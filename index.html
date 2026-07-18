@@ -4,173 +4,181 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sortilege — Project Index</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <style>
-    /* ---------- Palette drawn from the Sortilege logo (vivid, not muddy) ---------- */
+    /* ============ Palette drawn from the illuminated-tile logo ============ */
     :root {
-      --bg-1:      #2c1220;  /* deep wine        */
-      --bg-2:      #180f13;  /* espresso shadow  */
-      --card:      #2a1a20;  /* lifted warm dark */
-      --card-2:    #331f26;
-      --edge:      #4a2c33;
-      --ink:       #f7ecd6;  /* warm cream text  */
-      --ink-soft:  #cbb097;  /* muted parchment  */
-      --terracotta:#e0532f;
-      --coral:     #f2803f;
-      --gold:      #edb54a;
-      --rose:      #e8677f;
-      --crimson:   #cf4438;
-      --amber:     #d98a3a;
-      --glow:      rgba(224, 83, 47, 0.35);
+      --slate:     #5c7a90;
+      --navy:      #34475d;
+      --plum:      #5b4a63;
+      --violet:    #7b6aa6;
+      --terracotta:#b45a34;
+      --orange:    #d98a3b;
+      --coral:     #cc4f48;
+      --teal:      #4d7d6d;
+      --forest:    #375442;
+
+      --bg-1:   #f7f2e7;   /* warm cream light */
+      --bg-2:   #ece3d1;   /* cream shadow     */
+      --panel:  #fbf7ee;   /* tile / card face */
+      --panel-2:#f3ecdb;
+      --line:   #cfc3a8;   /* neutral frame    */
+      --ink:    #3a3428;   /* warm dark text   */
+      --ink-soft:#6f6650;
     }
-    :root[data-theme="light"] {
-      --bg-1:      #fbeede;  /* clean ivory, not sandstone */
-      --bg-2:      #f3e2cb;
-      --card:      #ffffff;
-      --card-2:    #fdf6ea;
-      --edge:      #e6d2b4;
-      --ink:       #2c1a12;
-      --ink-soft:  #7a5a44;
-      --terracotta:#c9401f;
-      --coral:     #e0662a;
-      --gold:      #c78f2a;
-      --rose:      #cf4d68;
-      --crimson:   #b5322a;
-      --amber:     #bf7726;
-      --glow:      rgba(201, 64, 31, 0.20);
+    :root[data-theme="dark"] {
+      --slate:#7ea0b6; --navy:#6b86a2; --plum:#9784ab; --violet:#a08fce;
+      --terracotta:#d3764a; --orange:#e6a256; --coral:#e06b62; --teal:#6fa693; --forest:#6a9678;
+      --bg-1:#211d17; --bg-2:#161310; --panel:#2a251d; --panel-2:#231f18;
+      --line:#4a4130; --ink:#efe7d3; --ink-soft:#b7aa8c;
     }
 
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; }
     body {
-      background:
-        radial-gradient(1200px 600px at 15% -5%, var(--bg-1) 0%, var(--bg-2) 70%),
-        var(--bg-2);
-      background-attachment: fixed;
+      background: radial-gradient(1200px 720px at 50% -12%, var(--bg-1) 0%, var(--bg-2) 82%) fixed;
       color: var(--ink);
-      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      font-family: "EB Garamond", "Iowan Old Style", Palatino, Georgia, serif;
+      font-size: 18px;
       line-height: 1.55;
       min-height: 100vh;
       -webkit-font-smoothing: antialiased;
     }
+    .wrap { max-width: 1140px; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3.5rem) 1.25rem 4.5rem; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 
-    .wrap { max-width: 1120px; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3.5rem) 1.25rem 4rem; }
+    /* ---------- Framed tile decoration (double rule + corner marks) ---------- */
+    .frame { position: relative; background: linear-gradient(158deg, var(--panel), var(--panel-2)); }
+    .frame::before {
+      content: ""; position: absolute; inset: 5px; pointer-events: none;
+      border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
+    }
+    .frame::after {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent)),
+        linear-gradient(var(--accent), var(--accent)), linear-gradient(var(--accent), var(--accent));
+      background-repeat: no-repeat; background-size: 7px 7px;
+      background-position: 3px 3px, calc(100% - 3px) 3px, 3px calc(100% - 3px), calc(100% - 3px) calc(100% - 3px);
+    }
 
     /* ---------- Header / wordmark ---------- */
-    header { text-align: center; margin-bottom: clamp(2.2rem, 6vw, 4rem); }
+    header { text-align: center; margin-bottom: clamp(2.4rem, 6vw, 4rem); }
+    .wordmark {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(6px, 1.4vw, 12px);
+    }
+    .glyph {
+      --accent: var(--slate);
+      width: clamp(58px, 9.5vw, 104px); aspect-ratio: 1;
+      border: 1.5px solid var(--accent);
+      display: grid; place-items: center;
+      font-family: "Cinzel", serif; font-weight: 600;
+      font-size: clamp(1.9rem, 5vw, 3.4rem);
+      color: var(--accent);
+      box-shadow: 0 6px 20px rgba(58, 44, 24, 0.10);
+    }
+    .glyph:nth-child(1){ --accent: var(--slate); }
+    .glyph:nth-child(2){ --accent: var(--navy); }
+    .glyph:nth-child(3){ --accent: var(--plum); }
+    .glyph:nth-child(4){ --accent: var(--violet); }
+    .glyph:nth-child(5){ --accent: var(--terracotta); }
+    .glyph:nth-child(6){ --accent: var(--teal); }
+    .glyph:nth-child(7){ --accent: var(--orange); }
+    .glyph:nth-child(8){ --accent: var(--coral); }
+    .glyph:nth-child(9){ --accent: var(--forest); }
 
-    .tablet {
-      display: inline-grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0.12em 0.32em;
-      padding: 0.5em 0.68em;
-      border-radius: 14px;
-      background: linear-gradient(155deg, var(--card-2) 0%, var(--card) 55%, var(--bg-2) 100%);
-      border: 1px solid var(--edge);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.45), 0 0 60px var(--glow), inset 0 1px 0 rgba(255,255,255,0.06);
-      font-size: clamp(1.7rem, 6.2vw, 3.1rem);
-      font-weight: 700;
-      letter-spacing: 0.06em;
+    .tagline {
+      margin: 1.6rem 0 0; color: var(--ink-soft); font-style: italic;
+      font-size: 1.12rem; letter-spacing: 0.01em;
     }
-    .tablet span { line-height: 1; text-align: center; text-shadow: 0 2px 10px rgba(0,0,0,0.35); }
-    .tablet span:nth-child(1){ color: var(--terracotta); }
-    .tablet span:nth-child(2){ color: var(--gold); }
-    .tablet span:nth-child(3){ color: var(--rose); }
-    .tablet span:nth-child(4){ color: var(--coral); }
-    .tablet span:nth-child(5){ color: var(--crimson); }
-    .tablet span:nth-child(6){ color: var(--gold); }
-    .tablet span:nth-child(7){ color: var(--rose); }
-    .tablet span:nth-child(8){ color: var(--terracotta); }
-    .tablet span:nth-child(9){ color: var(--coral); }
-
-    h1 {
-      font-size: clamp(2.2rem, 6vw, 3.4rem);
-      margin: 0.55em 0 0.15em;
-      letter-spacing: 0.02em;
-      background: linear-gradient(90deg, var(--terracotta), var(--gold) 45%, var(--rose));
-      -webkit-background-clip: text; background-clip: text;
-      -webkit-text-fill-color: transparent; color: transparent;
+    .ornament {
+      display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+      margin-top: 1.1rem; color: var(--terracotta);
     }
-    .tagline { color: var(--ink-soft); font-size: 1.08rem; margin: 0; font-style: italic; }
-    .rule {
-      width: 120px; height: 3px; margin: 1.4rem auto 0; border-radius: 3px;
-      background: linear-gradient(90deg, transparent, var(--terracotta), var(--gold), var(--rose), transparent);
+    .ornament::before, .ornament::after {
+      content: ""; height: 1px; width: clamp(60px, 18vw, 180px);
+      background: linear-gradient(90deg, transparent, var(--line));
     }
+    .ornament::after { background: linear-gradient(90deg, var(--line), transparent); }
+    .ornament span { transform: rotate(45deg); width: 8px; height: 8px; background: var(--terracotta); }
 
     /* ---------- Groups ---------- */
-    .group { margin-top: clamp(2.4rem, 5vw, 3.4rem); }
+    .group { margin-top: clamp(2.6rem, 5vw, 3.6rem); }
     .group h2 {
-      font-size: 1.5rem;
-      margin: 0 0 0.2rem;
-      display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
-      color: var(--accent);
+      font-family: "Cinzel", serif; font-weight: 600;
+      font-size: clamp(1.25rem, 2.6vw, 1.6rem);
+      margin: 0 0 0.15rem; color: var(--accent);
+      display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+      letter-spacing: 0.02em;
     }
     .group h2::before {
-      content: ""; width: 0.55em; height: 0.55em; border-radius: 3px;
-      background: var(--accent); box-shadow: 0 0 14px var(--accent);
-      display: inline-block; transform: rotate(45deg); flex: none;
+      content: ""; width: 0.5em; height: 0.5em; flex: none;
+      background: var(--accent); transform: rotate(45deg);
     }
     .group h2 .count {
-      font-size: 0.78rem; font-weight: 400; color: var(--ink-soft);
-      font-style: italic; letter-spacing: 0.03em;
+      font-family: "EB Garamond", serif; font-size: 0.82rem; font-weight: 400;
+      color: var(--ink-soft); font-style: italic; letter-spacing: 0.02em;
     }
-    .group > p.blurb { margin: 0.15rem 0 1.15rem; color: var(--ink-soft); font-size: 0.98rem; }
+    .group > p.blurb { margin: 0.1rem 0 1.25rem; color: var(--ink-soft); font-size: 1.02rem; }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
-      gap: 1rem;
+    /* ---------- Project table (one row per project) ---------- */
+    .panel { padding: clamp(0.4rem, 1.4vw, 0.9rem) clamp(0.7rem, 2vw, 1.3rem); overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    thead th {
+      font-family: "Cinzel", serif; font-weight: 600; font-size: 0.7rem;
+      letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent);
+      text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1.5px solid var(--accent);
+      white-space: nowrap;
     }
+    thead th.col-status, thead th.col-links { width: 1%; }
+    thead th.col-links { text-align: right; }
+    tbody td { padding: 0.7rem 0.8rem; vertical-align: middle; border-bottom: 1px solid var(--line); }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr { transition: background 0.12s ease; }
+    tbody tr:hover td { background: color-mix(in srgb, var(--accent) 9%, transparent); }
 
-    /* ---------- Cards ---------- */
-    .card {
-      position: relative;
-      background: linear-gradient(160deg, var(--card-2), var(--card));
-      border: 1px solid var(--edge);
-      border-radius: 12px;
-      padding: 1.1rem 1.2rem 1.05rem;
-      overflow: hidden;
-      display: flex; flex-direction: column;
-      transition: transform 0.16s ease, box-shadow 0.16s ease;
-    }
-    .card::before {
-      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
-      background: var(--accent);
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 14px 34px rgba(0,0,0,0.4), 0 0 0 1px var(--accent), 0 0 26px -6px var(--accent);
-    }
-    .card h3 { margin: 0 0 0.32rem; font-size: 1.14rem; color: var(--ink); letter-spacing: 0.01em; }
-    .card p { margin: 0 0 0.95rem; color: var(--ink-soft); font-size: 0.9rem; flex: 1; }
-    .card p.empty { opacity: 0.5; font-style: italic; }
+    .proj-name { font-family: "Cinzel", serif; font-weight: 600; font-size: 0.98rem; color: var(--ink); line-height: 1.3; }
+    .proj-desc { color: var(--ink-soft); font-size: 0.92rem; margin-top: 0.12rem; }
+    .proj-desc.empty { opacity: 0.4; font-style: italic; }
 
-    .links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    a.pill {
+    td.col-status { white-space: nowrap; }
+    .badge {
       display: inline-flex; align-items: center; gap: 0.4rem;
-      text-decoration: none; font-size: 0.8rem; font-weight: 600;
-      padding: 0.36rem 0.72rem; border-radius: 999px;
-      border: 1px solid transparent;
-      font-family: system-ui, sans-serif; letter-spacing: 0.02em;
-      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+      font-family: "EB Garamond", serif; font-size: 0.86rem; font-weight: 500;
+      padding: 0.16rem 0.62rem; border: 1px solid currentColor; border-radius: 999px;
+      white-space: nowrap;
     }
-    a.pill:active { transform: translateY(1px); }
-    a.pill svg { width: 15px; height: 15px; }
-    a.pill.gh { background: transparent; color: var(--ink-soft); border-color: var(--edge); }
-    a.pill.gh:hover { background: var(--ink); color: var(--bg-2); border-color: var(--ink); }
-    a.pill.web { background: var(--accent); color: #fff; }
-    a.pill.web:hover { filter: brightness(1.12); }
+    .badge::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
 
-    footer { margin-top: 3.8rem; text-align: center; color: var(--ink-soft); font-size: 0.85rem; }
-    footer a { color: var(--gold); }
+    td.col-links { text-align: right; white-space: nowrap; }
+    .links { display: inline-flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-end; }
+    a.pill {
+      display: inline-flex; align-items: center; gap: 0.4rem; text-decoration: none;
+      font-family: "EB Garamond", serif; font-size: 0.92rem; font-weight: 500;
+      padding: 0.28rem 0.7rem; border: 1px solid var(--accent); background: transparent;
+      color: var(--accent); transition: background 0.15s ease, color 0.15s ease;
+    }
+    a.pill svg { width: 14px; height: 14px; }
+    a.pill.gh:hover { background: var(--ink); color: var(--panel); border-color: var(--ink); }
+    a.pill.web { background: var(--accent); color: var(--panel); }
+    a.pill.web:hover { filter: brightness(1.08); }
+
+    footer {
+      margin-top: 4rem; padding-top: 1.6rem; text-align: center;
+      color: var(--ink-soft); font-size: 0.95rem;
+      border-top: 1px solid var(--line);
+    }
+    footer a { color: var(--terracotta); }
 
     .toggle {
       position: fixed; top: 1rem; right: 1rem;
-      background: var(--card); border: 1px solid var(--edge); color: var(--ink);
-      border-radius: 999px; width: 42px; height: 42px; cursor: pointer;
-      font-size: 1.05rem; line-height: 1;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+      background: var(--panel); border: 1px solid var(--line); color: var(--ink);
+      width: 42px; height: 42px; cursor: pointer; font-size: 1.05rem; line-height: 1;
+      box-shadow: 0 4px 14px rgba(58, 44, 24, 0.14);
     }
-    .toggle:hover { border-color: var(--gold); }
+    .toggle:hover { border-color: var(--terracotta); }
   </style>
 </head>
 <body>
@@ -178,14 +186,20 @@
 
   <div class="wrap">
     <header>
-      <div class="tablet" aria-hidden="true">
-        <span>S</span><span>O</span><span>R</span>
-        <span>T</span><span>I</span><span>L</span>
-        <span>E</span><span>G</span><span>E</span>
+      <h1 class="sr-only">Sortilege</h1>
+      <div class="wordmark" aria-hidden="true">
+        <div class="glyph frame">S</div>
+        <div class="glyph frame">O</div>
+        <div class="glyph frame">R</div>
+        <div class="glyph frame">T</div>
+        <div class="glyph frame">I</div>
+        <div class="glyph frame">L</div>
+        <div class="glyph frame">E</div>
+        <div class="glyph frame">G</div>
+        <div class="glyph frame">E</div>
       </div>
-      <h1>Sortilege</h1>
       <p class="tagline">An index of our projects &amp; conjurings</p>
-      <div class="rule"></div>
+      <div class="ornament"><span></span></div>
     </header>
 
     <main id="app"></main>
@@ -198,13 +212,26 @@
   <script>
     /* =========================================================================
        EDIT HERE. Each group: { name, blurb, projects:[...] }.
-       Each project: { name, desc, github, web }  (github/web optional).
+       Each project: { name, desc, github, web, status }  (all but name optional).
+       - status : one of the STATUS keys below. Omit it and it defaults to "Unknown".
        Group accent colors cycle automatically through ACCENTS below.
        ========================================================================= */
     const ACCENTS = [
-      "var(--terracotta)", "var(--gold)", "var(--rose)", "var(--coral)",
-      "var(--crimson)", "var(--amber)"
+      "var(--slate)", "var(--terracotta)", "var(--plum)", "var(--teal)", "var(--orange)",
+      "var(--violet)", "var(--coral)", "var(--navy)", "var(--forest)"
     ];
+
+    // Status label -> badge color. Add your own; "Unknown" is the default.
+    const STATUS = {
+      "Unknown":     "var(--ink-soft)",
+      "Live":        "var(--teal)",
+      "Active":      "var(--slate)",
+      "In Progress": "var(--orange)",
+      "Complete":    "var(--forest)",
+      "On Hold":     "var(--coral)",
+      "Draft":       "var(--violet)",
+      "Archived":    "var(--plum)"
+    };
 
     const GROUPS = [
       {
@@ -265,8 +292,8 @@
         ]
       },
       {
-        name: "Apps & Experiments",
-        blurb: "Standalone tools, generators, and one-offs.",
+        name: "Writings & Utilities",
+        blurb: "Essays, generators, and standalone tools.",
         projects: [
           { name: "Un Coup de Dés", desc: "", github: "https://github.com/sortilege-inc/un-coup-de-des" },
           { name: "Dossier Studio", desc: "", github: "https://github.com/sortilege-inc/dossier-studio" },
@@ -281,8 +308,8 @@
         ]
       },
       {
-        name: "Databases & Data Services",
-        blurb: "Datastores and backing services.",
+        name: "Trading Card Game Tools",
+        blurb: "Databases and services backing the card games.",
         projects: [
           { name: "TCGGG", desc: "", github: "https://github.com/sortilege-inc/tcggg" },
           { name: "TCG DB", desc: "Trading Card Game database.", github: "https://github.com/sortilege-inc/tcgdb" },
@@ -290,7 +317,7 @@
         ]
       },
       {
-        name: "Gods of the Dead",
+        name: "Kid Projects",
         blurb: "",
         projects: [
           { name: "Gods of the Dead", desc: "", github: "https://github.com/sortilege-inc/gotd" },
@@ -298,7 +325,7 @@
         ]
       },
       {
-        name: "Hope, Fear & Mythic Greece",
+        name: "Variant Rulesets",
         blurb: "",
         projects: [
           { name: "Hope · Fear · Mythic Greece", desc: "", github: "https://github.com/sortilege-inc/hope-fear-mythic-greece" }
@@ -315,7 +342,7 @@
         ]
       },
       {
-        name: "Card & Strategy Games",
+        name: "Private Client Work",
         blurb: "",
         projects: [
           { name: "Hegemony CCG", desc: "", github: "https://github.com/sortilege-inc/hegemonyccg" },
@@ -323,8 +350,8 @@
         ]
       },
       {
-        name: "Libraries & Sundry",
-        blurb: "Reusable pieces and campaign ephemera.",
+        name: "Draft Experiments",
+        blurb: "Works in progress and rough sketches.",
         projects: [
           { name: "Ragtime", desc: "", github: "https://github.com/sortilege-inc/ragtime" },
           { name: "React Hexgrid", desc: "Build interactive hexagon grids with React.",
@@ -335,8 +362,8 @@
         ]
       },
       {
-        name: "Trading Card Games & the Website",
-        blurb: "In-house TCGs and the Sortilege web presence.",
+        name: "Archived",
+        blurb: "Retired projects and the legacy web presence.",
         projects: [
           { name: "Nine Eyes TCG", desc: "Nine Eyes TCG.", github: "https://github.com/sortilege-inc/9e" },
           { name: "Be Slightly Evil", desc: "Be Slightly Evil — the trading card game.",
@@ -349,7 +376,6 @@
       }
     ];
 
-    /* ---------- icons ---------- */
     const GH_ICON = '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>';
     const WEB_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="8" cy="8" r="6.4"/><path d="M1.6 8h12.8M8 1.6c1.9 2 1.9 10.8 0 12.8M8 1.6c-1.9 2-1.9 10.8 0 12.8"/></svg>';
 
@@ -360,30 +386,42 @@
       app.innerHTML = GROUPS.map((g, gi) => {
         if (!g.projects || !g.projects.length) return "";
         const accent = ACCENTS[gi % ACCENTS.length];
-        const cards = g.projects.map(p => {
+        const rows = g.projects.map(p => {
           const links = [];
           if (p.github) links.push(`<a class="pill gh" href="${esc(p.github)}" target="_blank" rel="noopener">${GH_ICON} GitHub</a>`);
           if (p.web)    links.push(`<a class="pill web" href="${esc(p.web)}" target="_blank" rel="noopener">${WEB_ICON} Website</a>`);
-          const desc = p.desc ? `<p>${esc(p.desc)}</p>` : `<p class="empty">—</p>`;
-          return `<article class="card">
-            <h3>${esc(p.name)}</h3>
-            ${desc}
-            <div class="links">${links.join("")}</div>
-          </article>`;
+          const status = (p.status && STATUS[p.status]) ? p.status : "Unknown";
+          const desc = p.desc ? `<div class="proj-desc">${esc(p.desc)}</div>` : `<div class="proj-desc empty">no description</div>`;
+          return `<tr>
+            <td>
+              <div class="proj-name">${esc(p.name)}</div>
+              ${desc}
+            </td>
+            <td class="col-status"><span class="badge" style="color:${STATUS[status]}">${esc(status)}</span></td>
+            <td class="col-links"><div class="links">${links.join("")}</div></td>
+          </tr>`;
         }).join("");
         return `<section class="group" style="--accent:${accent}">
           <h2>${esc(g.name)} <span class="count">${g.projects.length} project${g.projects.length !== 1 ? "s" : ""}</span></h2>
           ${g.blurb ? `<p class="blurb">${esc(g.blurb)}</p>` : ""}
-          <div class="grid">${cards}</div>
+          <div class="panel frame">
+            <table>
+              <thead><tr>
+                <th>Project</th>
+                <th class="col-status">Current status</th>
+                <th class="col-links">Links</th>
+              </tr></thead>
+              <tbody>${rows}</tbody>
+            </table>
+          </div>
         </section>`;
       }).join("");
     }
     render();
 
-    /* ---------- theme toggle (defaults to the vivid dark canvas) ---------- */
     const root = document.documentElement;
     document.getElementById("themeToggle").addEventListener("click", () => {
-      root.setAttribute("data-theme", root.getAttribute("data-theme") === "light" ? "dark" : "light");
+      root.setAttribute("data-theme", root.getAttribute("data-theme") === "dark" ? "light" : "dark");
     });
   </script>
 </body>
