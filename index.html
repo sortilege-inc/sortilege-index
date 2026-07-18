@@ -104,8 +104,33 @@
     .ornament::after { background: linear-gradient(90deg, var(--line), transparent); }
     .ornament span { transform: rotate(45deg); width: 8px; height: 8px; background: var(--terracotta); }
 
+    /* ---------- Tabs ---------- */
+    .tabs {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 0.3rem;
+      margin: 0 auto clamp(1.8rem, 4vw, 2.6rem);
+      border-bottom: 1px solid var(--line);
+    }
+    .tab {
+      font-family: "Cinzel", serif; font-weight: 600; font-size: 0.9rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      background: none; border: none; color: var(--ink-soft);
+      padding: 0.7rem 1.4rem; cursor: pointer; margin-bottom: -1px;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .tab:hover { color: var(--ink); }
+    .tab[aria-selected="true"] { color: var(--terracotta); border-bottom-color: var(--terracotta); }
+    .tab:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }
+
+    .tabpanel[hidden] { display: none; }
+    .placeholder {
+      text-align: center; color: var(--ink-soft); font-style: italic; font-size: 1.15rem;
+      padding: clamp(2.5rem, 10vw, 6rem) 1.5rem;
+    }
+
     /* ---------- Groups ---------- */
     .group { margin-top: clamp(2.6rem, 5vw, 3.6rem); }
+    .group:first-child { margin-top: 0; }
     .group h2 {
       font-family: "Cinzel", serif; font-weight: 600;
       font-size: clamp(1.25rem, 2.6vw, 1.6rem);
@@ -202,7 +227,21 @@
       <div class="ornament"><span></span></div>
     </header>
 
-    <main id="app"></main>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button class="tab" role="tab" id="tab-projects" aria-controls="panel-projects" aria-selected="true">Projects</button>
+      <button class="tab" role="tab" id="tab-gm" aria-controls="panel-gm" aria-selected="false" tabindex="-1">GM</button>
+      <button class="tab" role="tab" id="tab-player" aria-controls="panel-player" aria-selected="false" tabindex="-1">Player</button>
+    </nav>
+
+    <main>
+      <div class="tabpanel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects"></div>
+      <div class="tabpanel" id="panel-gm" role="tabpanel" aria-labelledby="tab-gm" hidden>
+        <div class="placeholder frame" style="--accent:var(--slate)">Game Master content coming soon.</div>
+      </div>
+      <div class="tabpanel" id="panel-player" role="tabpanel" aria-labelledby="tab-player" hidden>
+        <div class="placeholder frame" style="--accent:var(--terracotta)">Player content coming soon.</div>
+      </div>
+    </main>
 
     <footer>
       Sortilege Inc. &middot; <a href="https://github.com/sortilege-inc">github.com/sortilege-inc</a>
@@ -269,6 +308,8 @@
             github: "https://github.com/sortilege-inc/titterpig-dsl-root" },
           { name: "DSL · Daggerheart", desc: "Daggerheart rules corpus.",
             github: "https://github.com/sortilege-inc/titterpig-dsl-daggerheart" },
+          { name: "DSL · D&D 5e", desc: "Dungeons & Dragons 5th Edition rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-dnd5e" },
           { name: "DSL · Ars Magica 5e", desc: "Ars Magica 5th Edition rules corpus.",
             github: "https://github.com/sortilege-inc/titterpig-dsl-arm5e" },
           { name: "DSL · Vampire 5e", desc: "Vampire: The Masquerade 5e rules corpus.",
@@ -382,7 +423,7 @@
     const esc = s => (s || "").replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
     function render() {
-      const app = document.getElementById("app");
+      const app = document.getElementById("panel-projects");
       app.innerHTML = GROUPS.map((g, gi) => {
         if (!g.projects || !g.projects.length) return "";
         const accent = ACCENTS[gi % ACCENTS.length];
@@ -422,6 +463,26 @@
     const root = document.documentElement;
     document.getElementById("themeToggle").addEventListener("click", () => {
       root.setAttribute("data-theme", root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+    });
+
+    /* ---------- Tabs: Projects / GM / Player ---------- */
+    const tabs = [...document.querySelectorAll('.tab')];
+    function activate(tab) {
+      tabs.forEach(t => {
+        const selected = t === tab;
+        t.setAttribute('aria-selected', selected ? 'true' : 'false');
+        t.tabIndex = selected ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !selected;
+      });
+    }
+    tabs.forEach((tab, i) => {
+      tab.addEventListener('click', () => activate(tab));
+      tab.addEventListener('keydown', e => {
+        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+        e.preventDefault();
+        const next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+        activate(next); next.focus();
+      });
     });
   </script>
 </body>
