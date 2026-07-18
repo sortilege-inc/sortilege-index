@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sortilege — Project Index</title>
+  <style>
+    /* ---------- Palette drawn from the Sortilege logo (vivid, not muddy) ---------- */
+    :root {
+      --bg-1:      #2c1220;  /* deep wine        */
+      --bg-2:      #180f13;  /* espresso shadow  */
+      --card:      #2a1a20;  /* lifted warm dark */
+      --card-2:    #331f26;
+      --edge:      #4a2c33;
+      --ink:       #f7ecd6;  /* warm cream text  */
+      --ink-soft:  #cbb097;  /* muted parchment  */
+      --terracotta:#e0532f;
+      --coral:     #f2803f;
+      --gold:      #edb54a;
+      --rose:      #e8677f;
+      --crimson:   #cf4438;
+      --amber:     #d98a3a;
+      --glow:      rgba(224, 83, 47, 0.35);
+    }
+    :root[data-theme="light"] {
+      --bg-1:      #fbeede;  /* clean ivory, not sandstone */
+      --bg-2:      #f3e2cb;
+      --card:      #ffffff;
+      --card-2:    #fdf6ea;
+      --edge:      #e6d2b4;
+      --ink:       #2c1a12;
+      --ink-soft:  #7a5a44;
+      --terracotta:#c9401f;
+      --coral:     #e0662a;
+      --gold:      #c78f2a;
+      --rose:      #cf4d68;
+      --crimson:   #b5322a;
+      --amber:     #bf7726;
+      --glow:      rgba(201, 64, 31, 0.20);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background:
+        radial-gradient(1200px 600px at 15% -5%, var(--bg-1) 0%, var(--bg-2) 70%),
+        var(--bg-2);
+      background-attachment: fixed;
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+      line-height: 1.55;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { max-width: 1120px; margin: 0 auto; padding: clamp(1.5rem, 4vw, 3.5rem) 1.25rem 4rem; }
+
+    /* ---------- Header / wordmark ---------- */
+    header { text-align: center; margin-bottom: clamp(2.2rem, 6vw, 4rem); }
+
+    .tablet {
+      display: inline-grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.12em 0.32em;
+      padding: 0.5em 0.68em;
+      border-radius: 14px;
+      background: linear-gradient(155deg, var(--card-2) 0%, var(--card) 55%, var(--bg-2) 100%);
+      border: 1px solid var(--edge);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.45), 0 0 60px var(--glow), inset 0 1px 0 rgba(255,255,255,0.06);
+      font-size: clamp(1.7rem, 6.2vw, 3.1rem);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+    .tablet span { line-height: 1; text-align: center; text-shadow: 0 2px 10px rgba(0,0,0,0.35); }
+    .tablet span:nth-child(1){ color: var(--terracotta); }
+    .tablet span:nth-child(2){ color: var(--gold); }
+    .tablet span:nth-child(3){ color: var(--rose); }
+    .tablet span:nth-child(4){ color: var(--coral); }
+    .tablet span:nth-child(5){ color: var(--crimson); }
+    .tablet span:nth-child(6){ color: var(--gold); }
+    .tablet span:nth-child(7){ color: var(--rose); }
+    .tablet span:nth-child(8){ color: var(--terracotta); }
+    .tablet span:nth-child(9){ color: var(--coral); }
+
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      margin: 0.55em 0 0.15em;
+      letter-spacing: 0.02em;
+      background: linear-gradient(90deg, var(--terracotta), var(--gold) 45%, var(--rose));
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; color: transparent;
+    }
+    .tagline { color: var(--ink-soft); font-size: 1.08rem; margin: 0; font-style: italic; }
+    .rule {
+      width: 120px; height: 3px; margin: 1.4rem auto 0; border-radius: 3px;
+      background: linear-gradient(90deg, transparent, var(--terracotta), var(--gold), var(--rose), transparent);
+    }
+
+    /* ---------- Groups ---------- */
+    .group { margin-top: clamp(2.4rem, 5vw, 3.4rem); }
+    .group h2 {
+      font-size: 1.5rem;
+      margin: 0 0 0.2rem;
+      display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap;
+      color: var(--accent);
+    }
+    .group h2::before {
+      content: ""; width: 0.55em; height: 0.55em; border-radius: 3px;
+      background: var(--accent); box-shadow: 0 0 14px var(--accent);
+      display: inline-block; transform: rotate(45deg); flex: none;
+    }
+    .group h2 .count {
+      font-size: 0.78rem; font-weight: 400; color: var(--ink-soft);
+      font-style: italic; letter-spacing: 0.03em;
+    }
+    .group > p.blurb { margin: 0.15rem 0 1.15rem; color: var(--ink-soft); font-size: 0.98rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+      gap: 1rem;
+    }
+
+    /* ---------- Cards ---------- */
+    .card {
+      position: relative;
+      background: linear-gradient(160deg, var(--card-2), var(--card));
+      border: 1px solid var(--edge);
+      border-radius: 12px;
+      padding: 1.1rem 1.2rem 1.05rem;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: transform 0.16s ease, box-shadow 0.16s ease;
+    }
+    .card::before {
+      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+      background: var(--accent);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.4), 0 0 0 1px var(--accent), 0 0 26px -6px var(--accent);
+    }
+    .card h3 { margin: 0 0 0.32rem; font-size: 1.14rem; color: var(--ink); letter-spacing: 0.01em; }
+    .card p { margin: 0 0 0.95rem; color: var(--ink-soft); font-size: 0.9rem; flex: 1; }
+    .card p.empty { opacity: 0.5; font-style: italic; }
+
+    .links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    a.pill {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      text-decoration: none; font-size: 0.8rem; font-weight: 600;
+      padding: 0.36rem 0.72rem; border-radius: 999px;
+      border: 1px solid transparent;
+      font-family: system-ui, sans-serif; letter-spacing: 0.02em;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+    }
+    a.pill:active { transform: translateY(1px); }
+    a.pill svg { width: 15px; height: 15px; }
+    a.pill.gh { background: transparent; color: var(--ink-soft); border-color: var(--edge); }
+    a.pill.gh:hover { background: var(--ink); color: var(--bg-2); border-color: var(--ink); }
+    a.pill.web { background: var(--accent); color: #fff; }
+    a.pill.web:hover { filter: brightness(1.12); }
+
+    footer { margin-top: 3.8rem; text-align: center; color: var(--ink-soft); font-size: 0.85rem; }
+    footer a { color: var(--gold); }
+
+    .toggle {
+      position: fixed; top: 1rem; right: 1rem;
+      background: var(--card); border: 1px solid var(--edge); color: var(--ink);
+      border-radius: 999px; width: 42px; height: 42px; cursor: pointer;
+      font-size: 1.05rem; line-height: 1;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    }
+    .toggle:hover { border-color: var(--gold); }
+  </style>
+</head>
+<body>
+  <button class="toggle" id="themeToggle" title="Toggle light/dark" aria-label="Toggle theme">◐</button>
+
+  <div class="wrap">
+    <header>
+      <div class="tablet" aria-hidden="true">
+        <span>S</span><span>O</span><span>R</span>
+        <span>T</span><span>I</span><span>L</span>
+        <span>E</span><span>G</span><span>E</span>
+      </div>
+      <h1>Sortilege</h1>
+      <p class="tagline">An index of our projects &amp; conjurings</p>
+      <div class="rule"></div>
+    </header>
+
+    <main id="app"></main>
+
+    <footer>
+      Sortilege Inc. &middot; <a href="https://github.com/sortilege-inc">github.com/sortilege-inc</a>
+    </footer>
+  </div>
+
+  <script>
+    /* =========================================================================
+       EDIT HERE. Each group: { name, blurb, projects:[...] }.
+       Each project: { name, desc, github, web }  (github/web optional).
+       Group accent colors cycle automatically through ACCENTS below.
+       ========================================================================= */
+    const ACCENTS = [
+      "var(--terracotta)", "var(--gold)", "var(--rose)", "var(--coral)",
+      "var(--crimson)", "var(--amber)"
+    ];
+
+    const GROUPS = [
+      {
+        name: "Games, Campaigns & Companions",
+        blurb: "Playable modules, campaign material, and companion apps.",
+        projects: [
+          { name: "Bellum Arborem", desc: "Companion web app for the Root roleplaying game.",
+            github: "https://github.com/sortilege-inc/bellum-arborem", web: "https://sortilege-inc.github.io/bellum-arborem/" },
+          { name: "Children of Fear", desc: "", github: "https://github.com/sortilege-inc/children-of-fear" },
+          { name: "Banes of Beleriand", desc: "", github: "https://github.com/sortilege-inc/banes-of-beleriand" },
+          { name: "Collateral", desc: "", github: "https://github.com/sortilege-inc/collateral" },
+          { name: "Caul", desc: "", github: "https://github.com/sortilege-inc/caul" },
+          { name: "Sjórseiðr", desc: "Sjórseiðr campaign.",
+            github: "https://github.com/sortilege-inc/sjorseidr", web: "https://sortilege-inc.github.io/sjorseidr/" },
+          { name: "War of Princes", desc: "Vampire: The Dark Ages — War of Princes.",
+            github: "https://github.com/sortilege-inc/war-of-princes", web: "https://sortilege-inc.github.io/war-of-princes/" },
+          { name: "Istya", desc: "The One Ring 2e — company, character & adversary app.",
+            github: "https://github.com/sortilege-inc/istya" }
+        ]
+      },
+      {
+        name: "Titterpig — DSL, Corpora & Tooling",
+        blurb: "The system-agnostic TTRPG DSL engine, its rules corpora, and authoring tools.",
+        projects: [
+          { name: "Titterpig Mastra", desc: "Ingestion & authoring pipeline that turns rulebooks into DSL.",
+            github: "https://github.com/sortilege-inc/titterpig-mastra" },
+          { name: "Titterpig Synthesist", desc: "", github: "https://github.com/sortilege-inc/titterpig-synthesist" },
+          { name: "Titterpig DSL", desc: "Core Titterpig DSL grammar & specification.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl" },
+          { name: "Sublime TTRPG Syntax", desc: "Titterpig syntax highlighting for Sublime Text.",
+            github: "https://github.com/sortilege-inc/sublime-ttrpg-syntax" },
+          { name: "DSL · Call of Cthulhu 7e", desc: "Call of Cthulhu 7th Edition rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-callofcthulhu7e" },
+          { name: "DSL · Root", desc: "Root RPG rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-root" },
+          { name: "DSL · Daggerheart", desc: "Daggerheart rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-daggerheart" },
+          { name: "DSL · Ars Magica 5e", desc: "Ars Magica 5th Edition rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-arm5e" },
+          { name: "DSL · Vampire 5e", desc: "Vampire: The Masquerade 5e rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-vtm5e" },
+          { name: "DSL · Draw Steel", desc: "Draw Steel rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-draw-steel" },
+          { name: "DSL · Legend of the Five Rings 5e", desc: "L5R 5th Edition rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-l5r5e" },
+          { name: "DSL · The One Ring 2e", desc: "The One Ring 2nd Edition rules corpus.",
+            github: "https://github.com/sortilege-inc/titterpig-dsl-tor2e" }
+        ]
+      },
+      {
+        name: "Engines, Dashboards & Wikis",
+        blurb: "Runtime engines, dashboards, and knowledge bases.",
+        projects: [
+          { name: "Titterpig Engine", desc: "", github: "https://github.com/sortilege-inc/titterpig-engine" },
+          { name: "Titterpig Dashboard (Web)", desc: "", github: "https://github.com/sortilege-inc/titterpig-dashboard-web" },
+          { name: "Marginalia", desc: "", github: "https://github.com/sortilege-inc/marginalia" },
+          { name: "Intertwingler — L5R Wiki", desc: "", github: "https://github.com/sortilege-inc/intertwingler-l5r-wiki" }
+        ]
+      },
+      {
+        name: "Apps & Experiments",
+        blurb: "Standalone tools, generators, and one-offs.",
+        projects: [
+          { name: "Un Coup de Dés", desc: "", github: "https://github.com/sortilege-inc/un-coup-de-des" },
+          { name: "Dossier Studio", desc: "", github: "https://github.com/sortilege-inc/dossier-studio" },
+          { name: "Dossiers", desc: "Deep dives on constructed player characters.",
+            github: "https://github.com/sortilege-inc/dossiers", web: "https://sortilege-inc.github.io/dossiers/" },
+          { name: "Quorum", desc: "", github: "https://github.com/sortilege-inc/quorum" },
+          { name: "Spiders", desc: "", github: "https://github.com/sortilege-inc/spiders-game" },
+          { name: "Maker's Matrix", desc: "Invisible Sun Maker's Matrix.",
+            github: "https://github.com/sortilege-inc/makers-matrix" },
+          { name: "Maker's Matrix API", desc: "Maker's Matrix API.",
+            github: "https://github.com/sortilege-inc/makers-matrix-api" }
+        ]
+      },
+      {
+        name: "Databases & Data Services",
+        blurb: "Datastores and backing services.",
+        projects: [
+          { name: "TCGGG", desc: "", github: "https://github.com/sortilege-inc/tcggg" },
+          { name: "TCG DB", desc: "Trading Card Game database.", github: "https://github.com/sortilege-inc/tcgdb" },
+          { name: "SNAFU DB", desc: "", github: "https://github.com/sortilege-inc/snafu-db" }
+        ]
+      },
+      {
+        name: "Gods of the Dead",
+        blurb: "",
+        projects: [
+          { name: "Gods of the Dead", desc: "", github: "https://github.com/sortilege-inc/gotd" },
+          { name: "Gods of the Dead (repo)", desc: "", github: "https://github.com/sortilege-inc/gods-of-the-dead" }
+        ]
+      },
+      {
+        name: "Hope, Fear & Mythic Greece",
+        blurb: "",
+        projects: [
+          { name: "Hope · Fear · Mythic Greece", desc: "", github: "https://github.com/sortilege-inc/hope-fear-mythic-greece" }
+        ]
+      },
+      {
+        name: "Foundry VTT Compendia",
+        blurb: "Compendium packs for Foundry Virtual Tabletop.",
+        projects: [
+          { name: "FVTT · L5R 5e", desc: "", github: "https://github.com/sortilege-inc/sortilege-fvtt-compendia-l5r5e" },
+          { name: "FVTT · Marvel Multiverse", desc: "", github: "https://github.com/sortilege-inc/sortilege-fvtt-compendia-marvel-multiverse" },
+          { name: "L5R 5e Compendia", desc: "", github: "https://github.com/sortilege-inc/l5r5e-compendia-sortilege" },
+          { name: "FVTT · Vampire 5e", desc: "", github: "https://github.com/sortilege-inc/sortilege-fvtt-compendia-vtm5e" }
+        ]
+      },
+      {
+        name: "Card & Strategy Games",
+        blurb: "",
+        projects: [
+          { name: "Hegemony CCG", desc: "", github: "https://github.com/sortilege-inc/hegemonyccg" },
+          { name: "Networked Futures", desc: "", github: "https://github.com/sortilege-inc/networked-futures" }
+        ]
+      },
+      {
+        name: "Libraries & Sundry",
+        blurb: "Reusable pieces and campaign ephemera.",
+        projects: [
+          { name: "Ragtime", desc: "", github: "https://github.com/sortilege-inc/ragtime" },
+          { name: "React Hexgrid", desc: "Build interactive hexagon grids with React.",
+            github: "https://github.com/sortilege-inc/react-hexgrid" },
+          { name: "Exquisite Shade", desc: "GM Binder files for an Invisible Sun campaign.",
+            github: "https://github.com/sortilege-inc/exquisite-shade" },
+          { name: "Situation Normal", desc: "", github: "https://github.com/sortilege-inc/situation-normal" }
+        ]
+      },
+      {
+        name: "Trading Card Games & the Website",
+        blurb: "In-house TCGs and the Sortilege web presence.",
+        projects: [
+          { name: "Nine Eyes TCG", desc: "Nine Eyes TCG.", github: "https://github.com/sortilege-inc/9e" },
+          { name: "Be Slightly Evil", desc: "Be Slightly Evil — the trading card game.",
+            github: "https://github.com/sortilege-inc/bse" },
+          { name: "BSE Web", desc: "", github: "https://github.com/sortilege-inc/bse-web" },
+          { name: "BSE Archive", desc: "", github: "https://github.com/sortilege-inc/bse-archive" },
+          { name: "sortilege.online", desc: "The Sortilege website.",
+            github: "https://github.com/sortilege-inc/sortilege.online", web: "https://sortilege.online/" }
+        ]
+      }
+    ];
+
+    /* ---------- icons ---------- */
+    const GH_ICON = '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>';
+    const WEB_ICON = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="8" cy="8" r="6.4"/><path d="M1.6 8h12.8M8 1.6c1.9 2 1.9 10.8 0 12.8M8 1.6c-1.9 2-1.9 10.8 0 12.8"/></svg>';
+
+    const esc = s => (s || "").replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+    function render() {
+      const app = document.getElementById("app");
+      app.innerHTML = GROUPS.map((g, gi) => {
+        if (!g.projects || !g.projects.length) return "";
+        const accent = ACCENTS[gi % ACCENTS.length];
+        const cards = g.projects.map(p => {
+          const links = [];
+          if (p.github) links.push(`<a class="pill gh" href="${esc(p.github)}" target="_blank" rel="noopener">${GH_ICON} GitHub</a>`);
+          if (p.web)    links.push(`<a class="pill web" href="${esc(p.web)}" target="_blank" rel="noopener">${WEB_ICON} Website</a>`);
+          const desc = p.desc ? `<p>${esc(p.desc)}</p>` : `<p class="empty">—</p>`;
+          return `<article class="card">
+            <h3>${esc(p.name)}</h3>
+            ${desc}
+            <div class="links">${links.join("")}</div>
+          </article>`;
+        }).join("");
+        return `<section class="group" style="--accent:${accent}">
+          <h2>${esc(g.name)} <span class="count">${g.projects.length} project${g.projects.length !== 1 ? "s" : ""}</span></h2>
+          ${g.blurb ? `<p class="blurb">${esc(g.blurb)}</p>` : ""}
+          <div class="grid">${cards}</div>
+        </section>`;
+      }).join("");
+    }
+    render();
+
+    /* ---------- theme toggle (defaults to the vivid dark canvas) ---------- */
+    const root = document.documentElement;
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      root.setAttribute("data-theme", root.getAttribute("data-theme") === "light" ? "dark" : "light");
+    });
+  </script>
+</body>
+</html>
