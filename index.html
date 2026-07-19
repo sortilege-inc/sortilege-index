@@ -157,8 +157,10 @@
       text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1.5px solid var(--accent);
       white-space: nowrap;
     }
-    thead th.col-status, thead th.col-links { width: 1%; }
+    thead th.col-updated, thead th.col-status, thead th.col-links { width: 1%; }
     thead th.col-links { text-align: right; }
+    th.col-updated, td.col-updated { white-space: nowrap; }
+    td.col-updated { color: var(--ink-soft); font-size: 0.9rem; font-variant-numeric: tabular-nums; }
     tbody td { padding: 0.7rem 0.8rem; vertical-align: middle; border-bottom: 1px solid var(--line); }
     tbody tr:last-child td { border-bottom: none; }
     tbody tr { transition: background 0.12s ease; }
@@ -273,6 +275,10 @@
       "Archived":    "var(--plum)"
     };
 
+    // Fallback "Last Updated" date for any project without its own `updated` field.
+    // Set a project's `updated: "YYYY-MM-DD"` to override this per item.
+    const DEFAULT_UPDATED = "2026-07-19";
+
     const GROUPS = [
       {
         name: "Games, Campaigns & Companions",
@@ -292,8 +298,8 @@
         projects: [
           { name: "Titterpig Mastra", desc: "Ingestion & authoring pipeline that turns rulebooks into DSL.",
             github: "https://github.com/sortilege-inc/titterpig-mastra" },
-          { name: "Titterpig Synthesist", desc: "", github: "https://github.com/sortilege-inc/titterpig-synthesist" },
-          { name: "Titterpig DSL", desc: "Core Titterpig DSL grammar & specification.",
+          { name: "Titterpig Synthesist", desc: "", status: "0.4-compliant", github: "https://github.com/sortilege-inc/titterpig-synthesist" },
+          { name: "Titterpig DSL", desc: "Core Titterpig DSL grammar & specification.", status: "0.4-compliant",
             github: "https://github.com/sortilege-inc/titterpig-dsl" },
           { name: "Sublime TTRPG Syntax", desc: "Titterpig syntax highlighting for Sublime Text.",
             github: "https://github.com/sortilege-inc/sublime-ttrpg-syntax" },
@@ -304,7 +310,7 @@
           { name: "DSL · Daggerheart", desc: "Daggerheart rules corpus.",
             github: "https://github.com/sortilege-inc/titterpig-dsl-daggerheart", status: "0.4-compliant" },
           { name: "DSL · D&D 5e", desc: "Dungeons & Dragons 5th Edition rules corpus.",
-            github: "https://github.com/sortilege-inc/titterpig-dsl-dnd5e" },
+            github: "https://github.com/sortilege-inc/titterpig-dsl-dnd5e", status: "0.4-compliant" },
           { name: "DSL · Ars Magica 5e", desc: "Ars Magica 5th Edition rules corpus.",
             github: "https://github.com/sortilege-inc/titterpig-dsl-arm5e", status: "0.4-compliant" },
           { name: "DSL · Vampire 5e", desc: "Vampire: The Masquerade 5e rules corpus.",
@@ -316,9 +322,9 @@
           { name: "DSL · The One Ring 2e", desc: "The One Ring 2nd Edition rules corpus.",
             github: "https://github.com/sortilege-inc/titterpig-dsl-tor2e", status: "0.4-compliant" },
           { name: "DSL · Invisible Sun", desc: "Invisible Sun rules corpus.",
-            github: "https://github.com/sortilege-inc/titterpig-dsl-invisiblesun" },
+            github: "https://github.com/sortilege-inc/titterpig-dsl-invisiblesun", status: "0.4-compliant" },
           { name: "DSL · The Expanse", desc: "The Expanse RPG rules corpus.",
-            github: "https://github.com/sortilege-inc/titterpig-dsl-expanse" }
+            github: "https://github.com/sortilege-inc/titterpig-dsl-expanse", status: "0.4-compliant" }
         ]
       },
       {
@@ -422,9 +428,10 @@
         name: "Campaigns",
         blurb: "",
         projects: [
-          { name: "Sjórseiðr", desc: "Sjórseiðr campaign.", status: "In Progress",
+          { name: "Sjórseiðr", desc: "A startplaying.games Ars Magica Campaign", status: "In Progress",
             github: "https://github.com/sortilege-inc/sjorseidr", web: "https://sortilege-inc.github.io/sjorseidr/" },
-          { name: "Caul", desc: "", github: "https://github.com/sortilege-inc/caul", web: "https://caul.sortilege.online/" }
+          { name: "Caul", desc: "A Wyldwolf Daggerheart Campaign set in the Age of Umbra", status: "In Progress",
+            github: "https://github.com/sortilege-inc/caul", web: "https://caul.sortilege.online/" }
         ]
       }
     ];
@@ -435,11 +442,11 @@
         name: "Campaigns",
         blurb: "",
         projects: [
-          { name: "War of Princes", desc: "Vampire: The Dark Ages — War of Princes.", status: "In Progress",
+          { name: "War of Princes", desc: "A Vampire: the Masquerade - Dark Ages Chronicle.", status: "In Progress",
             github: "https://github.com/sortilege-inc/war-of-princes", web: "https://sortilege-inc.github.io/war-of-princes/" },
-          { name: "Children of Fear", desc: "", status: "In Progress",
+          { name: "Children of Fear", desc: "A Call of Cthulhu Campaign", status: "In Progress",
             github: "https://github.com/sortilege-inc/children-of-fear", web: "https://sortilege-inc.github.io/children-of-fear/" },
-          { name: "Home Is Where We Make Our Fire", desc: "Celenneth — a solo The One Ring 2e campaign.",
+          { name: "Home Is Where We Make Our Fire", desc: "Celenneth — a solo The One Ring 2e campaign.", status: "In Progress",
             github: "https://github.com/sortilege-inc/home-is-where-we-make-our-fire", web: "https://celenneth.sortilege.online/" }
         ]
       }
@@ -459,12 +466,14 @@
           if (p.github) links.push(`<a class="pill gh" href="${esc(p.github)}" target="_blank" rel="noopener">${GH_ICON} GitHub</a>`);
           if (p.web)    links.push(`<a class="pill web" href="${esc(p.web)}" target="_blank" rel="noopener">${WEB_ICON} Website</a>`);
           const status = (p.status && STATUS[p.status]) ? p.status : "Unknown";
+          const updated = p.updated || DEFAULT_UPDATED;
           const desc = p.desc ? `<div class="proj-desc">${esc(p.desc)}</div>` : `<div class="proj-desc empty">no description</div>`;
           return `<tr>
             <td>
               <div class="proj-name">${esc(p.name)}</div>
               ${desc}
             </td>
+            <td class="col-updated">${esc(updated)}</td>
             <td class="col-status"><span class="badge" style="color:${STATUS[status]}">${esc(status)}</span></td>
             <td class="col-links"><div class="links">${links.join("")}</div></td>
           </tr>`;
@@ -476,6 +485,7 @@
             <table>
               <thead><tr>
                 <th>Project</th>
+                <th class="col-updated">Last Updated</th>
                 <th class="col-status">Current status</th>
                 <th class="col-links">Links</th>
               </tr></thead>
