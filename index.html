@@ -444,7 +444,8 @@
         const state = v == null ? "unknown" : v ? "present" : "missing";
         return `<span class="pip ${cls}" title="${name}: ${state}">${letter}</span>`;
       };
-      return `<span class="pips">${pip(s.readme, "R", "README")}${pip(s.license, "L", "License")}${pip(s.ci, "C", "CI workflow")}</span>`;
+      const lic = st.declaredLicense || st.license;
+      return `<span class="pips">${pip(s.readme, "R", "README")}${pip(s.license, "L", "License" + (lic ? ` (${lic})` : ""))}${pip(s.ci, "C", "CI workflow")}</span>`;
     }
 
     function tasksCountCell(st, slug) {

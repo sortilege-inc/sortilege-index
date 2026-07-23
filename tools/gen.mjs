@@ -212,11 +212,11 @@ async function main() {
   const owner = catalog.owner;
 
   // Every tracked slug, plus a back-reference to where it lives.
-  const tracked = new Map(); // slug -> { tab, group, name }
+  const tracked = new Map(); // slug -> { tab, group, name, license }
   for (const tab of catalog.tabs) {
     for (const group of tab.groups) {
       for (const p of group.projects) {
-        tracked.set(p.repo, { tab: tab.id, group: group.name, name: p.name });
+        tracked.set(p.repo, { tab: tab.id, group: group.name, name: p.name, license: p.license || null });
       }
     }
   }
@@ -231,8 +231,11 @@ async function main() {
   const limit = pLimit(4);
   const errors = [];
 
-  // Enrich one repo with the calls that need per-repo requests.
-  async function enrich(slug, base) {
+  // Enrich one repo with the calls that need per-repo requests. declaredLicense
+  // is the catalog's editorial licensing decision (e.g. "MPL-2.0", "Proprietary",
+  // "Per-file"); it satisfies the license standard even when GitHub can't SPDX-
+  // detect it (proprietary notices, NOTICE files).
+  async function enrich(slug, base, declaredLicense) {
     const out = {
       slug,
       description: base?.description ?? null,
@@ -242,6 +245,7 @@ async function main() {
       defaultBranch: base?.defaultBranchRef?.name ?? null,
       language: base?.primaryLanguage?.name ?? null,
       license: base?.licenseInfo?.spdxId ?? base?.licenseInfo?.key ?? null,
+      declaredLicense: declaredLicense || null,
       topics: (base?.repositoryTopics || []).map((t) => t.name).filter(Boolean),
       hasIssues: !!base?.hasIssuesEnabled,
     };
@@ -275,7 +279,9 @@ async function main() {
       ]);
       out.standards = {
         readme,
-        license: !!out.license,
+        // Satisfied by a GitHub-detected SPDX license OR the catalog's declared
+        // license (covers proprietary/NOTICE files GitHub can't detect).
+        license: !!(out.license || out.declaredLicense),
         ci,
       };
 
@@ -299,7 +305,7 @@ async function main() {
           errors.push({ slug, error: "in catalog but not found in org repo list" });
           return [slug, { slug, missing: true }];
         }
-        return [slug, await enrich(slug, base)];
+        return [slug, await enrich(slug, base, tracked.get(slug)?.license)];
       }),
     ),
   );

@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-23T20:53:05.855Z",
+  "generatedAt": "2026-07-23T22:10:20.123Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 63,
     "org": 70,
     "untracked": 7,
     "accessLimited": 0,
-    "openTasks": 156,
+    "openTasks": 109,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -20,6 +20,7 @@
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -68,6 +69,7 @@
       "defaultBranch": "",
       "language": null,
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -119,6 +121,7 @@
       "defaultBranch": "",
       "language": null,
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -170,6 +173,7 @@
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "stale",
@@ -206,12 +210,13 @@
     "arcs-2026": {
       "slug": "arcs-2026",
       "description": "Arcs Narrative Playthrough",
-      "pushedAt": "2026-07-18T20:27:33Z",
+      "pushedAt": "2026-07-23T22:01:03Z",
       "archived": false,
       "visibility": "private",
-      "defaultBranch": "",
+      "defaultBranch": "main",
       "language": null,
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -220,7 +225,7 @@
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -231,15 +236,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -257,12 +253,13 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-07-23T14:36:29Z",
+      "pushedAt": "2026-07-23T21:53:45Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "TypeScript",
-      "license": null,
+      "license": "mpl-2.0",
+      "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -271,7 +268,7 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": true,
@@ -445,15 +442,6 @@
           "source": "backlog"
         },
         {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
-        {
           "text": "Add a CI workflow",
           "done": false,
           "priority": 3,
@@ -467,12 +455,13 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-07-23T20:33:43Z",
+      "pushedAt": "2026-07-23T21:50:48Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Go",
-      "license": null,
+      "license": "mpl-2.0",
+      "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -481,20 +470,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -509,12 +489,13 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-07-20T16:59:33Z",
+      "pushedAt": "2026-07-23T21:48:50Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Python",
-      "license": null,
+      "license": "mpl-2.0",
+      "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -523,20 +504,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -557,6 +529,7 @@
       "defaultBranch": "main",
       "language": null,
       "license": "gpl-3.0",
+      "declaredLicense": "GPL-3.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -584,12 +557,13 @@
     "titterpig-dsl-callofcthulhu7e": {
       "slug": "titterpig-dsl-callofcthulhu7e",
       "description": "Titterpig Call of Cthulhu 7e",
-      "pushedAt": "2026-07-18T19:53:09Z",
+      "pushedAt": "2026-07-23T22:01:16Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Arc",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -598,20 +572,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -626,12 +591,13 @@
     "titterpig-dsl-root": {
       "slug": "titterpig-dsl-root",
       "description": "Titterpig Root",
-      "pushedAt": "2026-07-18T17:18:49Z",
+      "pushedAt": "2026-07-23T22:01:18Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Arc",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -640,20 +606,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -668,12 +625,13 @@
     "titterpig-dsl-daggerheart": {
       "slug": "titterpig-dsl-daggerheart",
       "description": "Daggerheart - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-18T19:42:06Z",
+      "pushedAt": "2026-07-23T22:01:19Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -682,20 +640,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -710,12 +659,13 @@
     "titterpig-dsl-dnd5e": {
       "slug": "titterpig-dsl-dnd5e",
       "description": "Titterpig Dungeons & Dragons 5th Edition",
-      "pushedAt": "2026-07-18T19:36:13Z",
+      "pushedAt": "2026-07-23T22:01:21Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -724,20 +674,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -752,12 +693,13 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-15T16:31:20Z",
+      "pushedAt": "2026-07-23T22:01:22Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Python",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -766,7 +708,7 @@
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -777,15 +719,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -803,12 +736,13 @@
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
       "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-12T20:16:00Z",
+      "pushedAt": "2026-07-23T22:01:24Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Python",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -817,20 +751,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -845,12 +770,13 @@
     "titterpig-dsl-draw-steel": {
       "slug": "titterpig-dsl-draw-steel",
       "description": "Draw Steel Titterpig DSL Implementation",
-      "pushedAt": "2026-07-19T14:16:54Z",
+      "pushedAt": "2026-07-23T22:01:25Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Python",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -859,20 +785,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -887,12 +804,13 @@
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-12T20:15:52Z",
+      "pushedAt": "2026-07-23T22:01:27Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Arc",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -901,20 +819,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -929,12 +838,13 @@
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
       "description": "The One Ring 2e Titterpig",
-      "pushedAt": "2026-07-20T17:21:43Z",
+      "pushedAt": "2026-07-23T22:01:28Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Arc",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -943,20 +853,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -971,12 +872,13 @@
     "titterpig-dsl-invisiblesun": {
       "slug": "titterpig-dsl-invisiblesun",
       "description": "Titterpig Invisible Sun",
-      "pushedAt": "2026-07-19T10:50:41Z",
+      "pushedAt": "2026-07-23T22:01:29Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -985,7 +887,7 @@
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -996,15 +898,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -1022,12 +915,13 @@
     "titterpig-dsl-expanse": {
       "slug": "titterpig-dsl-expanse",
       "description": "Titterpig The Expanse",
-      "pushedAt": "2026-07-18T19:35:16Z",
+      "pushedAt": "2026-07-23T22:01:31Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1036,7 +930,7 @@
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -1047,15 +941,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -1073,12 +958,13 @@
     "titterpig-dsl-dnd5.5e": {
       "slug": "titterpig-dsl-dnd5.5e",
       "description": "Titterpig Dungeons & Dragons 5.5e",
-      "pushedAt": "2026-07-23T15:38:53Z",
+      "pushedAt": "2026-07-23T21:53:43Z",
       "archived": false,
       "visibility": "private",
-      "defaultBranch": "",
+      "defaultBranch": "main",
       "language": null,
-      "license": null,
+      "license": "cc-by-4.0",
+      "declaredLicense": "CC-BY-4.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1087,7 +973,7 @@
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -1098,15 +984,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -1124,12 +1001,13 @@
     "titterpig-dsl-dnd5e-3rdparty": {
       "slug": "titterpig-dsl-dnd5e-3rdparty",
       "description": "Titterpig D&D 5e Third Party",
-      "pushedAt": "2026-07-23T14:32:16Z",
+      "pushedAt": "2026-07-23T22:01:33Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Arc",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1138,7 +1016,7 @@
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -1149,15 +1027,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -1175,12 +1044,13 @@
     "titterpig-dsl-l5r5e-3rdparty": {
       "slug": "titterpig-dsl-l5r5e-3rdparty",
       "description": "Titterpig Legend of the Five Rings 5e Third Party",
-      "pushedAt": "2026-07-23T20:18:36Z",
+      "pushedAt": "2026-07-23T22:01:34Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": null,
+      "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1189,7 +1059,7 @@
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -1200,15 +1070,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -1226,12 +1087,13 @@
     "titterpig-rules-lawyer": {
       "slug": "titterpig-rules-lawyer",
       "description": "Titterpig Rules Lawyer",
-      "pushedAt": "2026-07-23T20:48:05Z",
+      "pushedAt": "2026-07-23T21:48:51Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "TypeScript",
-      "license": null,
+      "license": "mpl-2.0",
+      "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1240,20 +1102,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -1268,12 +1121,13 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-07-23T20:40:35Z",
+      "pushedAt": "2026-07-23T20:53:50Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
       "license": null,
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1281,14 +1135,14 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-23T20:40:37Z",
+        "created_at": "2026-07-23T20:53:51Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
       },
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": true
       },
       "hasBacklog": true,
@@ -1386,27 +1240,19 @@
             "docs"
           ],
           "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
         }
       ]
     },
     "titterpig-engine": {
       "slug": "titterpig-engine",
       "description": "Titterpig Engine",
-      "pushedAt": "2026-07-12T14:51:27Z",
+      "pushedAt": "2026-07-23T21:48:52Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Go",
-      "license": null,
+      "license": "mpl-2.0",
+      "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1415,20 +1261,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -1443,12 +1280,13 @@
     "titterpig-dashboard-web": {
       "slug": "titterpig-dashboard-web",
       "description": "Titterpig Dashboard Web",
-      "pushedAt": "2026-07-12T14:53:08Z",
+      "pushedAt": "2026-07-23T21:48:55Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "JavaScript",
-      "license": null,
+      "license": "mpl-2.0",
+      "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1457,20 +1295,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -1485,12 +1314,13 @@
     "marginalia": {
       "slug": "marginalia",
       "description": "A Solo TTRPG Structure powered by Claude and Titterpig",
-      "pushedAt": "2026-07-12T14:47:17Z",
+      "pushedAt": "2026-07-23T21:48:56Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "Go",
-      "license": null,
+      "license": "mpl-2.0",
+      "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1499,20 +1329,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -1533,6 +1354,7 @@
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1569,12 +1391,13 @@
     "un-coup-de-des": {
       "slug": "un-coup-de-des",
       "description": "Un Coup de Des",
-      "pushedAt": "2026-07-12T14:52:10Z",
+      "pushedAt": "2026-07-23T22:00:28Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1583,20 +1406,11 @@
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -1617,6 +1431,7 @@
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1653,12 +1468,13 @@
     "dossiers": {
       "slug": "dossiers",
       "description": "Deep dives on constructed player characters",
-      "pushedAt": "2026-07-04T23:31:50Z",
+      "pushedAt": "2026-07-23T22:00:29Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1666,27 +1482,18 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-04T23:31:51Z",
+        "created_at": "2026-07-23T22:00:31Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
       },
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -1707,6 +1514,7 @@
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "stale",
@@ -1749,6 +1557,7 @@
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "stale",
@@ -1791,6 +1600,7 @@
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": "bsd-3-clause",
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "stale",
@@ -1824,6 +1634,7 @@
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "stale",
@@ -1866,6 +1677,7 @@
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -1908,6 +1720,7 @@
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": null,
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "active",
@@ -1947,6 +1760,7 @@
       "defaultBranch": "master",
       "language": "JavaScript",
       "license": "mit",
+      "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
       "freshness": "stale",
@@ -1974,34 +1788,26 @@
     "gotd": {
       "slug": "gotd",
       "description": "Gods of the Dead",
-      "pushedAt": "2026-05-31T01:18:50Z",
+      "pushedAt": "2026-07-23T22:01:04Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "GDScript",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2016,34 +1822,26 @@
     "gods-of-the-dead": {
       "slug": "gods-of-the-dead",
       "description": "Gods of the Dead",
-      "pushedAt": "2025-10-26T15:13:49Z",
+      "pushedAt": "2026-07-23T22:01:06Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "TypeScript",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 1,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2058,34 +1856,26 @@
     "hope-fear-mythic-greece": {
       "slug": "hope-fear-mythic-greece",
       "description": "Hope & Fear: Mythic Greece (Daggerheart Reimagined)",
-      "pushedAt": "2026-05-19T14:04:48Z",
+      "pushedAt": "2026-07-23T22:00:34Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2100,34 +1890,26 @@
     "sortilege-fvtt-compendia-l5r5e": {
       "slug": "sortilege-fvtt-compendia-l5r5e",
       "description": "Updated compendia for L5R 5e",
-      "pushedAt": "2026-03-05T16:14:58Z",
+      "pushedAt": "2026-07-23T22:01:08Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": "Publisher-owned",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2142,34 +1924,26 @@
     "sortilege-fvtt-compendia-marvel-multiverse": {
       "slug": "sortilege-fvtt-compendia-marvel-multiverse",
       "description": "Updated compendia for Marvel Multiverse RPG",
-      "pushedAt": "2026-03-05T16:13:51Z",
+      "pushedAt": "2026-07-23T22:01:11Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": "Publisher-owned",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2184,21 +1958,22 @@
     "l5r5e-compendia-sortilege": {
       "slug": "l5r5e-compendia-sortilege",
       "description": "Edits and additions to the L5R5e Foundry Compendia",
-      "pushedAt": "2025-10-29T12:28:33Z",
+      "pushedAt": "2026-07-23T22:01:13Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": "Publisher-owned",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -2209,15 +1984,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -2235,34 +2001,26 @@
     "sortilege-fvtt-compendia-vtm5e": {
       "slug": "sortilege-fvtt-compendia-vtm5e",
       "description": "Updated compendia for Vampire: the Masquerade, 5th edition",
-      "pushedAt": "2026-03-05T16:12:53Z",
+      "pushedAt": "2026-07-23T22:01:15Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
       "license": null,
+      "declaredLicense": "Publisher-owned",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2277,21 +2035,22 @@
     "hegemonyccg": {
       "slug": "hegemonyccg",
       "description": "Hegemony CCG",
-      "pushedAt": "2025-10-12T16:37:08Z",
+      "pushedAt": "2026-07-23T22:00:50Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": "TypeScript",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -2302,15 +2061,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -2328,34 +2078,26 @@
     "networked-futures": {
       "slug": "networked-futures",
       "description": "Networked Futures card game for the Gottlieb Duttweiler Institute",
-      "pushedAt": "2018-08-04T17:25:24Z",
+      "pushedAt": "2026-07-23T22:00:52Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "master",
       "language": "Ruby",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2370,34 +2112,26 @@
     "ragtime": {
       "slug": "ragtime",
       "description": "RAG Setup",
-      "pushedAt": "2025-10-10T13:52:07Z",
+      "pushedAt": "2026-07-23T22:00:43Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2418,6 +2152,7 @@
       "defaultBranch": "master",
       "language": "JavaScript",
       "license": "mit",
+      "declaredLicense": "MIT",
       "topics": [],
       "hasIssues": false,
       "freshness": "stale",
@@ -2445,34 +2180,26 @@
     "exquisite-shade": {
       "slug": "exquisite-shade",
       "description": "GM Binder files for my Invisible Sun campaign",
-      "pushedAt": "2020-01-17T14:55:50Z",
+      "pushedAt": "2026-07-23T22:00:46Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "master",
       "language": null,
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2487,34 +2214,26 @@
     "situation-normal": {
       "slug": "situation-normal",
       "description": "",
-      "pushedAt": "2019-04-14T00:07:33Z",
+      "pushedAt": "2026-07-23T22:00:48Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "master",
       "language": "Ruby",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2529,34 +2248,26 @@
     "9e": {
       "slug": "9e",
       "description": "Nine Eyes TCG",
-      "pushedAt": "2018-02-18T17:53:32Z",
+      "pushedAt": "2026-07-23T22:00:36Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "master",
       "language": "Ruby",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2571,34 +2282,26 @@
     "bse": {
       "slug": "bse",
       "description": "Be Slightly Evil - the Trading Card Game",
-      "pushedAt": "2015-03-03T18:25:25Z",
+      "pushedAt": "2026-07-23T22:00:38Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "master",
       "language": null,
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2613,34 +2316,26 @@
     "bse-web": {
       "slug": "bse-web",
       "description": "",
-      "pushedAt": "2014-12-10T12:20:13Z",
+      "pushedAt": "2026-07-23T22:00:39Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "master",
-      "language": "CSS",
-      "license": null,
+      "language": "SCSS",
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2661,6 +2356,7 @@
       "defaultBranch": "master",
       "language": null,
       "license": "cc0-1.0",
+      "declaredLicense": "CC0-1.0",
       "topics": [],
       "hasIssues": true,
       "freshness": "stale",
@@ -2688,21 +2384,22 @@
     "sortilege.online": {
       "slug": "sortilege.online",
       "description": "sortilege.online",
-      "pushedAt": "2026-05-20T15:02:12Z",
+      "pushedAt": "2026-07-23T22:00:42Z",
       "archived": false,
       "visibility": "private",
-      "defaultBranch": "",
+      "defaultBranch": "main",
       "language": null,
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
       "standards": {
         "readme": false,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
@@ -2713,15 +2410,6 @@
           "priority": 3,
           "tags": [
             "docs"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
           ],
           "source": "standards"
         },
@@ -2739,12 +2427,13 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-07-15T03:54:33Z",
+      "pushedAt": "2026-07-23T22:00:53Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -2752,27 +2441,18 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-15T03:54:34Z",
+        "created_at": "2026-07-23T22:00:55Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
       },
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2787,12 +2467,13 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-07-20T13:56:36Z",
+      "pushedAt": "2026-07-23T22:00:55Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -2800,27 +2481,18 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-20T13:56:38Z",
+        "created_at": "2026-07-23T22:00:56Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
       },
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2835,12 +2507,13 @@
     "a-gibbous-moon": {
       "slug": "a-gibbous-moon",
       "description": "A Gibbous Moon Over Constantinople",
-      "pushedAt": "2026-07-23T16:03:16Z",
+      "pushedAt": "2026-07-23T22:00:56Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -2848,27 +2521,18 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-23T16:03:18Z",
+        "created_at": "2026-07-23T22:00:58Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
       },
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2883,12 +2547,13 @@
     "war-of-princes": {
       "slug": "war-of-princes",
       "description": "Vampire: the Dark Ages - War of Princes",
-      "pushedAt": "2026-07-20T17:10:31Z",
+      "pushedAt": "2026-07-23T22:00:58Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -2896,27 +2561,18 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-20T17:10:33Z",
+        "created_at": "2026-07-23T22:00:59Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
       },
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2931,12 +2587,13 @@
     "children-of-fear": {
       "slug": "children-of-fear",
       "description": "Children of Fear",
-      "pushedAt": "2026-07-18T21:03:09Z",
+      "pushedAt": "2026-07-23T22:00:59Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -2944,27 +2601,18 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-18T21:03:10Z",
+        "created_at": "2026-07-23T22:01:01Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
       },
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2979,12 +2627,13 @@
     "home-is-where-we-make-our-fire": {
       "slug": "home-is-where-we-make-our-fire",
       "description": "Home is Where We Make Our Fire",
-      "pushedAt": "2026-07-21T21:01:56Z",
+      "pushedAt": "2026-07-23T22:01:01Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
+      "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
       "freshness": "fresh",
@@ -2992,27 +2641,18 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-21T21:01:58Z",
+        "created_at": "2026-07-23T22:01:02Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
       },
       "standards": {
         "readme": true,
-        "license": false,
+        "license": true,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
