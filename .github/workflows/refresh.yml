@@ -1,0 +1,56 @@
+name: Refresh live state
+
+# Regenerates data.json from live GitHub state and commits it, so the static
+# GitHub Pages site always shows fresh per-repo state with no backend.
+#
+# AUTH: the generator reads ~35 PRIVATE org repos. A runner's built-in
+# GITHUB_TOKEN can only read THIS repo, so it cannot see them. Provide a
+# read-only token with access to the sortilege-inc org repos as the repo (or
+# org) secret ORG_READ_TOKEN:
+#   Fine-grained PAT → Resource owner: sortilege-inc, Repository access: all
+#   repositories, Permissions: Contents (read-only), Metadata (read-only).
+# Without it the job still runs but private repos come back as errors.
+
+on:
+  schedule:
+    - cron: "0 7 * * *"   # daily, 07:00 UTC
+  workflow_dispatch: {}    # manual "Run workflow" button
+
+# Allow the job to commit data.json back to the default branch.
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-live-state
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate data.json
+        env:
+          # gh reads GH_TOKEN; prefer the org-read PAT, fall back to the
+          # built-in token (public repos only) so the job never hard-fails.
+          GH_TOKEN: ${{ secrets.ORG_READ_TOKEN || github.token }}
+        run: node tools/gen.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- data.json; then
+            echo "data.json unchanged — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "sortilege-index[bot]"
+          git config user.email "actions@github.com"
+          git add data.json
+          git commit -m "chore: refresh live state [skip ci]"
+          git push

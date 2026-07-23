@@ -1,0 +1,1431 @@
+{
+  "generatedAt": "2026-07-23T18:32:45.941Z",
+  "owner": "sortilege-inc",
+  "counts": {
+    "tracked": 61,
+    "org": 70,
+    "untracked": 9,
+    "errors": 0
+  },
+  "repos": {
+    "bellum-arborem": {
+      "slug": "bellum-arborem",
+      "description": "Bellum Arborem",
+      "pushedAt": "2026-07-18T14:26:11Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-18T14:26:13Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "banes-of-beleriand": {
+      "slug": "banes-of-beleriand",
+      "description": "Banes of Beleriand",
+      "pushedAt": "2026-07-15T18:50:54Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "collateral": {
+      "slug": "collateral",
+      "description": "Collateral",
+      "pushedAt": "2026-07-15T18:50:35Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "istya": {
+      "slug": "istya",
+      "description": "The One Ring 2e: Company, Character, and Adversary app",
+      "pushedAt": "2024-12-22T04:25:50Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-mastra": {
+      "slug": "titterpig-mastra",
+      "description": "",
+      "pushedAt": "2026-07-23T14:36:29Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-synthesist": {
+      "slug": "titterpig-synthesist",
+      "description": "Titterpig Synthesist",
+      "pushedAt": "2026-07-20T16:10:49Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Go",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl": {
+      "slug": "titterpig-dsl",
+      "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
+      "pushedAt": "2026-07-20T16:59:33Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Python",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "sublime-ttrpg-syntax": {
+      "slug": "sublime-ttrpg-syntax",
+      "description": "Titterpig Syntax Highlighting for Sublime Text Editor",
+      "pushedAt": "2026-07-12T18:27:40Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": null,
+      "license": "gpl-3.0",
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": true,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-callofcthulhu7e": {
+      "slug": "titterpig-dsl-callofcthulhu7e",
+      "description": "Titterpig Call of Cthulhu 7e",
+      "pushedAt": "2026-07-18T19:53:09Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Arc",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-root": {
+      "slug": "titterpig-dsl-root",
+      "description": "Titterpig Root",
+      "pushedAt": "2026-07-18T17:18:49Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Arc",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-daggerheart": {
+      "slug": "titterpig-dsl-daggerheart",
+      "description": "Daggerheart - Titterpig DSL Implementation",
+      "pushedAt": "2026-07-18T19:42:06Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-dnd5e": {
+      "slug": "titterpig-dsl-dnd5e",
+      "description": "Titterpig Dungeons & Dragons 5th Edition",
+      "pushedAt": "2026-07-18T19:36:13Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-arm5e": {
+      "slug": "titterpig-dsl-arm5e",
+      "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
+      "pushedAt": "2026-07-15T16:31:20Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Python",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-vtm5e": {
+      "slug": "titterpig-dsl-vtm5e",
+      "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
+      "pushedAt": "2026-07-12T20:16:00Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Python",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-draw-steel": {
+      "slug": "titterpig-dsl-draw-steel",
+      "description": "Draw Steel Titterpig DSL Implementation",
+      "pushedAt": "2026-07-19T14:16:54Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Python",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-l5r5e": {
+      "slug": "titterpig-dsl-l5r5e",
+      "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
+      "pushedAt": "2026-07-12T20:15:52Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Arc",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-tor2e": {
+      "slug": "titterpig-dsl-tor2e",
+      "description": "The One Ring 2e Titterpig",
+      "pushedAt": "2026-07-20T17:21:43Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Arc",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-invisiblesun": {
+      "slug": "titterpig-dsl-invisiblesun",
+      "description": "Titterpig Invisible Sun",
+      "pushedAt": "2026-07-19T10:50:41Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-expanse": {
+      "slug": "titterpig-dsl-expanse",
+      "description": "Titterpig The Expanse",
+      "pushedAt": "2026-07-18T19:35:16Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-dnd5.5e": {
+      "slug": "titterpig-dsl-dnd5.5e",
+      "description": "Titterpig Dungeons & Dragons 5.5e",
+      "pushedAt": "2026-07-23T15:38:53Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-dnd5e-3rdparty": {
+      "slug": "titterpig-dsl-dnd5e-3rdparty",
+      "description": "Titterpig D&D 5e Third Party",
+      "pushedAt": "2026-07-23T14:32:16Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Arc",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dsl-l5r5e-3rdparty": {
+      "slug": "titterpig-dsl-l5r5e-3rdparty",
+      "description": "Titterpig Legend of the Five Rings 5e Third Party",
+      "pushedAt": "2026-07-23T17:48:55Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-rules-lawyer": {
+      "slug": "titterpig-rules-lawyer",
+      "description": "Titterpig Rules Lawyer",
+      "pushedAt": "2026-07-23T18:29:25Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "sortilege-index": {
+      "slug": "sortilege-index",
+      "description": "Sortilege Project Index",
+      "pushedAt": "2026-07-19T19:18:22Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-19T19:18:23Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-engine": {
+      "slug": "titterpig-engine",
+      "description": "Titterpig Engine",
+      "pushedAt": "2026-07-12T14:51:27Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Go",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "titterpig-dashboard-web": {
+      "slug": "titterpig-dashboard-web",
+      "description": "Titterpig Dashboard Web",
+      "pushedAt": "2026-07-12T14:53:08Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "marginalia": {
+      "slug": "marginalia",
+      "description": "A Solo TTRPG Structure powered by Claude and Titterpig",
+      "pushedAt": "2026-07-12T14:47:17Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "Go",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "intertwingler-l5r-wiki": {
+      "slug": "intertwingler-l5r-wiki",
+      "description": "Test of Intertwingler with the L5R wiki",
+      "pushedAt": "2026-07-12T14:46:16Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "un-coup-de-des": {
+      "slug": "un-coup-de-des",
+      "description": "Un Coup de Des",
+      "pushedAt": "2026-07-12T14:52:10Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "dossier-studio": {
+      "slug": "dossier-studio",
+      "description": "PC Dossier Studio",
+      "pushedAt": "2026-07-07T16:31:08Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "dossiers": {
+      "slug": "dossiers",
+      "description": "Deep dives on constructed player characters",
+      "pushedAt": "2026-07-04T23:31:50Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-04T23:31:51Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "quorum": {
+      "slug": "quorum",
+      "description": "Quorum",
+      "pushedAt": "2024-07-30T22:16:19Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "spiders-game": {
+      "slug": "spiders-game",
+      "description": "Spider's Game",
+      "pushedAt": "2024-07-10T20:08:06Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 2,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "makers-matrix": {
+      "slug": "makers-matrix",
+      "description": "Invisible Sun Maker's Matrix",
+      "pushedAt": "2022-10-25T21:21:49Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": "bsd-3-clause",
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": true,
+        "ci": false
+      }
+    },
+    "makers-matrix-api": {
+      "slug": "makers-matrix-api",
+      "description": "Maker's Matrix API",
+      "pushedAt": "2022-10-18T17:00:10Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "tcggg": {
+      "slug": "tcggg",
+      "description": "TCG GG",
+      "pushedAt": "2026-07-10T17:46:25Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "tcgdb": {
+      "slug": "tcgdb",
+      "description": "Trading Card Game Database",
+      "pushedAt": "2026-06-13T01:42:56Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "active",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-06-13T01:42:59Z",
+        "head_branch": "main",
+        "name": "ci",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": true
+      }
+    },
+    "snafu-db": {
+      "slug": "snafu-db",
+      "description": "Situation Normal Card Encyclopedia",
+      "pushedAt": "2022-10-25T17:23:29Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "master",
+      "language": "JavaScript",
+      "license": "mit",
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 7,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": true,
+        "ci": false
+      }
+    },
+    "gotd": {
+      "slug": "gotd",
+      "description": "Gods of the Dead",
+      "pushedAt": "2026-05-31T01:18:50Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "GDScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "active",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "gods-of-the-dead": {
+      "slug": "gods-of-the-dead",
+      "description": "Gods of the Dead",
+      "pushedAt": "2025-10-26T15:13:49Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 1,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "hope-fear-mythic-greece": {
+      "slug": "hope-fear-mythic-greece",
+      "description": "Hope & Fear: Mythic Greece (Daggerheart Reimagined)",
+      "pushedAt": "2026-05-19T14:04:48Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "active",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "sortilege-fvtt-compendia-l5r5e": {
+      "slug": "sortilege-fvtt-compendia-l5r5e",
+      "description": "Updated compendia for L5R 5e",
+      "pushedAt": "2026-03-05T16:14:58Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "active",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "sortilege-fvtt-compendia-marvel-multiverse": {
+      "slug": "sortilege-fvtt-compendia-marvel-multiverse",
+      "description": "Updated compendia for Marvel Multiverse RPG",
+      "pushedAt": "2026-03-05T16:13:51Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "active",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "l5r5e-compendia-sortilege": {
+      "slug": "l5r5e-compendia-sortilege",
+      "description": "Edits and additions to the L5R5e Foundry Compendia",
+      "pushedAt": "2025-10-29T12:28:33Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "sortilege-fvtt-compendia-vtm5e": {
+      "slug": "sortilege-fvtt-compendia-vtm5e",
+      "description": "Updated compendia for Vampire: the Masquerade, 5th edition",
+      "pushedAt": "2026-03-05T16:12:53Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "active",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "hegemonyccg": {
+      "slug": "hegemonyccg",
+      "description": "Hegemony CCG",
+      "pushedAt": "2025-10-12T16:37:08Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "networked-futures": {
+      "slug": "networked-futures",
+      "description": "Networked Futures card game for the Gottlieb Duttweiler Institute",
+      "pushedAt": "2018-08-04T17:25:24Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "master",
+      "language": "Ruby",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "ragtime": {
+      "slug": "ragtime",
+      "description": "RAG Setup",
+      "pushedAt": "2025-10-10T13:52:07Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "react-hexgrid": {
+      "slug": "react-hexgrid",
+      "description": "Build interactive hexagon grids with React",
+      "pushedAt": "2018-10-12T21:36:51Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "master",
+      "language": "JavaScript",
+      "license": "mit",
+      "topics": [],
+      "hasIssues": false,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": true,
+        "ci": false
+      }
+    },
+    "exquisite-shade": {
+      "slug": "exquisite-shade",
+      "description": "GM Binder files for my Invisible Sun campaign",
+      "pushedAt": "2020-01-17T14:55:50Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "master",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "situation-normal": {
+      "slug": "situation-normal",
+      "description": "",
+      "pushedAt": "2019-04-14T00:07:33Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "master",
+      "language": "Ruby",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "9e": {
+      "slug": "9e",
+      "description": "Nine Eyes TCG",
+      "pushedAt": "2018-02-18T17:53:32Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "master",
+      "language": "Ruby",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "bse": {
+      "slug": "bse",
+      "description": "Be Slightly Evil - the Trading Card Game",
+      "pushedAt": "2015-03-03T18:25:25Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "master",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "bse-web": {
+      "slug": "bse-web",
+      "description": "",
+      "pushedAt": "2014-12-10T12:20:13Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "master",
+      "language": "CSS",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "bse-archive": {
+      "slug": "bse-archive",
+      "description": "",
+      "pushedAt": "2015-04-13T22:51:04Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "master",
+      "language": null,
+      "license": "cc0-1.0",
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "stale",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": true,
+        "ci": false
+      }
+    },
+    "sortilege.online": {
+      "slug": "sortilege.online",
+      "description": "sortilege.online",
+      "pushedAt": "2026-05-20T15:02:12Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "active",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
+    },
+    "sjorseidr": {
+      "slug": "sjorseidr",
+      "description": "Sjórseiðr Campaign",
+      "pushedAt": "2026-07-15T03:54:33Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-15T03:54:34Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "caul": {
+      "slug": "caul",
+      "description": "Caul",
+      "pushedAt": "2026-07-20T13:56:36Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-20T13:56:38Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "war-of-princes": {
+      "slug": "war-of-princes",
+      "description": "Vampire: the Dark Ages - War of Princes",
+      "pushedAt": "2026-07-20T17:10:31Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-20T17:10:33Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "children-of-fear": {
+      "slug": "children-of-fear",
+      "description": "Children of Fear",
+      "pushedAt": "2026-07-18T21:03:09Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-18T21:03:10Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    },
+    "home-is-where-we-make-our-fire": {
+      "slug": "home-is-where-we-make-our-fire",
+      "description": "Home is Where We Make Our Fire",
+      "pushedAt": "2026-07-21T21:01:56Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-21T21:01:58Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
+    }
+  },
+  "untracked": [
+    {
+      "slug": "a-gibbous-moon",
+      "description": "A Gibbous Moon Over Constantinople",
+      "pushedAt": "2026-07-23T16:03:16Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "arcs-2026",
+      "description": "Arcs Narrative Playthrough",
+      "pushedAt": "2026-07-18T20:27:33Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "expanse-ships-pack",
+      "description": "Foundry Compendium: Expanse Ship Pack",
+      "pushedAt": "2025-01-16T16:15:16Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "stale",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "expanse-npc-pack",
+      "description": "Foundry Compendium: Expanse NPC Pack",
+      "pushedAt": "2025-01-16T16:15:04Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "stale",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "expanse-gear-pack",
+      "description": "Foundry Compendium: Expanse Gear Pack",
+      "pushedAt": "2025-01-16T16:14:26Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "stale",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "expanse-bonus-pack",
+      "description": "Foundry Compendium: Expanse Bonus Pack",
+      "pushedAt": "2025-01-16T16:14:16Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "stale",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "expanse-chargen",
+      "description": "Character Generator for The Expanse RPG",
+      "pushedAt": "2025-01-07T06:06:00Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "stale",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "age-system",
+      "description": "Unofficial implementation of AGE System (Green Ronin) for Foundry VTT",
+      "pushedAt": "2024-08-10T12:11:00Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "stale",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "expanse",
+      "description": "Green Ronin Official Expanse system for Foundry VTT",
+      "pushedAt": "2024-07-05T21:06:23Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "stale",
+      "isDslCorpus": false
+    }
+  ],
+  "errors": []
+}

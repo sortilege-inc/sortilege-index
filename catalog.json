@@ -1,0 +1,164 @@
+{
+  "_comment": "Hand-owned editorial truth for the Sortilege project index. The generator (tools/gen.mjs) NEVER writes this file; it reads it, merges live GitHub state into data.json, and the page renders the two together. Edit blurbs, groupings, descriptions, web links, and editorial `status` here by hand. `repo` is the sortilege-inc repo slug; the github URL is derived. `status` is an OPTIONAL editorial override (e.g. 0.4-compliant, In Progress) — omit it to let the page show only the derived live state.",
+  "owner": "sortilege-inc",
+  "defaultUpdated": "2026-07-19",
+  "tabs": [
+    {
+      "id": "projects",
+      "label": "Projects",
+      "groups": [
+        {
+          "name": "Games, Campaigns & Companions",
+          "blurb": "Playable modules, campaign material, and companion apps.",
+          "projects": [
+            { "name": "Bellum Arborem", "desc": "Companion web app for the Root roleplaying game.", "repo": "bellum-arborem", "web": "https://sortilege-inc.github.io/bellum-arborem/", "status": "Active" },
+            { "name": "Banes of Beleriand", "desc": "", "repo": "banes-of-beleriand" },
+            { "name": "Collateral", "desc": "", "repo": "collateral" },
+            { "name": "Istya", "desc": "The One Ring 2e — company, character & adversary app.", "repo": "istya" }
+          ]
+        },
+        {
+          "name": "Titterpig — DSL, Corpora & Tooling",
+          "blurb": "The system-agnostic TTRPG DSL engine, its rules corpora, and authoring tools.",
+          "projects": [
+            { "name": "Titterpig Mastra", "desc": "Ingestion & authoring pipeline that turns rulebooks into DSL.", "repo": "titterpig-mastra" },
+            { "name": "Titterpig Synthesist", "desc": "", "repo": "titterpig-synthesist", "status": "0.4-compliant" },
+            { "name": "Titterpig DSL", "desc": "Core Titterpig DSL grammar & specification.", "repo": "titterpig-dsl", "status": "0.4-compliant" },
+            { "name": "Sublime TTRPG Syntax", "desc": "Titterpig syntax highlighting for Sublime Text.", "repo": "sublime-ttrpg-syntax" },
+            { "name": "DSL · Call of Cthulhu 7e", "desc": "Call of Cthulhu 7th Edition rules corpus.", "repo": "titterpig-dsl-callofcthulhu7e", "status": "0.4-compliant" },
+            { "name": "DSL · Root", "desc": "Root RPG rules corpus.", "repo": "titterpig-dsl-root", "status": "0.4-compliant" },
+            { "name": "DSL · Daggerheart", "desc": "Daggerheart rules corpus.", "repo": "titterpig-dsl-daggerheart", "status": "0.4-compliant" },
+            { "name": "DSL · D&D 5e", "desc": "Dungeons & Dragons 5th Edition rules corpus.", "repo": "titterpig-dsl-dnd5e", "status": "0.4-compliant" },
+            { "name": "DSL · Ars Magica 5e", "desc": "Ars Magica 5th Edition rules corpus.", "repo": "titterpig-dsl-arm5e", "status": "0.4-compliant" },
+            { "name": "DSL · Vampire 5e", "desc": "Vampire: The Masquerade 5e rules corpus.", "repo": "titterpig-dsl-vtm5e", "status": "0.4-compliant" },
+            { "name": "DSL · Draw Steel", "desc": "Draw Steel rules corpus.", "repo": "titterpig-dsl-draw-steel", "status": "0.4-compliant" },
+            { "name": "DSL · Legend of the Five Rings 5e", "desc": "L5R 5th Edition rules corpus.", "repo": "titterpig-dsl-l5r5e", "status": "0.4-compliant" },
+            { "name": "DSL · The One Ring 2e", "desc": "The One Ring 2nd Edition rules corpus.", "repo": "titterpig-dsl-tor2e", "status": "0.4-compliant" },
+            { "name": "DSL · Invisible Sun", "desc": "Invisible Sun rules corpus.", "repo": "titterpig-dsl-invisiblesun", "status": "0.4-compliant" },
+            { "name": "DSL · The Expanse", "desc": "The Expanse RPG rules corpus.", "repo": "titterpig-dsl-expanse", "status": "0.4-compliant" },
+            { "name": "DSL · D&D 2024 (5.2.1)", "desc": "Dungeons & Dragons 2024 (SRD 5.2.1) rules corpus.", "repo": "titterpig-dsl-dnd5.5e" },
+            { "name": "DSL · D&D 5e (3rd-party)", "desc": "Third-party D&D 5e content — Historica Arcanum: The City of Crescent.", "repo": "titterpig-dsl-dnd5e-3rdparty" },
+            { "name": "DSL · L5R 5e (3rd-party)", "desc": "Third-party Legend of the Five Rings 5e content.", "repo": "titterpig-dsl-l5r5e-3rdparty" },
+            { "name": "Titterpig Rules Lawyer", "desc": "", "repo": "titterpig-rules-lawyer" }
+          ]
+        },
+        {
+          "name": "Engines, Dashboards & Wikis",
+          "blurb": "Runtime engines, dashboards, and knowledge bases.",
+          "projects": [
+            { "name": "Sortilege Index", "desc": "This project index — a cross-repo state dashboard for all Sortilege repositories.", "repo": "sortilege-index", "web": "https://sortilege-inc.github.io/sortilege-index/", "status": "Active" },
+            { "name": "Titterpig Engine", "desc": "", "repo": "titterpig-engine" },
+            { "name": "Titterpig Dashboard (Web)", "desc": "", "repo": "titterpig-dashboard-web" },
+            { "name": "Marginalia", "desc": "", "repo": "marginalia" },
+            { "name": "Intertwingler — L5R Wiki", "desc": "", "repo": "intertwingler-l5r-wiki" }
+          ]
+        },
+        {
+          "name": "Writings & Utilities",
+          "blurb": "Essays, generators, and standalone tools.",
+          "projects": [
+            { "name": "Un Coup de Dés", "desc": "", "repo": "un-coup-de-des" },
+            { "name": "Dossier Studio", "desc": "", "repo": "dossier-studio" },
+            { "name": "Dossiers", "desc": "Deep dives on constructed player characters.", "repo": "dossiers", "web": "https://sortilege-inc.github.io/dossiers/" },
+            { "name": "Quorum", "desc": "", "repo": "quorum" },
+            { "name": "Spiders", "desc": "", "repo": "spiders-game" },
+            { "name": "Maker's Matrix", "desc": "Invisible Sun Maker's Matrix.", "repo": "makers-matrix" },
+            { "name": "Maker's Matrix API", "desc": "Maker's Matrix API.", "repo": "makers-matrix-api" }
+          ]
+        },
+        {
+          "name": "Trading Card Game Tools",
+          "blurb": "Databases and services backing the card games.",
+          "projects": [
+            { "name": "TCGGG", "desc": "", "repo": "tcggg" },
+            { "name": "TCG DB", "desc": "Trading Card Game database.", "repo": "tcgdb" },
+            { "name": "SNAFU DB", "desc": "", "repo": "snafu-db" }
+          ]
+        },
+        {
+          "name": "Kid Projects",
+          "blurb": "",
+          "projects": [
+            { "name": "Gods of the Dead", "desc": "", "repo": "gotd" },
+            { "name": "Gods of the Dead (repo)", "desc": "", "repo": "gods-of-the-dead" }
+          ]
+        },
+        {
+          "name": "Variant Rulesets",
+          "blurb": "",
+          "projects": [
+            { "name": "Hope · Fear · Mythic Greece", "desc": "", "repo": "hope-fear-mythic-greece" }
+          ]
+        },
+        {
+          "name": "Foundry VTT Compendia",
+          "blurb": "Compendium packs for Foundry Virtual Tabletop.",
+          "projects": [
+            { "name": "FVTT · L5R 5e", "desc": "", "repo": "sortilege-fvtt-compendia-l5r5e" },
+            { "name": "FVTT · Marvel Multiverse", "desc": "", "repo": "sortilege-fvtt-compendia-marvel-multiverse" },
+            { "name": "L5R 5e Compendia", "desc": "", "repo": "l5r5e-compendia-sortilege" },
+            { "name": "FVTT · Vampire 5e", "desc": "", "repo": "sortilege-fvtt-compendia-vtm5e" }
+          ]
+        },
+        {
+          "name": "Private Client Work",
+          "blurb": "",
+          "projects": [
+            { "name": "Hegemony CCG", "desc": "", "repo": "hegemonyccg" },
+            { "name": "Networked Futures", "desc": "", "repo": "networked-futures" }
+          ]
+        },
+        {
+          "name": "Draft Experiments",
+          "blurb": "Works in progress and rough sketches.",
+          "projects": [
+            { "name": "Ragtime", "desc": "", "repo": "ragtime" },
+            { "name": "React Hexgrid", "desc": "Build interactive hexagon grids with React.", "repo": "react-hexgrid" },
+            { "name": "Exquisite Shade", "desc": "GM Binder files for an Invisible Sun campaign.", "repo": "exquisite-shade" },
+            { "name": "Situation Normal", "desc": "", "repo": "situation-normal" }
+          ]
+        },
+        {
+          "name": "Archived",
+          "blurb": "Retired projects and the legacy web presence.",
+          "projects": [
+            { "name": "Nine Eyes TCG", "desc": "Nine Eyes TCG.", "repo": "9e" },
+            { "name": "Be Slightly Evil", "desc": "Be Slightly Evil — the trading card game.", "repo": "bse" },
+            { "name": "BSE Web", "desc": "", "repo": "bse-web" },
+            { "name": "BSE Archive", "desc": "", "repo": "bse-archive" },
+            { "name": "sortilege.online", "desc": "The Sortilege website.", "repo": "sortilege.online", "web": "https://sortilege.online/" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gm",
+      "label": "GM",
+      "groups": [
+        {
+          "name": "Campaigns",
+          "blurb": "",
+          "projects": [
+            { "name": "Sjórseiðr", "desc": "A startplaying.games Ars Magica Campaign", "repo": "sjorseidr", "web": "https://sortilege-inc.github.io/sjorseidr/", "status": "In Progress" },
+            { "name": "Caul", "desc": "A Wyldwolf Daggerheart Campaign set in the Age of Umbra", "repo": "caul", "web": "https://caul.sortilege.online/", "status": "In Progress" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "player",
+      "label": "Player",
+      "groups": [
+        {
+          "name": "Campaigns",
+          "blurb": "",
+          "projects": [
+            { "name": "War of Princes", "desc": "A Vampire: the Masquerade - Dark Ages Chronicle.", "repo": "war-of-princes", "web": "https://sortilege-inc.github.io/war-of-princes/", "status": "In Progress" },
+            { "name": "Children of Fear", "desc": "A Call of Cthulhu Campaign", "repo": "children-of-fear", "web": "https://sortilege-inc.github.io/children-of-fear/", "status": "In Progress" },
+            { "name": "Home Is Where We Make Our Fire", "desc": "Celenneth — a solo The One Ring 2e campaign.", "repo": "home-is-where-we-make-our-fire", "web": "https://celenneth.sortilege.online/", "status": "In Progress" }
+          ]
+        }
+      ]
+    }
+  ]
+}
