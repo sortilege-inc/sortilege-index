@@ -196,12 +196,11 @@ function deriveStandardsTasks(out) {
     t.push({ text: "Add a README", done: false, priority: 3, tags: ["docs"], source: "standards" });
   if (s.license === false)
     t.push({ text: "Add a LICENSE", done: false, priority: 3, tags: ["standards"], source: "standards" });
-  if (s.ci === false) {
-    if (out.isDslCorpus)
-      t.push({ text: "Wire CI: coverageAudit + validators gate", done: false, priority: 1, tags: ["ci", "coverage"], source: "standards" });
-    else
-      t.push({ text: "Add a CI workflow", done: false, priority: 2, tags: ["ci"], source: "standards" });
-  }
+  // Generic CI task for any repo missing a workflow. NB: for DSL corpora this is
+  // deliberately NOT a coverage gate — the coverageAudit gate can't run honestly
+  // in CI (no committable/trusted source outline); see sortilege-index/TASKS.md.
+  if (s.ci === false)
+    t.push({ text: "Add a CI workflow", done: false, priority: 3, tags: ["ci"], source: "standards" });
   return t;
 }
 

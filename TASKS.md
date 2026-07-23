@@ -12,11 +12,21 @@ parsed out; everything else here is just normal Markdown that renders on GitHub.
 - [ ] (p2) Roll out TASKS.md to the active repos so the queue reflects real work #phase2 #rollout
 - [ ] (p3) Document the convention in the repo README #phase2 #docs
 
-## Phase 3 — CI standards enforcement
+## Standards & CI
 
-- [ ] (p1) Author a shared reusable workflow: coverageAudit + validators gate #phase3 #ci
-- [ ] (p2) Adopt the reusable workflow across the 14 DSL corpora #phase3 #ci #coverage
-- [ ] (p3) Add a LICENSE across the public repos #phase3 #standards
+> Decided 2026-07-23: the `coverageAudit` gate can NOT run honestly in CI. It
+> needs each book's source outline (`toc.txt`/HTML), which isn't committable
+> (copyrighted source) and isn't fully trusted (toc.txt has known errors and
+> omissions). With no source present the gate passes 0/0 — a false green, the
+> exact thing the hard rule forbids. So coverage is not being automated.
+> Fidelity assurance is a human job — see below.
+
+- [ ] (p3) Add a LICENSE across the public repos #standards
+- [ ] Optional later: structural-validation CI for DSL corpora (validator over `.ttrpg` only — honest and source-free; NOT coverage) #ci
+
+## Fidelity validation (human — deferred, do not automate)
+
+- [ ] (p2) Human validation program: check each corpus **sentence-by-sentence against its source PDF** — every statblock, spell, table, etc. Build alignment + resumable-ledger tooling WHEN this starts (per-corpus, beginning with the most-used corpus); the judgment stays human, no automated pass may mark it green. Not started. #validation #deferred
 
 ## Dashboard polish
 
