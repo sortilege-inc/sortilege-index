@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-07-23T19:28:48.974Z",
+  "generatedAt": "2026-07-23T19:51:35.928Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 61,
     "org": 70,
     "untracked": 9,
     "accessLimited": 0,
+    "openTasks": 144,
+    "backlogRepos": 1,
     "errors": 0
   },
   "repos": {
@@ -34,7 +36,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "banes-of-beleriand": {
       "slug": "banes-of-beleriand",
@@ -55,7 +78,37 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "collateral": {
       "slug": "collateral",
@@ -76,7 +129,37 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "istya": {
       "slug": "istya",
@@ -97,7 +180,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
@@ -118,7 +222,196 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": true,
+      "tasks": [
+        {
+          "text": "**Virtue/Flaw alias → caret-ref mapping — GRAMMAR RESOLVED (DECISION-6, 2026-07-14).**",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Parameterized abilities/virtues — RESOLVED (DECISION-6, 2026-07-14).** Any DEF may now",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**l5r5e NPC Templates — RESOLVED (DECISION-5, 2026-07-14; spec §5 + AUTHORING-GUIDELINES).**",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Retrofit l5r5e `0.4/` NPC templates** to the `TEMPLATE` construct (they currently sit",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "armdef's 23 chapter III character templates convert as `TEMPLATE`s (done 2026-07-14,",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Composition, editions & precedence — RESOLVED (D8; recorded in spec DECISION-4 + §5/§13/§19).**",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Validator: scope the duplicate-anchor check.** Today `ttrpg_validator.py` errors on *any*",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Converters emit/retain an edition diff** (what changed E1→E2) so the future forward-port",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Forward-port tool (future, out of scope now).** Generate a newer-edition `.ttrpg` of a",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**armdef weapons/armor as equipment DEFs (upgrade; re-ingest DONE 2026-07-14).** The melee",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**armdef Shape & Material table — RESOLVED 2026-07-14.** The 2-column page layout scrambled",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**`.ttrpg → .json` transform + machine (JSON) contract.** Per-system output schemas and the",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Downstream \"sophisticated rules validation\"** (chargen legality, rules consistency) — built",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Grammar/validator unification.** `ttrpg.peg` is a recognizer; the v0.4 `ttrpg_validator.py`",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Re-convert remaining systems to v0.4:** **arm5e** remains; daggerheart is an empty stub.",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Split into two edition namespaces — as SUBDIRS of the one `titterpig-dsl-arm5e` repo**",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**The ~356 `0.3/` duplicate-anchor errors are mostly cross-edition** (Definitive",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "Both cores come from **pristine sources**, so the old `0.3/`'s 6 OCR `unclosed '{'` errors",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**daggerheart:** empty stub. When started, its **beta versions are edition-like namespaces**",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**vtm5e:** `vault-black-hand` (fan/3rd-party source) now has hash IDs distinct from official",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Update `sublime-ttrpg-syntax` highlighter to DSL v0.4** (after tor2e).",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**tor2e `^\"RevelationEpisode\"` undefined — core omission.** The 10 revelation-episode `.arc`",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "~~tor2e source location~~ — resolved: cloned `titterpig-dsl-tor2e`.",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "l5r5e `.lore` files still carry `Version: 0.1` markdown headers — cosmetic; bump when convenient.",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
@@ -139,7 +432,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
@@ -160,7 +474,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "sublime-ttrpg-syntax": {
       "slug": "sublime-ttrpg-syntax",
@@ -181,7 +516,19 @@
         "readme": true,
         "license": true,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-callofcthulhu7e": {
       "slug": "titterpig-dsl-callofcthulhu7e",
@@ -202,7 +549,29 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-root": {
       "slug": "titterpig-dsl-root",
@@ -223,7 +592,29 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-daggerheart": {
       "slug": "titterpig-dsl-daggerheart",
@@ -244,7 +635,29 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-dnd5e": {
       "slug": "titterpig-dsl-dnd5e",
@@ -265,7 +678,29 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
@@ -286,7 +721,38 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
@@ -307,7 +773,29 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-draw-steel": {
       "slug": "titterpig-dsl-draw-steel",
@@ -328,7 +816,29 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
@@ -349,7 +859,29 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
@@ -370,7 +902,29 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-invisiblesun": {
       "slug": "titterpig-dsl-invisiblesun",
@@ -391,7 +945,38 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-expanse": {
       "slug": "titterpig-dsl-expanse",
@@ -412,7 +997,38 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-dnd5.5e": {
       "slug": "titterpig-dsl-dnd5.5e",
@@ -433,7 +1049,38 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-dnd5e-3rdparty": {
       "slug": "titterpig-dsl-dnd5e-3rdparty",
@@ -454,7 +1101,38 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dsl-l5r5e-3rdparty": {
       "slug": "titterpig-dsl-l5r5e-3rdparty",
@@ -475,7 +1153,38 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Wire CI: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "ci",
+            "coverage"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-rules-lawyer": {
       "slug": "titterpig-rules-lawyer",
@@ -496,12 +1205,33 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-07-23T19:26:39Z",
+      "pushedAt": "2026-07-23T19:29:10Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -513,17 +1243,38 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": null,
-        "created_at": "2026-07-23T19:28:41Z",
+        "conclusion": "success",
+        "created_at": "2026-07-23T19:29:12Z",
         "head_branch": "main",
-        "name": "Refresh live state",
-        "status": "in_progress"
+        "name": "pages build and deployment",
+        "status": "completed"
       },
       "standards": {
         "readme": false,
         "license": false,
         "ci": true
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-engine": {
       "slug": "titterpig-engine",
@@ -544,7 +1295,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "titterpig-dashboard-web": {
       "slug": "titterpig-dashboard-web",
@@ -565,7 +1337,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "marginalia": {
       "slug": "marginalia",
@@ -586,7 +1379,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "intertwingler-l5r-wiki": {
       "slug": "intertwingler-l5r-wiki",
@@ -607,7 +1421,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "un-coup-de-des": {
       "slug": "un-coup-de-des",
@@ -628,7 +1463,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "dossier-studio": {
       "slug": "dossier-studio",
@@ -649,7 +1505,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "dossiers": {
       "slug": "dossiers",
@@ -676,7 +1553,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "quorum": {
       "slug": "quorum",
@@ -697,7 +1595,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "spiders-game": {
       "slug": "spiders-game",
@@ -718,7 +1637,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "makers-matrix": {
       "slug": "makers-matrix",
@@ -739,7 +1679,19 @@
         "readme": true,
         "license": true,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "makers-matrix-api": {
       "slug": "makers-matrix-api",
@@ -760,7 +1712,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "tcggg": {
       "slug": "tcggg",
@@ -781,7 +1754,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "tcgdb": {
       "slug": "tcgdb",
@@ -808,7 +1802,19 @@
         "readme": true,
         "license": false,
         "ci": true
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "snafu-db": {
       "slug": "snafu-db",
@@ -829,7 +1835,19 @@
         "readme": true,
         "license": true,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "gotd": {
       "slug": "gotd",
@@ -850,7 +1868,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "gods-of-the-dead": {
       "slug": "gods-of-the-dead",
@@ -871,7 +1910,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "hope-fear-mythic-greece": {
       "slug": "hope-fear-mythic-greece",
@@ -892,7 +1952,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "sortilege-fvtt-compendia-l5r5e": {
       "slug": "sortilege-fvtt-compendia-l5r5e",
@@ -913,7 +1994,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "sortilege-fvtt-compendia-marvel-multiverse": {
       "slug": "sortilege-fvtt-compendia-marvel-multiverse",
@@ -934,7 +2036,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "l5r5e-compendia-sortilege": {
       "slug": "l5r5e-compendia-sortilege",
@@ -955,7 +2078,37 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "sortilege-fvtt-compendia-vtm5e": {
       "slug": "sortilege-fvtt-compendia-vtm5e",
@@ -976,7 +2129,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "hegemonyccg": {
       "slug": "hegemonyccg",
@@ -997,7 +2171,37 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "networked-futures": {
       "slug": "networked-futures",
@@ -1018,7 +2222,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "ragtime": {
       "slug": "ragtime",
@@ -1039,7 +2264,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "react-hexgrid": {
       "slug": "react-hexgrid",
@@ -1060,7 +2306,19 @@
         "readme": true,
         "license": true,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "exquisite-shade": {
       "slug": "exquisite-shade",
@@ -1081,7 +2339,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "situation-normal": {
       "slug": "situation-normal",
@@ -1102,7 +2381,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "9e": {
       "slug": "9e",
@@ -1123,7 +2423,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "bse": {
       "slug": "bse",
@@ -1144,7 +2465,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "bse-web": {
       "slug": "bse-web",
@@ -1165,7 +2507,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "bse-archive": {
       "slug": "bse-archive",
@@ -1186,7 +2549,19 @@
         "readme": true,
         "license": true,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "sortilege.online": {
       "slug": "sortilege.online",
@@ -1207,7 +2582,37 @@
         "readme": false,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "sjorseidr": {
       "slug": "sjorseidr",
@@ -1234,7 +2639,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "caul": {
       "slug": "caul",
@@ -1261,7 +2687,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "war-of-princes": {
       "slug": "war-of-princes",
@@ -1288,7 +2735,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "children-of-fear": {
       "slug": "children-of-fear",
@@ -1315,7 +2783,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     },
     "home-is-where-we-make-our-fire": {
       "slug": "home-is-where-we-make-our-fire",
@@ -1342,7 +2831,28 @@
         "readme": true,
         "license": false,
         "ci": false
-      }
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     }
   },
   "untracked": [

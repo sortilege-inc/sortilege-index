@@ -223,6 +223,65 @@
     .pip.off { opacity: 0.5; }
     .pip.unk { opacity: 0.5; border-style: dashed; }
 
+    /* ---------- Per-repo open-task count (jumps to the Tasks tab) ---------- */
+    thead th.col-tasks { width: 1%; }
+    td.col-tasks { white-space: nowrap; }
+    .tcount {
+      font: 600 0.78rem/1 "Cinzel", serif; cursor: pointer;
+      min-width: 22px; padding: 3px 7px; border-radius: 999px;
+      border: 1px solid var(--accent); color: var(--accent); background: transparent;
+    }
+    .tcount:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+    .tcount.has-p1 { border-color: var(--coral); color: var(--coral); }
+    .tcount.zero { border: none; color: var(--ink-soft); opacity: 0.5; cursor: default; padding: 3px 4px; }
+
+    /* ---------- Tasks tab: cross-repo queue ---------- */
+    .task-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1rem; margin-bottom: 1rem; }
+    .task-summary { font-size: 0.95rem; color: var(--ink-soft); }
+    .task-summary strong { color: var(--ink); font-weight: 600; }
+    .task-controls { display: flex; flex-wrap: wrap; gap: 0.5rem 0.65rem; align-items: center; margin-bottom: 1.3rem; }
+    .task-controls input[type="search"] {
+      font-family: inherit; font-size: 0.9rem; padding: 0.4rem 0.7rem;
+      border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--ink); min-width: 12rem;
+    }
+    .fbtn {
+      font: 500 0.8rem/1 "EB Garamond", serif; cursor: pointer; padding: 0.35rem 0.7rem;
+      border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--ink-soft);
+    }
+    .fbtn[aria-pressed="true"] { color: var(--panel); background: var(--ink); border-color: var(--ink); }
+    .fgroup { display: inline-flex; gap: 0.3rem; align-items: center; }
+    .fgroup .flabel { font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+    .task-list { display: flex; flex-direction: column; gap: 0.5rem; }
+    .task-row {
+      display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.7rem;
+      padding: 0.6rem 0.85rem; border: 1px solid var(--line); border-radius: 10px;
+      background: linear-gradient(158deg, var(--panel), var(--panel-2));
+    }
+    .task-row.is-done { opacity: 0.55; }
+    .task-row.is-done .task-text { text-decoration: line-through; }
+    .task-text { font-size: 0.98rem; }
+    .task-meta { display: flex; flex-wrap: wrap; gap: 0.3rem; align-items: center; justify-content: flex-end; }
+    .prio {
+      font: 700 0.66rem/1 "Cinzel", serif; padding: 3px 6px; border-radius: 5px;
+      color: var(--panel); letter-spacing: 0.03em; flex: none;
+    }
+    .prio.p1 { background: var(--coral); }
+    .prio.p2 { background: var(--orange); }
+    .prio.p3 { background: var(--slate); }
+    .prio.p0 { background: transparent; color: var(--ink-soft); border: 1px dashed var(--line); }
+    .repo-chip {
+      font-size: 0.78rem; padding: 2px 8px; border-radius: 999px; cursor: pointer;
+      border: 1px solid var(--accent, var(--line)); color: var(--accent, var(--ink-soft)); background: transparent;
+    }
+    .repo-chip:hover { background: color-mix(in srgb, var(--accent, var(--slate)) 14%, transparent); }
+    .tag-chip { font-size: 0.74rem; color: var(--ink-soft); opacity: 0.85; }
+    .src {
+      font-size: 0.66rem; letter-spacing: 0.04em; text-transform: uppercase;
+      padding: 2px 6px; border-radius: 4px; border: 1px solid var(--line); color: var(--ink-soft);
+    }
+    .src.standards { border-style: dashed; }
+    .task-empty { color: var(--ink-soft); font-style: italic; padding: 1.5rem 0; }
+
     /* ---------- Untracked repositories (drift surfaced by the generator) ---------- */
     .untracked { margin-top: 2.4rem; }
     .untracked .list { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.4rem; }
@@ -282,6 +341,7 @@
       <button class="tab" role="tab" id="tab-projects" aria-controls="panel-projects" aria-selected="true">Projects</button>
       <button class="tab" role="tab" id="tab-gm" aria-controls="panel-gm" aria-selected="false" tabindex="-1">GM</button>
       <button class="tab" role="tab" id="tab-player" aria-controls="panel-player" aria-selected="false" tabindex="-1">Player</button>
+      <button class="tab" role="tab" id="tab-tasks" aria-controls="panel-tasks" aria-selected="false" tabindex="-1">Tasks</button>
     </nav>
 
     <p class="meta-line" id="metaLine"></p>
@@ -294,6 +354,7 @@
       <div class="tabpanel" id="panel-player" role="tabpanel" aria-labelledby="tab-player" hidden>
         <div class="placeholder frame" style="--accent:var(--terracotta)">Player content coming soon.</div>
       </div>
+      <div class="tabpanel" id="panel-tasks" role="tabpanel" aria-labelledby="tab-tasks" hidden></div>
     </main>
 
     <footer>
@@ -386,6 +447,15 @@
       return `<span class="pips">${pip(s.readme, "R", "README")}${pip(s.license, "L", "License")}${pip(s.ci, "C", "CI workflow")}</span>`;
     }
 
+    function tasksCountCell(st, slug) {
+      const tasks = (st && st.tasks) || [];
+      const open = tasks.filter(t => !t.done).length;
+      if (!open) return `<span class="tcount zero" title="no open tasks">—</span>`;
+      const p1 = tasks.filter(t => !t.done && t.priority === 1).length;
+      const title = `${open} open task${open !== 1 ? "s" : ""}${p1 ? ` · ${p1} P1` : ""} — view in Tasks`;
+      return `<button class="tcount${p1 ? " has-p1" : ""}" title="${esc(title)}" onclick="showTasksForRepo('${esc(slug)}')">${open}</button>`;
+    }
+
     function statusCell(p, st) {
       const fr = (st && st.freshness) || "unknown";
       let label, derived = false;
@@ -414,6 +484,7 @@
             <td class="col-status">${statusCell(p, st)}</td>
             <td class="col-state">${stateCell(st)}</td>
             <td class="col-standards">${standardsCell(st)}</td>
+            <td class="col-tasks">${tasksCountCell(st, p.repo)}</td>
             <td class="col-links"><div class="links">${links.join("")}</div></td>
           </tr>`;
         }).join("");
@@ -428,6 +499,7 @@
                 <th class="col-status">Status</th>
                 <th class="col-state">State</th>
                 <th class="col-standards" title="README · License · CI workflow">Standards</th>
+                <th class="col-tasks" title="Open tasks — click a count to view">Tasks</th>
                 <th class="col-links">Links</th>
               </tr></thead>
               <tbody>${rows}</tbody>
@@ -456,6 +528,124 @@
         `<div class="placeholder frame" style="--accent:${accentVar}">${fallback}</div>`;
     }
 
+    /* ---------------------------------------------------------------------------
+       Tasks tab — cross-repo queue aggregated from every repo's tasks
+       (hand-authored TASKS.md + auto-derived standards-debt), generated into
+       data.json by tools/gen.mjs.
+       --------------------------------------------------------------------------- */
+    let ALL_TASKS = [];                       // flattened { ...task, repo, repoName, accent }
+    const taskFilter = { q: "", priority: 0, source: "", repo: "", done: false };
+
+    function buildTaskIndex(catalog, repos) {
+      const meta = {};
+      let i = 0;
+      (catalog.tabs || []).forEach(t => (t.groups || []).forEach(g => (g.projects || []).forEach(p => {
+        if (!meta[p.repo]) meta[p.repo] = { name: p.name, accent: ACCENTS[i++ % ACCENTS.length] };
+      })));
+      ALL_TASKS = [];
+      Object.entries(repos).forEach(([slug, st]) => {
+        const m = meta[slug] || { name: slug, accent: "var(--slate)" };
+        (st.tasks || []).forEach(t => ALL_TASKS.push({ ...t, repo: slug, repoName: m.name, accent: m.accent }));
+      });
+    }
+
+    function filteredTasks() {
+      const f = taskFilter, q = f.q.toLowerCase();
+      return ALL_TASKS.filter(t => {
+        if (!f.done && t.done) return false;
+        if (f.priority && t.priority !== f.priority) return false;
+        if (f.source && t.source !== f.source) return false;
+        if (f.repo && t.repo !== f.repo) return false;
+        if (q && !(t.text + " " + t.repo + " " + t.tags.join(" ")).toLowerCase().includes(q)) return false;
+        return true;
+      }).sort((a, b) =>
+        (a.priority || 9) - (b.priority || 9) ||
+        a.repoName.localeCompare(b.repoName) ||
+        a.text.localeCompare(b.text));
+    }
+
+    function taskRow(t) {
+      const cls = t.priority ? "p" + t.priority : "p0";
+      const label = t.priority ? "P" + t.priority : "–";
+      const tags = t.tags.map(x => `<span class="tag-chip">#${esc(x)}</span>`).join(" ");
+      return `<div class="task-row ${t.done ? "is-done" : ""}" style="--accent:${t.accent}">
+        <span class="prio ${cls}" title="priority">${label}</span>
+        <span class="task-text">${esc(t.text)}${tags ? " " + tags : ""}</span>
+        <span class="task-meta">
+          <button class="repo-chip" onclick="showTasksForRepo('${esc(t.repo)}')" title="filter to ${esc(t.repo)}">${esc(t.repoName)}</button>
+          <span class="src ${t.source}" title="${t.source === "standards" ? "auto-derived from standards gaps" : "from TASKS.md"}">${t.source === "standards" ? "auto" : "backlog"}</span>
+        </span>
+      </div>`;
+    }
+
+    function updateTasks() {
+      const rows = filteredTasks();
+      const list = document.getElementById("task-list");
+      if (list) list.innerHTML = rows.length
+        ? rows.map(taskRow).join("")
+        : `<p class="task-empty">No tasks match the current filters.</p>`;
+
+      const open = ALL_TASKS.filter(t => !t.done);
+      const nRepos = new Set(open.map(t => t.repo)).size;
+      const backlog = open.filter(t => t.source === "backlog").length;
+      const std = open.filter(t => t.source === "standards").length;
+      const sum = document.getElementById("task-summary");
+      if (sum) sum.innerHTML =
+        `<strong>${open.length}</strong> open task${open.length !== 1 ? "s" : ""} across <strong>${nRepos}</strong> repo${nRepos !== 1 ? "s" : ""} · ${backlog} hand-authored · ${std} standards-debt`;
+
+      // sync control pressed-states + active-repo note
+      document.querySelectorAll("#panel-tasks [data-prio]").forEach(b =>
+        b.setAttribute("aria-pressed", String(Number(b.dataset.prio) === taskFilter.priority)));
+      document.querySelectorAll("#panel-tasks [data-src]").forEach(b =>
+        b.setAttribute("aria-pressed", String(b.dataset.src === taskFilter.source)));
+      const doneBtn = document.getElementById("task-done-toggle");
+      if (doneBtn) doneBtn.setAttribute("aria-pressed", String(taskFilter.done));
+      const note = document.getElementById("repo-filter-note");
+      if (note) note.innerHTML = taskFilter.repo
+        ? `filtered to <button class="repo-chip" onclick="clearRepoFilter()" title="clear">${esc(taskFilter.repo)} ✕</button>`
+        : "";
+    }
+
+    function clearRepoFilter() { taskFilter.repo = ""; updateTasks(); }
+
+    function showTasksForRepo(slug) {
+      taskFilter.repo = slug;
+      const tab = document.getElementById("tab-tasks");
+      if (tab) activate(tab);
+      updateTasks();
+    }
+
+    function renderTasksTab() {
+      const panel = document.getElementById("panel-tasks");
+      if (!panel) return;
+      if (!ALL_TASKS.length) {
+        panel.innerHTML = `<div class="placeholder frame" style="--accent:var(--forest)">No tasks yet. Add a <code>TASKS.md</code> to any repo, or let standards-debt tasks populate on the next generation run.</div>`;
+        return;
+      }
+      const pbtn = (v, lbl) => `<button class="fbtn" data-prio="${v}" aria-pressed="false">${lbl}</button>`;
+      const sbtn = (v, lbl) => `<button class="fbtn" data-src="${v}" aria-pressed="false">${lbl}</button>`;
+      panel.innerHTML = `
+        <div class="task-head">
+          <p class="task-summary" id="task-summary"></p>
+          <span id="repo-filter-note"></span>
+        </div>
+        <div class="task-controls">
+          <input type="search" id="task-search" placeholder="Filter tasks…" aria-label="Filter tasks" />
+          <span class="fgroup"><span class="flabel">Priority</span>${pbtn(0, "All")}${pbtn(1, "P1")}${pbtn(2, "P2")}${pbtn(3, "P3")}</span>
+          <span class="fgroup"><span class="flabel">Source</span>${sbtn("", "All")}${sbtn("backlog", "Backlog")}${sbtn("standards", "Auto")}</span>
+          <button class="fbtn" id="task-done-toggle" aria-pressed="false">Show done</button>
+        </div>
+        <div class="task-list" id="task-list"></div>`;
+
+      panel.querySelector("#task-search").addEventListener("input", e => { taskFilter.q = e.target.value; updateTasks(); });
+      panel.querySelectorAll("[data-prio]").forEach(b =>
+        b.addEventListener("click", () => { taskFilter.priority = Number(b.dataset.prio); updateTasks(); }));
+      panel.querySelectorAll("[data-src]").forEach(b =>
+        b.addEventListener("click", () => { taskFilter.source = b.dataset.src; updateTasks(); }));
+      panel.querySelector("#task-done-toggle").addEventListener("click", () => { taskFilter.done = !taskFilter.done; updateTasks(); });
+      updateTasks();
+    }
+
     async function boot() {
       let catalog = null, data = null;
       try {
@@ -480,12 +670,16 @@
       renderTab("panel-player", (byId.player || {}).groups || [], owner, repos,
         "var(--terracotta)", "Player content coming soon.");
 
+      buildTaskIndex(catalog, repos);
+      renderTasksTab();
+
       const meta = document.getElementById("metaLine");
       if (meta) {
         if (data && data.generatedAt) {
           const c = data.counts || {};
           const ageDays = Math.floor((Date.now() - new Date(data.generatedAt).getTime()) / 86400000);
           let text = `Live state generated ${isoDate(data.generatedAt)} · ${c.tracked || 0} tracked · ${c.untracked || 0} untracked · ${c.org || 0} in org`;
+          if (c.openTasks) text += ` · ${c.openTasks} open task${c.openTasks !== 1 ? "s" : ""}`;
           if (ageDays > 7) { text += ` · ${ageDays}d old — run tools/gen.mjs`; meta.classList.add("stale-warn"); }
           meta.textContent = text;
         } else {

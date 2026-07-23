@@ -111,6 +111,22 @@ async function ghExistsSoft(path) {
   }
 }
 
+// Fetch a repo file's raw text. 404 -> value:null (absent); 403 -> forbidden.
+async function ghRawSoft(path) {
+  try {
+    const { stdout } = await runGh(
+      ["api", path, "-H", "Accept: application/vnd.github.raw"],
+      { maxBuffer: 8 * 1024 * 1024 },
+    );
+    return { ok: true, value: stdout };
+  } catch (err) {
+    const msg = String(err.stderr || err.message || "");
+    if (/HTTP 404|Not Found/i.test(msg)) return { ok: true, value: null };
+    if (is403(msg)) return { ok: false, forbidden: true };
+    throw err;
+  }
+}
+
 // ---- tiny concurrency limiter --------------------------------------------
 
 function pLimit(n) {
@@ -142,6 +158,51 @@ function freshness(pushedAt, archived, now) {
 // (the core `titterpig-dsl` grammar repo is excluded — it isn't a corpus).
 function isDslCorpus(slug) {
   return slug.startsWith("titterpig-dsl-");
+}
+
+// Parse a TASKS.md into structured tasks. Convention: GitHub-flavored checkbox
+// list items — `- [ ] text` (open) / `- [x] text` (done) — anywhere in the file.
+// Optional inline markers: `(p1)`..`(p3)` priority, `#tag` tags (both stripped
+// from the displayed text and collected). Non-checkbox lines (headings, prose)
+// are ignored, so the file stays a normal, GitHub-rendered document.
+function parseTasks(md) {
+  const tasks = [];
+  const re = /^\s*[-*]\s+\[([ xX])\]\s+(.+?)\s*$/;
+  for (const line of String(md).split(/\r?\n/)) {
+    const m = line.match(re);
+    if (!m) continue;
+    const done = m[1].toLowerCase() === "x";
+    let text = m[2];
+    let priority = null;
+    const pm = text.match(/\(p([1-3])\)/i);
+    if (pm) { priority = Number(pm[1]); text = text.replace(pm[0], " "); }
+    const tags = [];
+    for (const tm of text.matchAll(/(?:^|\s)#([a-z0-9][\w-]*)/gi)) tags.push(tm[1].toLowerCase());
+    text = text.replace(/(?:^|\s)#[a-z0-9][\w-]*/gi, " ").replace(/\s+/g, " ").trim();
+    if (text) tasks.push({ text, done, priority, tags, source: "backlog" });
+  }
+  return tasks;
+}
+
+// Turn Phase-1 standards gaps into open tasks, so the queue is populated even
+// before anyone hand-writes a TASKS.md. Self-clearing: when the gap closes, the
+// next generation run simply stops emitting the task. Skipped for archived repos
+// and where standards couldn't be read (accessLimited).
+function deriveStandardsTasks(out) {
+  const s = out.standards;
+  if (out.archived || !s) return [];
+  const t = [];
+  if (s.readme === false)
+    t.push({ text: "Add a README", done: false, priority: 3, tags: ["docs"], source: "standards" });
+  if (s.license === false)
+    t.push({ text: "Add a LICENSE", done: false, priority: 3, tags: ["standards"], source: "standards" });
+  if (s.ci === false) {
+    if (out.isDslCorpus)
+      t.push({ text: "Wire CI: coverageAudit + validators gate", done: false, priority: 1, tags: ["ci", "coverage"], source: "standards" });
+    else
+      t.push({ text: "Add a CI workflow", done: false, priority: 2, tags: ["ci"], source: "standards" });
+  }
+  return t;
 }
 
 // ---- main -----------------------------------------------------------------
@@ -218,6 +279,12 @@ async function main() {
         license: !!out.license,
         ci,
       };
+
+      // Hand-authored backlog (TASKS.md) + auto-derived standards-debt tasks.
+      const backlog = await ghRawSoft(`repos/${owner}/${slug}/contents/TASKS.md`);
+      const authored = backlog.ok && backlog.value ? parseTasks(backlog.value) : [];
+      out.hasBacklog = !!(backlog.ok && backlog.value);
+      out.tasks = [...authored, ...deriveStandardsTasks(out)];
     } catch (err) {
       errors.push({ slug, error: String(err.stderr || err.message || err).slice(0, 300) });
     }
@@ -261,6 +328,9 @@ async function main() {
       org: orgList.length,
       untracked: untracked.length,
       accessLimited: Object.values(repos).filter((r) => r.accessLimited).length,
+      openTasks: Object.values(repos).reduce(
+        (n, r) => n + ((r.tasks || []).filter((t) => !t.done).length), 0),
+      backlogRepos: Object.values(repos).filter((r) => r.hasBacklog).length,
       errors: errors.length,
     },
     repos,
@@ -279,7 +349,13 @@ async function main() {
   }
 }
 
-main().catch((err) => {
-  console.error("gen.mjs failed:", err);
-  process.exit(1);
-});
+// Pure helpers are exported for unit testing; main() runs only when this file
+// is executed directly (not when imported).
+export { parseTasks, deriveStandardsTasks, freshness, isDslCorpus };
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  main().catch((err) => {
+    console.error("gen.mjs failed:", err);
+    process.exit(1);
+  });
+}
