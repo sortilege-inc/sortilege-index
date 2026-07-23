@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-23T20:40:10.795Z",
+  "generatedAt": "2026-07-23T20:53:05.855Z",
   "owner": "sortilege-inc",
   "counts": {
-    "tracked": 61,
+    "tracked": 63,
     "org": 70,
-    "untracked": 9,
+    "untracked": 7,
     "accessLimited": 0,
-    "openTasks": 151,
+    "openTasks": 156,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -183,6 +183,57 @@
       },
       "hasBacklog": false,
       "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
+    "arcs-2026": {
+      "slug": "arcs-2026",
+      "description": "Arcs Narrative Playthrough",
+      "pushedAt": "2026-07-18T20:27:33Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
         {
           "text": "Add a LICENSE",
           "done": false,
@@ -1175,7 +1226,7 @@
     "titterpig-rules-lawyer": {
       "slug": "titterpig-rules-lawyer",
       "description": "Titterpig Rules Lawyer",
-      "pushedAt": "2026-07-23T19:22:09Z",
+      "pushedAt": "2026-07-23T20:48:05Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1217,7 +1268,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-07-23T20:39:46Z",
+      "pushedAt": "2026-07-23T20:40:35Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1229,11 +1280,11 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": null,
-        "created_at": "2026-07-23T20:40:03Z",
+        "conclusion": "success",
+        "created_at": "2026-07-23T20:40:37Z",
         "head_branch": "main",
-        "name": "Refresh live state",
-        "status": "in_progress"
+        "name": "pages build and deployment",
+        "status": "completed"
       },
       "standards": {
         "readme": false,
@@ -2781,6 +2832,54 @@
         }
       ]
     },
+    "a-gibbous-moon": {
+      "slug": "a-gibbous-moon",
+      "description": "A Gibbous Moon Over Constantinople",
+      "pushedAt": "2026-07-23T16:03:16Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-07-23T16:03:18Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
     "war-of-princes": {
       "slug": "war-of-princes",
       "description": "Vampire: the Dark Ages - War of Princes",
@@ -2927,24 +3026,6 @@
     }
   },
   "untracked": [
-    {
-      "slug": "a-gibbous-moon",
-      "description": "A Gibbous Moon Over Constantinople",
-      "pushedAt": "2026-07-23T16:03:16Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "arcs-2026",
-      "description": "Arcs Narrative Playthrough",
-      "pushedAt": "2026-07-18T20:27:33Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
     {
       "slug": "expanse-ships-pack",
       "description": "Foundry Compendium: Expanse Ship Pack",

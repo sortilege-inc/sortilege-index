@@ -14,7 +14,8 @@
             { "name": "Bellum Arborem", "desc": "Companion web app for the Root roleplaying game.", "repo": "bellum-arborem", "web": "https://sortilege-inc.github.io/bellum-arborem/", "status": "Active" },
             { "name": "Banes of Beleriand", "desc": "", "repo": "banes-of-beleriand" },
             { "name": "Collateral", "desc": "", "repo": "collateral" },
-            { "name": "Istya", "desc": "The One Ring 2e — company, character & adversary app.", "repo": "istya" }
+            { "name": "Istya", "desc": "The One Ring 2e — company, character & adversary app.", "repo": "istya" },
+            { "name": "Arcs 2026", "desc": "Arcs narrative playthrough.", "repo": "arcs-2026" }
           ]
         },
         {
@@ -140,7 +141,8 @@
           "blurb": "",
           "projects": [
             { "name": "Sjórseiðr", "desc": "A startplaying.games Ars Magica Campaign", "repo": "sjorseidr", "web": "https://sortilege-inc.github.io/sjorseidr/", "status": "In Progress" },
-            { "name": "Caul", "desc": "A Wyldwolf Daggerheart Campaign set in the Age of Umbra", "repo": "caul", "web": "https://caul.sortilege.online/", "status": "In Progress" }
+            { "name": "Caul", "desc": "A Wyldwolf Daggerheart Campaign set in the Age of Umbra", "repo": "caul", "web": "https://caul.sortilege.online/", "status": "In Progress" },
+            { "name": "A Gibbous Moon Over Constantinople", "desc": "A D&D 5e campaign in the City of Crescent — Ottoman Constantinople.", "repo": "a-gibbous-moon", "web": "https://ottoman.sortilege.online/", "status": "In Progress" }
           ]
         }
       ]
