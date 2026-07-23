@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-07-23T19:06:46.011Z",
+  "generatedAt": "2026-07-23T19:28:48.974Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 61,
     "org": 70,
     "untracked": 9,
-    "errors": 39
+    "accessLimited": 0,
+    "errors": 0
   },
   "repos": {
     "bellum-arborem": {
@@ -111,7 +112,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
@@ -126,7 +133,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
@@ -141,7 +154,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "sublime-ttrpg-syntax": {
       "slug": "sublime-ttrpg-syntax",
@@ -177,7 +196,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-root": {
       "slug": "titterpig-dsl-root",
@@ -192,7 +217,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-daggerheart": {
       "slug": "titterpig-dsl-daggerheart",
@@ -207,7 +238,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-dnd5e": {
       "slug": "titterpig-dsl-dnd5e",
@@ -222,7 +259,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
@@ -237,7 +280,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
@@ -252,7 +301,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-draw-steel": {
       "slug": "titterpig-dsl-draw-steel",
@@ -267,7 +322,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
@@ -282,7 +343,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
@@ -297,7 +364,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-invisiblesun": {
       "slug": "titterpig-dsl-invisiblesun",
@@ -312,7 +385,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-expanse": {
       "slug": "titterpig-dsl-expanse",
@@ -327,7 +406,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-dnd5.5e": {
       "slug": "titterpig-dsl-dnd5.5e",
@@ -342,7 +427,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-dnd5e-3rdparty": {
       "slug": "titterpig-dsl-dnd5e-3rdparty",
@@ -357,7 +448,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dsl-l5r5e-3rdparty": {
       "slug": "titterpig-dsl-l5r5e-3rdparty",
@@ -372,12 +469,18 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": true,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-rules-lawyer": {
       "slug": "titterpig-rules-lawyer",
       "description": "Titterpig Rules Lawyer",
-      "pushedAt": "2026-07-23T18:29:25Z",
+      "pushedAt": "2026-07-23T19:22:09Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -387,12 +490,18 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-07-23T18:35:13Z",
+      "pushedAt": "2026-07-23T19:26:39Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -405,7 +514,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-07-23T19:06:39Z",
+        "created_at": "2026-07-23T19:28:41Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -429,7 +538,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "titterpig-dashboard-web": {
       "slug": "titterpig-dashboard-web",
@@ -444,7 +559,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "marginalia": {
       "slug": "marginalia",
@@ -459,7 +580,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "intertwingler-l5r-wiki": {
       "slug": "intertwingler-l5r-wiki",
@@ -474,7 +601,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "un-coup-de-des": {
       "slug": "un-coup-de-des",
@@ -489,7 +622,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "dossier-studio": {
       "slug": "dossier-studio",
@@ -504,7 +643,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "dossiers": {
       "slug": "dossiers",
@@ -546,7 +691,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "spiders-game": {
       "slug": "spiders-game",
@@ -561,7 +712,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 2
+      "openItems": 2,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "makers-matrix": {
       "slug": "makers-matrix",
@@ -618,7 +775,13 @@
       "hasIssues": true,
       "freshness": "fresh",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "tcgdb": {
       "slug": "tcgdb",
@@ -660,7 +823,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 7
+      "openItems": 7,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": true,
+        "ci": false
+      }
     },
     "gotd": {
       "slug": "gotd",
@@ -696,7 +865,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 1
+      "openItems": 1,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "hope-fear-mythic-greece": {
       "slug": "hope-fear-mythic-greece",
@@ -711,7 +886,13 @@
       "hasIssues": true,
       "freshness": "active",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "sortilege-fvtt-compendia-l5r5e": {
       "slug": "sortilege-fvtt-compendia-l5r5e",
@@ -726,7 +907,13 @@
       "hasIssues": true,
       "freshness": "active",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "sortilege-fvtt-compendia-marvel-multiverse": {
       "slug": "sortilege-fvtt-compendia-marvel-multiverse",
@@ -741,7 +928,13 @@
       "hasIssues": true,
       "freshness": "active",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "l5r5e-compendia-sortilege": {
       "slug": "l5r5e-compendia-sortilege",
@@ -756,7 +949,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "sortilege-fvtt-compendia-vtm5e": {
       "slug": "sortilege-fvtt-compendia-vtm5e",
@@ -771,7 +970,13 @@
       "hasIssues": true,
       "freshness": "active",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "hegemonyccg": {
       "slug": "hegemonyccg",
@@ -786,7 +991,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "networked-futures": {
       "slug": "networked-futures",
@@ -801,7 +1012,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "ragtime": {
       "slug": "ragtime",
@@ -816,7 +1033,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "react-hexgrid": {
       "slug": "react-hexgrid",
@@ -873,7 +1096,13 @@
       "hasIssues": true,
       "freshness": "stale",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      }
     },
     "9e": {
       "slug": "9e",
@@ -972,7 +1201,13 @@
       "hasIssues": true,
       "freshness": "active",
       "isDslCorpus": false,
-      "openItems": 0
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      }
     },
     "sjorseidr": {
       "slug": "sjorseidr",
@@ -1193,162 +1428,5 @@
       "isDslCorpus": false
     }
   ],
-  "errors": [
-    {
-      "slug": "titterpig-mastra",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-synthesist",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-callofcthulhu7e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-root",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-daggerheart",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-dnd5e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-arm5e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-vtm5e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-draw-steel",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-l5r5e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-tor2e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-invisiblesun",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-expanse",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-dnd5.5e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-dnd5e-3rdparty",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dsl-l5r5e-3rdparty",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-rules-lawyer",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-engine",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "titterpig-dashboard-web",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "marginalia",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "intertwingler-l5r-wiki",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "un-coup-de-des",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "dossier-studio",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "quorum",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "spiders-game",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "tcggg",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "snafu-db",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "gods-of-the-dead",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "hope-fear-mythic-greece",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "sortilege-fvtt-compendia-l5r5e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "sortilege-fvtt-compendia-marvel-multiverse",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "l5r5e-compendia-sortilege",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "sortilege-fvtt-compendia-vtm5e",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "hegemonyccg",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "ragtime",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "networked-futures",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "situation-normal",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    },
-    {
-      "slug": "sortilege.online",
-      "error": "gh: Resource not accessible by personal access token (HTTP 403)\n"
-    }
-  ]
+  "errors": []
 }
