@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T20:37:36.866Z",
+  "generatedAt": "2026-07-23T20:40:10.795Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 61,
@@ -1217,7 +1217,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-07-23T19:54:35Z",
+      "pushedAt": "2026-07-23T20:39:46Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1229,11 +1229,11 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-07-23T19:54:36Z",
+        "conclusion": null,
+        "created_at": "2026-07-23T20:40:03Z",
         "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
+        "name": "Refresh live state",
+        "status": "in_progress"
       },
       "standards": {
         "readme": false,
@@ -1281,33 +1281,30 @@
           "source": "backlog"
         },
         {
-          "text": "Author a shared reusable workflow: coverageAudit + validators gate",
+          "text": "Add a LICENSE across the public repos",
           "done": false,
-          "priority": 1,
+          "priority": 3,
           "tags": [
-            "phase3",
+            "standards"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Optional later: structural-validation CI for DSL corpora (validator over `.ttrpg` only — honest and source-free; NOT coverage)",
+          "done": false,
+          "priority": null,
+          "tags": [
             "ci"
           ],
           "source": "backlog"
         },
         {
-          "text": "Adopt the reusable workflow across the 14 DSL corpora",
+          "text": "Human validation program: check each corpus **sentence-by-sentence against its source PDF** — every statblock, spell, table, etc. Build alignment + resumable-ledger tooling WHEN this starts (per-corpus, beginning with the most-used corpus); the judgment stays human, no automated pass may mark it green. Not started.",
           "done": false,
           "priority": 2,
           "tags": [
-            "phase3",
-            "ci",
-            "coverage"
-          ],
-          "source": "backlog"
-        },
-        {
-          "text": "Add a LICENSE across the public repos",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "phase3",
-            "standards"
+            "validation",
+            "deferred"
           ],
           "source": "backlog"
         },
