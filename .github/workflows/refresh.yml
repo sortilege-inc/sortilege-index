@@ -9,7 +9,10 @@ name: Refresh live state
 # org) secret ORG_READ_TOKEN:
 #   Fine-grained PAT → Resource owner: sortilege-inc, Repository access: all
 #   repositories, Permissions: Contents (read-only), Metadata (read-only).
-# Without it the job still runs but private repos come back as errors.
+#   (Actions:read is optional — it only enriches the CI-status column.)
+# The org must also ALLOW fine-grained tokens (Org → Settings → Personal access
+# tokens); otherwise the token lists repos but 403s reading into private ones,
+# which the generator reports as accessLimited rather than a hard error.
 
 on:
   schedule:
@@ -29,10 +32,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: "22"
 

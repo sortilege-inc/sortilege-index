@@ -61,19 +61,6 @@ async function gh(args) {
   return stdout.trim() ? JSON.parse(stdout) : null;
 }
 
-// `gh api <path>`; resolves to a "present" boolean, treating 404 as absent
-// (not an error) and re-throwing anything else.
-async function ghApiExists(path) {
-  try {
-    await runGh(["api", path, "--silent"], { maxBuffer: 8 * 1024 * 1024 });
-    return true;
-  } catch (err) {
-    const msg = String(err.stderr || err.message || "");
-    if (/HTTP 404|Not Found/i.test(msg)) return false;
-    throw err;
-  }
-}
-
 // `gh api <path> --jq <expr>`, tolerating 404 -> null.
 async function ghApiJq(path, jq) {
   try {
@@ -84,6 +71,42 @@ async function ghApiJq(path, jq) {
   } catch (err) {
     const msg = String(err.stderr || err.message || "");
     if (/HTTP 404|Not Found/i.test(msg)) return null;
+    throw err;
+  }
+}
+
+function is403(msg) {
+  return /HTTP 403|not accessible|Forbidden/i.test(msg);
+}
+
+// Soft JSON fetch: distinguishes "absent" (404 -> value:null) from "forbidden"
+// (403 -> forbidden:true) so a token missing one permission (e.g. Actions:read)
+// degrades that one field instead of failing the whole repo. Rethrows anything
+// else. Returns { ok, value } | { ok:false, forbidden:true, msg }.
+async function ghApiJqSoft(path, jq) {
+  try {
+    const { stdout } = await runGh(["api", path, "--jq", jq], { maxBuffer: 16 * 1024 * 1024 });
+    const t = stdout.trim();
+    let value = null;
+    if (t) { try { value = JSON.parse(t); } catch { value = t; } }
+    return { ok: true, value };
+  } catch (err) {
+    const msg = String(err.stderr || err.message || "");
+    if (/HTTP 404|Not Found/i.test(msg)) return { ok: true, value: null };
+    if (is403(msg)) return { ok: false, forbidden: true, msg };
+    throw err;
+  }
+}
+
+// Soft existence check: true (present) / false (404) / null (forbidden-unknown).
+async function ghExistsSoft(path) {
+  try {
+    await runGh(["api", path, "--silent"], { maxBuffer: 8 * 1024 * 1024 });
+    return true;
+  } catch (err) {
+    const msg = String(err.stderr || err.message || "");
+    if (/HTTP 404|Not Found/i.test(msg)) return false;
+    if (is403(msg)) return null;
     throw err;
   }
 }
@@ -166,20 +189,29 @@ async function main() {
     out.isDslCorpus = isDslCorpus(slug);
 
     try {
-      // open issues+PRs (single number; PRs count as issues in this field)
-      out.openItems = await ghApiJq(`repos/${owner}/${slug}`, ".open_issues_count");
+      // Repo detail (open issues+PRs) needs Metadata:read and gates the rest.
+      // A 403 here means the token can't see into this repo at all — flag it
+      // once, keep the org-list-derived fields (pushedAt/freshness), and stop.
+      const meta = await ghApiJqSoft(`repos/${owner}/${slug}`, ".open_issues_count");
+      if (meta.forbidden) {
+        out.accessLimited = true;
+        return out;
+      }
+      out.openItems = meta.value;
 
-      // latest Actions run
-      const run = await ghApiJq(
+      // Latest Actions run needs Actions:read; a 403 just means "no CI
+      // visibility" (common — the read-only token may omit Actions), not a
+      // failure. Treat it as unknown rather than erroring the whole repo.
+      const run = await ghApiJqSoft(
         `repos/${owner}/${slug}/actions/runs?per_page=1`,
         "if (.workflow_runs | length) > 0 then .workflow_runs[0] | {name,status,conclusion,created_at,head_branch} else null end",
       );
-      out.lastRun = run || null;
+      out.lastRun = run.forbidden ? null : (run.value || null);
 
-      // standards checks
+      // Standards checks (Contents:read). null = couldn't verify (forbidden).
       const [readme, ci] = await Promise.all([
-        ghApiExists(`repos/${owner}/${slug}/readme`),
-        ghApiExists(`repos/${owner}/${slug}/contents/.github/workflows`),
+        ghExistsSoft(`repos/${owner}/${slug}/readme`),
+        ghExistsSoft(`repos/${owner}/${slug}/contents/.github/workflows`),
       ]);
       out.standards = {
         readme,
@@ -228,6 +260,7 @@ async function main() {
       tracked: tracked.size,
       org: orgList.length,
       untracked: untracked.length,
+      accessLimited: Object.values(repos).filter((r) => r.accessLimited).length,
       errors: errors.length,
     },
     repos,

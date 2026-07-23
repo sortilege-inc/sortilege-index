@@ -209,6 +209,7 @@
     .state .ci.ok   { color: var(--teal); }
     .state .ci.fail { color: var(--coral); }
     .state .ci.run  { color: var(--orange); }
+    .state .limited { font-size: 0.78rem; opacity: 0.7; cursor: help; }
 
     /* Standards checklist: R eadme · L icense · C I workflow. Filled = present. */
     .pips { display: inline-flex; gap: 5px; }
@@ -220,6 +221,7 @@
     }
     .pip.on { color: var(--panel); background: var(--forest); border-color: var(--forest); }
     .pip.off { opacity: 0.5; }
+    .pip.unk { opacity: 0.5; border-style: dashed; }
 
     /* ---------- Untracked repositories (drift surfaced by the generator) ---------- */
     .untracked { margin-top: 2.4rem; }
@@ -366,14 +368,21 @@
       if (!st) return `<span class="state">—</span>`;
       const f = FRESH[st.freshness] || FRESH.unknown;
       const ci = ciCell(st.lastRun);
-      return `<span class="state" style="--state:${f.color}"><span class="dot"></span>${esc(f.label)}${ci ? " " + ci : ""}</span>`;
+      const limited = st.accessLimited
+        ? ` <span class="limited" title="Limited token access — some state could not be read">🔒</span>`
+        : "";
+      return `<span class="state" style="--state:${f.color}"><span class="dot"></span>${esc(f.label)}${ci ? " " + ci : ""}${limited}</span>`;
     }
 
     function standardsCell(st) {
       if (!st || !st.standards) return `<span class="pips"></span>`;
       const s = st.standards;
-      const pip = (on, letter, name) =>
-        `<span class="pip ${on ? "on" : "off"}" title="${name}: ${on ? "present" : "missing"}">${letter}</span>`;
+      // true = present, false = missing, null = couldn't verify (unknown).
+      const pip = (v, letter, name) => {
+        const cls = v == null ? "unk" : v ? "on" : "off";
+        const state = v == null ? "unknown" : v ? "present" : "missing";
+        return `<span class="pip ${cls}" title="${name}: ${state}">${letter}</span>`;
+      };
       return `<span class="pips">${pip(s.readme, "R", "README")}${pip(s.license, "L", "License")}${pip(s.ci, "C", "CI workflow")}</span>`;
     }
 
