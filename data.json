@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-23T19:51:35.928Z",
+  "generatedAt": "2026-07-23T19:54:14.394Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 61,
     "org": 70,
     "untracked": 9,
     "accessLimited": 0,
-    "openTasks": 144,
-    "backlogRepos": 1,
+    "openTasks": 151,
+    "backlogRepos": 2,
     "errors": 0
   },
   "repos": {
@@ -1231,7 +1231,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-07-23T19:29:10Z",
+      "pushedAt": "2026-07-23T19:53:51Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1243,19 +1243,107 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-07-23T19:29:12Z",
+        "conclusion": null,
+        "created_at": "2026-07-23T19:54:07Z",
         "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
+        "name": "Refresh live state",
+        "status": "in_progress"
       },
       "standards": {
         "readme": false,
         "license": false,
         "ci": true
       },
-      "hasBacklog": false,
+      "hasBacklog": true,
       "tasks": [
+        {
+          "text": "Define the TASKS.md convention and dogfood it here",
+          "done": true,
+          "priority": null,
+          "tags": [
+            "phase2"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Parse TASKS.md + derive standards-debt tasks in gen.mjs",
+          "done": true,
+          "priority": null,
+          "tags": [
+            "phase2"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Roll out TASKS.md to the active repos so the queue reflects real work",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "phase2",
+            "rollout"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Document the convention in the repo README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "phase2",
+            "docs"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Author a shared reusable workflow: coverageAudit + validators gate",
+          "done": false,
+          "priority": 1,
+          "tags": [
+            "phase3",
+            "ci"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Adopt the reusable workflow across the 14 DSL corpora",
+          "done": false,
+          "priority": 2,
+          "tags": [
+            "phase3",
+            "ci",
+            "coverage"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Add a LICENSE across the public repos",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "phase3",
+            "standards"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Consider a \"stale backlog\" signal when TASKS.md itself goes untouched",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "polish"
+          ],
+          "source": "backlog"
+        },
+        {
+          "text": "Let the Tasks tab deep-link via URL hash (e.g. ?repo=caul)",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "tasks",
+            "polish"
+          ],
+          "source": "backlog"
+        },
         {
           "text": "Add a README",
           "done": false,
