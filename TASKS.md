@@ -30,5 +30,6 @@ parsed out; everything else here is just normal Markdown that renders on GitHub.
 
 ## Dashboard polish
 
+- [ ] (p3) Correct the arm5e catalog badge — currently `0.4-compliant`, but titterpig-dsl-arm5e is only partially converted (armdef spells only; no arm5e/ 5e-edition namespace, 0.1–0.3 still present). Drop to In Progress once confirmed. #dashboard #accuracy
 - [ ] (p3) Consider a "stale backlog" signal when TASKS.md itself goes untouched #polish
 - [ ] (p3) Let the Tasks tab deep-link via URL hash (e.g. #tasks?repo=caul) #polish

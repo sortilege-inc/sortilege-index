@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-23T22:10:20.123Z",
+  "generatedAt": "2026-07-23T22:52:08.091Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 63,
     "org": 70,
     "untracked": 7,
     "accessLimited": 0,
-    "openTasks": 109,
+    "openTasks": 103,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-07-23T21:53:45Z",
+      "pushedAt": "2026-07-23T22:48:22Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -351,15 +351,15 @@
           "source": "backlog"
         },
         {
-          "text": "**`.ttrpg → .json` transform + machine (JSON) contract.** Per-system output schemas and the",
-          "done": false,
+          "text": "**`.ttrpg → .json` transform — DONE 2026-07-23 (largely superseded).** `titterpig-synthesist`",
+          "done": true,
           "priority": null,
           "tags": [],
           "source": "backlog"
         },
         {
-          "text": "**Downstream \"sophisticated rules validation\"** (chargen legality, rules consistency) — built",
-          "done": false,
+          "text": "**Downstream \"sophisticated rules validation\" — DONE 2026-07-23 (moved to consumers, as D7",
+          "done": true,
           "priority": null,
           "tags": [],
           "source": "backlog"
@@ -372,7 +372,7 @@
           "source": "backlog"
         },
         {
-          "text": "**Re-convert remaining systems to v0.4:** **arm5e** remains; daggerheart is an empty stub.",
+          "text": "**Re-convert remaining systems to v0.4:** **arm5e** remains (the only one left).",
           "done": false,
           "priority": null,
           "tags": [],
@@ -400,29 +400,29 @@
           "source": "backlog"
         },
         {
-          "text": "**daggerheart:** empty stub. When started, its **beta versions are edition-like namespaces**",
-          "done": false,
+          "text": "**daggerheart — DONE (converted to 0.4; 2026-07-23 audit).** ~~empty stub~~ (Beta-vs-final",
+          "done": true,
           "priority": null,
           "tags": [],
           "source": "backlog"
         },
         {
-          "text": "**vtm5e:** `vault-black-hand` (fan/3rd-party source) now has hash IDs distinct from official",
-          "done": false,
+          "text": "**vtm5e — RESOLVED 2026-07-23:** a D8 consumption/precedence decision, not conversion work.",
+          "done": true,
           "priority": null,
           "tags": [],
           "source": "backlog"
         },
         {
-          "text": "**Update `sublime-ttrpg-syntax` highlighter to DSL v0.4** (after tor2e).",
-          "done": false,
+          "text": "**Update `sublime-ttrpg-syntax` highlighter to DSL v0.4** — DONE 2026-07-23: added `TEMPLATE`,",
+          "done": true,
           "priority": null,
           "tags": [],
           "source": "backlog"
         },
         {
-          "text": "**tor2e `^\"RevelationEpisode\"` undefined — core omission.** The 10 revelation-episode `.arc`",
-          "done": false,
+          "text": "**tor2e `^\"RevelationEpisode\"` — RESOLVED 2026-07-23:** now defined in",
+          "done": true,
           "priority": null,
           "tags": [],
           "source": "backlog"
@@ -523,7 +523,7 @@
     "sublime-ttrpg-syntax": {
       "slug": "sublime-ttrpg-syntax",
       "description": "Titterpig Syntax Highlighting for Sublime Text Editor",
-      "pushedAt": "2026-07-12T18:27:40Z",
+      "pushedAt": "2026-07-23T22:44:55Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -804,7 +804,7 @@
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-23T22:01:27Z",
+      "pushedAt": "2026-07-23T22:43:01Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1121,12 +1121,12 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-07-23T20:53:50Z",
+      "pushedAt": "2026-07-23T22:16:08Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": null,
+      "license": "other",
       "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
@@ -1135,7 +1135,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-23T20:53:51Z",
+        "created_at": "2026-07-23T22:16:09Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -1280,7 +1280,7 @@
     "titterpig-dashboard-web": {
       "slug": "titterpig-dashboard-web",
       "description": "Titterpig Dashboard Web",
-      "pushedAt": "2026-07-23T21:48:55Z",
+      "pushedAt": "2026-07-23T22:20:21Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2507,7 +2507,7 @@
     "a-gibbous-moon": {
       "slug": "a-gibbous-moon",
       "description": "A Gibbous Moon Over Constantinople",
-      "pushedAt": "2026-07-23T22:00:56Z",
+      "pushedAt": "2026-07-23T22:52:05Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2520,11 +2520,11 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-07-23T22:00:58Z",
+        "conclusion": null,
+        "created_at": "2026-07-23T22:52:07Z",
         "head_branch": "main",
         "name": "pages build and deployment",
-        "status": "completed"
+        "status": "in_progress"
       },
       "standards": {
         "readme": true,
