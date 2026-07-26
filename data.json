@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-25T08:57:41.522Z",
+  "generatedAt": "2026-07-26T09:09:30.552Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 63,
     "org": 70,
     "untracked": 7,
     "accessLimited": 0,
-    "openTasks": 104,
+    "openTasks": 105,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-07-23T22:48:22Z",
+      "pushedAt": "2026-07-25T16:18:22Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -365,6 +365,27 @@
           "source": "backlog"
         },
         {
+          "text": "**Cross-edition conversion construct — DONE 2026-07-25.** Spec **§21 `.bridge`**: the one",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Coverage gate could PASS vacuously — FIXED 2026-07-25.** A manifest whose source path had",
+          "done": true,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
+          "text": "**Bridge consumer.** §21 describes what a bridge makes possible — auditing an origin-edition",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
+        {
           "text": "**Grammar/validator unification.** `ttrpg.peg` is a recognizer; the v0.4 `ttrpg_validator.py`",
           "done": false,
           "priority": null,
@@ -455,7 +476,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-07-23T21:50:48Z",
+      "pushedAt": "2026-07-25T19:24:57Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -489,7 +510,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-07-23T21:48:50Z",
+      "pushedAt": "2026-07-25T19:04:48Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -659,7 +680,7 @@
     "titterpig-dsl-dnd5e": {
       "slug": "titterpig-dsl-dnd5e",
       "description": "Titterpig Dungeons & Dragons 5th Edition",
-      "pushedAt": "2026-07-23T22:01:21Z",
+      "pushedAt": "2026-07-25T16:17:26Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -693,7 +714,7 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-23T22:01:22Z",
+      "pushedAt": "2026-07-25T19:44:24Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -736,7 +757,7 @@
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
       "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-23T22:01:24Z",
+      "pushedAt": "2026-07-25T19:04:56Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -770,7 +791,7 @@
     "titterpig-dsl-draw-steel": {
       "slug": "titterpig-dsl-draw-steel",
       "description": "Draw Steel Titterpig DSL Implementation",
-      "pushedAt": "2026-07-23T22:01:25Z",
+      "pushedAt": "2026-07-25T19:05:04Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -804,7 +825,7 @@
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-23T22:43:01Z",
+      "pushedAt": "2026-07-25T19:09:18Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -838,7 +859,7 @@
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
       "description": "The One Ring 2e Titterpig",
-      "pushedAt": "2026-07-23T22:01:28Z",
+      "pushedAt": "2026-07-25T19:05:00Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -958,7 +979,7 @@
     "titterpig-dsl-dnd5.5e": {
       "slug": "titterpig-dsl-dnd5.5e",
       "description": "Titterpig Dungeons & Dragons 5.5e",
-      "pushedAt": "2026-07-23T21:53:43Z",
+      "pushedAt": "2026-07-25T16:17:30Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1121,7 +1142,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-07-24T09:18:50Z",
+      "pushedAt": "2026-07-25T08:58:06Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1135,7 +1156,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-07-25T08:57:32Z",
+        "created_at": "2026-07-26T09:09:22Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2437,7 +2458,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-07-23T22:00:53Z",
+      "pushedAt": "2026-07-25T23:56:30Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2451,7 +2472,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-23T22:00:55Z",
+        "created_at": "2026-07-25T23:56:31Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
