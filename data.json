@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-07T08:10:07.214Z",
+  "generatedAt": "2026-08-07T21:04:28.403Z",
   "owner": "sortilege-inc",
   "counts": {
-    "tracked": 63,
-    "org": 71,
-    "untracked": 8,
+    "tracked": 67,
+    "org": 74,
+    "untracked": 7,
     "accessLimited": 0,
-    "openTasks": 105,
+    "openTasks": 114,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -1142,7 +1142,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-08-06T09:37:24Z",
+      "pushedAt": "2026-08-07T08:10:35Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1155,11 +1155,11 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": null,
-        "created_at": "2026-08-07T08:10:01Z",
+        "conclusion": "success",
+        "created_at": "2026-08-07T08:10:36Z",
         "head_branch": "main",
-        "name": "Refresh live state",
-        "status": "in_progress"
+        "name": "pages build and deployment",
+        "status": "completed"
       },
       "standards": {
         "readme": false,
@@ -1384,6 +1384,49 @@
       "visibility": "private",
       "defaultBranch": "main",
       "language": null,
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
+    "session-history": {
+      "slug": "session-history",
+      "description": "TTRPG Session History",
+      "pushedAt": "2026-08-07T20:32:27Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "JavaScript",
       "license": null,
       "declaredLicense": null,
       "topics": [],
@@ -2140,6 +2183,49 @@
         }
       ]
     },
+    "mastra-and-commander": {
+      "slug": "mastra-and-commander",
+      "description": "Mastra and Commander",
+      "pushedAt": "2026-08-03T05:07:50Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "main",
+      "language": "JavaScript",
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
     "ragtime": {
       "slug": "ragtime",
       "description": "RAG Setup",
@@ -2458,7 +2544,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-08-07T04:45:13Z",
+      "pushedAt": "2026-08-07T21:00:46Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2472,7 +2558,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-07T04:45:14Z",
+        "created_at": "2026-08-07T21:00:47Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2498,7 +2584,7 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-08-06T22:59:10Z",
+      "pushedAt": "2026-08-07T20:49:28Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2512,7 +2598,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-06T22:59:11Z",
+        "created_at": "2026-08-07T20:49:30Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2575,10 +2661,59 @@
         }
       ]
     },
+    "portents-and-fortunes": {
+      "slug": "portents-and-fortunes",
+      "description": "Portents & Fortunes",
+      "pushedAt": "2026-08-07T21:03:25Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-08-07T21:03:27Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
     "war-of-princes": {
       "slug": "war-of-princes",
       "description": "Vampire: the Dark Ages - War of Princes",
-      "pushedAt": "2026-08-01T13:13:19Z",
+      "pushedAt": "2026-08-07T21:00:54Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2592,7 +2727,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-01T13:13:20Z",
+        "created_at": "2026-08-07T21:00:56Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2694,18 +2829,61 @@
           "source": "standards"
         }
       ]
+    },
+    "return-to-dolmenwood": {
+      "slug": "return-to-dolmenwood",
+      "description": "Return to Dolmenwood",
+      "pushedAt": "2026-08-07T17:32:11Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
     }
   },
   "untracked": [
-    {
-      "slug": "mastra-and-commander",
-      "description": "Mastra and Commander",
-      "pushedAt": "2026-08-03T05:07:50Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
     {
       "slug": "expanse-ships-pack",
       "description": "Foundry Compendium: Expanse Ship Pack",

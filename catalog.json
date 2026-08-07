@@ -51,7 +51,8 @@
             { "name": "Titterpig Engine", "desc": "", "repo": "titterpig-engine", "license": "MPL-2.0" },
             { "name": "Titterpig Dashboard (Web)", "desc": "", "repo": "titterpig-dashboard-web", "license": "MPL-2.0" },
             { "name": "Marginalia", "desc": "", "repo": "marginalia", "license": "MPL-2.0" },
-            { "name": "Intertwingler — L5R Wiki", "desc": "", "repo": "intertwingler-l5r-wiki" }
+            { "name": "Intertwingler — L5R Wiki", "desc": "", "repo": "intertwingler-l5r-wiki" },
+            { "name": "Session History", "desc": "TTRPG session history — buildless calendar over the play log.", "repo": "session-history" }
           ]
         },
         {
@@ -106,7 +107,8 @@
           "blurb": "",
           "projects": [
             { "name": "Hegemony CCG", "desc": "", "repo": "hegemonyccg", "license": "Proprietary" },
-            { "name": "Networked Futures", "desc": "", "repo": "networked-futures", "license": "Proprietary" }
+            { "name": "Networked Futures", "desc": "", "repo": "networked-futures", "license": "Proprietary" },
+            { "name": "Mastra and Commander", "desc": "Squib card-generation pipeline on the Lens frame system.", "repo": "mastra-and-commander" }
           ]
         },
         {
@@ -142,7 +144,8 @@
           "projects": [
             { "name": "Sjórseiðr", "desc": "A startplaying.games Ars Magica Campaign", "repo": "sjorseidr", "license": "Proprietary", "web": "https://sortilege-inc.github.io/sjorseidr/", "status": "In Progress" },
             { "name": "Caul", "desc": "A Wyldwolf Daggerheart Campaign set in the Age of Umbra", "repo": "caul", "license": "Proprietary", "web": "https://caul.sortilege.online/", "status": "In Progress" },
-            { "name": "A Gibbous Moon Over Constantinople", "desc": "A D&D 5e campaign in the City of Crescent — Ottoman Constantinople.", "repo": "a-gibbous-moon", "license": "Proprietary", "web": "https://ottoman.sortilege.online/", "status": "In Progress" }
+            { "name": "A Gibbous Moon Over Constantinople", "desc": "A D&D 5e campaign in the City of Crescent — Ottoman Constantinople.", "repo": "a-gibbous-moon", "license": "Proprietary", "web": "https://ottoman.sortilege.online/", "status": "In Progress" },
+            { "name": "Portents & Fortunes", "desc": "A solo L5R 5e campaign — Togashi Norikage, a Dragon Clan monk.", "repo": "portents-and-fortunes", "web": "https://sortilege-inc.github.io/portents-and-fortunes/", "status": "In Progress" }
           ]
         }
       ]
@@ -157,7 +160,8 @@
           "projects": [
             { "name": "War of Princes", "desc": "A Vampire: the Masquerade - Dark Ages Chronicle.", "repo": "war-of-princes", "license": "Proprietary", "web": "https://sortilege-inc.github.io/war-of-princes/", "status": "In Progress" },
             { "name": "Children of Fear", "desc": "A Call of Cthulhu Campaign", "repo": "children-of-fear", "license": "Proprietary", "web": "https://sortilege-inc.github.io/children-of-fear/", "status": "In Progress" },
-            { "name": "Home Is Where We Make Our Fire", "desc": "Celenneth — a solo The One Ring 2e campaign.", "repo": "home-is-where-we-make-our-fire", "license": "Proprietary", "web": "https://celenneth.sortilege.online/", "status": "In Progress" }
+            { "name": "Home Is Where We Make Our Fire", "desc": "Celenneth — a solo The One Ring 2e campaign.", "repo": "home-is-where-we-make-our-fire", "license": "Proprietary", "web": "https://celenneth.sortilege.online/", "status": "In Progress" },
+            { "name": "Return to Dolmenwood", "desc": "A Dolmenwood campaign.", "repo": "return-to-dolmenwood", "status": "In Progress" }
           ]
         }
       ]
