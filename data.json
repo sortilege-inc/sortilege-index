@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T21:04:28.403Z",
+  "generatedAt": "2026-08-08T07:44:16.821Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 67,
@@ -1142,7 +1142,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-08-07T08:10:35Z",
+      "pushedAt": "2026-08-07T21:05:15Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1155,11 +1155,11 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-08-07T08:10:36Z",
+        "conclusion": null,
+        "created_at": "2026-08-08T07:44:07Z",
         "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
+        "name": "Refresh live state",
+        "status": "in_progress"
       },
       "standards": {
         "readme": false,
@@ -1422,7 +1422,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-08-07T20:32:27Z",
+      "pushedAt": "2026-08-08T01:42:07Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2544,7 +2544,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-08-07T21:00:46Z",
+      "pushedAt": "2026-08-08T05:26:16Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2558,7 +2558,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-07T21:00:47Z",
+        "created_at": "2026-08-08T05:26:18Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2664,11 +2664,11 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-08-07T21:03:25Z",
+      "pushedAt": "2026-08-08T00:04:12Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
-      "language": "HTML",
+      "language": "JavaScript",
       "license": null,
       "declaredLicense": null,
       "topics": [],
@@ -2678,7 +2678,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-07T21:03:27Z",
+        "created_at": "2026-08-08T00:04:14Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
