@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-09T07:50:23.194Z",
+  "generatedAt": "2026-08-10T08:24:09.726Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 67,
-    "org": 74,
-    "untracked": 7,
+    "org": 75,
+    "untracked": 8,
     "accessLimited": 0,
     "openTasks": 113,
     "backlogRepos": 2,
@@ -1142,7 +1142,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-08-08T07:44:46Z",
+      "pushedAt": "2026-08-09T07:50:51Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1156,7 +1156,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-08-09T07:50:16Z",
+        "created_at": "2026-08-10T08:23:54Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1422,7 +1422,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-08-08T14:21:39Z",
+      "pushedAt": "2026-08-09T14:21:37Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1754,7 +1754,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -2544,7 +2544,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-08-08T23:30:35Z",
+      "pushedAt": "2026-08-10T03:45:14Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2558,7 +2558,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-08T23:30:36Z",
+        "created_at": "2026-08-10T03:45:15Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2881,6 +2881,15 @@
     }
   },
   "untracked": [
+    {
+      "slug": "titterpig-dsl-7pp",
+      "description": "Seven Part Pact",
+      "pushedAt": "2026-08-09T14:12:44Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
     {
       "slug": "expanse-ships-pack",
       "description": "Foundry Compendium: Expanse Ship Pack",
