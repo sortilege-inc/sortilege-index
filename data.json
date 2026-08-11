@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-10T08:24:09.726Z",
+  "generatedAt": "2026-08-11T08:06:56.657Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 67,
-    "org": 75,
-    "untracked": 8,
+    "org": 76,
+    "untracked": 9,
     "accessLimited": 0,
     "openTasks": 113,
     "backlogRepos": 2,
@@ -1142,7 +1142,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-08-09T07:50:51Z",
+      "pushedAt": "2026-08-10T08:24:42Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1156,7 +1156,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-08-10T08:23:54Z",
+        "created_at": "2026-08-11T08:06:49Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2186,11 +2186,11 @@
     "mastra-and-commander": {
       "slug": "mastra-and-commander",
       "description": "Mastra and Commander",
-      "pushedAt": "2026-08-03T05:07:50Z",
+      "pushedAt": "2026-08-11T05:05:34Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
-      "language": "JavaScript",
+      "language": "Ruby",
       "license": null,
       "declaredLicense": null,
       "topics": [],
@@ -2544,7 +2544,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-08-10T03:45:14Z",
+      "pushedAt": "2026-08-10T16:50:57Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2558,7 +2558,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-10T03:45:15Z",
+        "created_at": "2026-08-10T16:50:58Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2664,11 +2664,11 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-08-08T00:04:12Z",
+      "pushedAt": "2026-08-11T04:02:02Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
-      "language": "JavaScript",
+      "language": "HTML",
       "license": null,
       "declaredLicense": null,
       "topics": [],
@@ -2678,7 +2678,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-08T00:04:14Z",
+        "created_at": "2026-08-11T04:02:04Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2881,6 +2881,15 @@
     }
   },
   "untracked": [
+    {
+      "slug": "mastra-and-commander-server",
+      "description": "Mastra and Commander Server",
+      "pushedAt": "2026-08-11T05:28:39Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
     {
       "slug": "titterpig-dsl-7pp",
       "description": "Seven Part Pact",
