@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-11T08:06:56.657Z",
+  "generatedAt": "2026-08-12T08:12:47.631Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 67,
-    "org": 76,
-    "untracked": 9,
+    "org": 77,
+    "untracked": 10,
     "accessLimited": 0,
-    "openTasks": 113,
+    "openTasks": 112,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -1142,7 +1142,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-08-10T08:24:42Z",
+      "pushedAt": "2026-08-11T08:07:35Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1156,7 +1156,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-08-11T08:06:49Z",
+        "created_at": "2026-08-12T08:12:40Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1388,7 +1388,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -1422,7 +1422,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-08-09T14:21:37Z",
+      "pushedAt": "2026-08-11T23:55:24Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1625,23 +1625,29 @@
     "spiders-game": {
       "slug": "spiders-game",
       "description": "Spider's Game",
-      "pushedAt": "2024-07-10T20:08:06Z",
+      "pushedAt": "2026-08-12T04:46:52Z",
       "archived": false,
-      "visibility": "private",
+      "visibility": "public",
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "stale",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 2,
-      "lastRun": null,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-08-12T04:46:55Z",
+        "head_branch": "main",
+        "name": "Deploy to GitHub Pages",
+        "status": "completed"
+      },
       "standards": {
         "readme": true,
         "license": false,
-        "ci": false
+        "ci": true
       },
       "hasBacklog": false,
       "tasks": [
@@ -1651,15 +1657,6 @@
           "priority": 3,
           "tags": [
             "standards"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a CI workflow",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "ci"
           ],
           "source": "standards"
         }
@@ -2186,7 +2183,7 @@
     "mastra-and-commander": {
       "slug": "mastra-and-commander",
       "description": "Mastra and Commander",
-      "pushedAt": "2026-08-11T05:05:34Z",
+      "pushedAt": "2026-08-11T13:02:18Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2664,11 +2661,11 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-08-11T04:02:02Z",
+      "pushedAt": "2026-08-12T06:05:46Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
-      "language": "HTML",
+      "language": "JavaScript",
       "license": null,
       "declaredLicense": null,
       "topics": [],
@@ -2678,7 +2675,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-11T04:02:04Z",
+        "created_at": "2026-08-12T06:05:47Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2882,11 +2879,20 @@
   },
   "untracked": [
     {
+      "slug": "city-of-winter",
+      "description": "City of Winter",
+      "pushedAt": "2026-08-12T05:35:22Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
       "slug": "mastra-and-commander-server",
       "description": "Mastra and Commander Server",
-      "pushedAt": "2026-08-11T05:28:39Z",
+      "pushedAt": "2026-08-11T14:15:49Z",
       "archived": false,
-      "visibility": "private",
+      "visibility": "public",
       "freshness": "fresh",
       "isDslCorpus": false
     },
