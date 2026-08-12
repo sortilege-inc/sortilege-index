@@ -341,6 +341,7 @@
       <button class="tab" role="tab" id="tab-projects" aria-controls="panel-projects" aria-selected="true">Projects</button>
       <button class="tab" role="tab" id="tab-gm" aria-controls="panel-gm" aria-selected="false" tabindex="-1">GM</button>
       <button class="tab" role="tab" id="tab-player" aria-controls="panel-player" aria-selected="false" tabindex="-1">Player</button>
+      <button class="tab" role="tab" id="tab-solo" aria-controls="panel-solo" aria-selected="false" tabindex="-1">Solo</button>
       <button class="tab" role="tab" id="tab-tasks" aria-controls="panel-tasks" aria-selected="false" tabindex="-1">Tasks</button>
     </nav>
 
@@ -353,6 +354,9 @@
       </div>
       <div class="tabpanel" id="panel-player" role="tabpanel" aria-labelledby="tab-player" hidden>
         <div class="placeholder frame" style="--accent:var(--terracotta)">Player content coming soon.</div>
+      </div>
+      <div class="tabpanel" id="panel-solo" role="tabpanel" aria-labelledby="tab-solo" hidden>
+        <div class="placeholder frame" style="--accent:var(--violet)">Solo content coming soon.</div>
       </div>
       <div class="tabpanel" id="panel-tasks" role="tabpanel" aria-labelledby="tab-tasks" hidden></div>
     </main>
@@ -472,7 +476,8 @@
         const accent = ACCENTS[gi % ACCENTS.length];
         const rows = g.projects.map(p => {
           const st = repos && repos[p.repo];
-          const links = [`<a class="pill gh" href="${esc(ghUrl(owner, p.repo))}" target="_blank" rel="noopener">${GH_ICON} GitHub</a>`];
+          const links = [];
+          if (p.repo) links.push(`<a class="pill gh" href="${esc(ghUrl(owner, p.repo))}" target="_blank" rel="noopener">${GH_ICON} GitHub</a>`);
           if (p.web) links.push(`<a class="pill web" href="${esc(p.web)}" target="_blank" rel="noopener">${WEB_ICON} Website</a>`);
           const updated = isoDate(st && st.pushedAt) || p.updated || "—";
           const desc = p.desc ? `<div class="proj-desc">${esc(p.desc)}</div>` : `<div class="proj-desc empty">no description</div>`;
@@ -541,7 +546,7 @@
       const meta = {};
       let i = 0;
       (catalog.tabs || []).forEach(t => (t.groups || []).forEach(g => (g.projects || []).forEach(p => {
-        if (!meta[p.repo]) meta[p.repo] = { name: p.name, accent: ACCENTS[i++ % ACCENTS.length] };
+        if (p.repo && !meta[p.repo]) meta[p.repo] = { name: p.name, accent: ACCENTS[i++ % ACCENTS.length] };
       })));
       ALL_TASKS = [];
       Object.entries(repos).forEach(([slug, st]) => {
@@ -670,6 +675,8 @@
         "var(--slate)", "Game Master content coming soon.");
       renderTab("panel-player", (byId.player || {}).groups || [], owner, repos,
         "var(--terracotta)", "Player content coming soon.");
+      renderTab("panel-solo", (byId.solo || {}).groups || [], owner, repos,
+        "var(--violet)", "Solo content coming soon.");
 
       buildTaskIndex(catalog, repos);
       renderTasksTab();

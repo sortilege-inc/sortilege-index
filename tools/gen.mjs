@@ -216,6 +216,9 @@ async function main() {
   for (const tab of catalog.tabs) {
     for (const group of tab.groups) {
       for (const p of group.projects) {
+        // Repo-less entries (e.g. client engagements with no repo yet) are
+        // catalog-only: skip them so they don't pollute the org state map.
+        if (!p.repo) continue;
         tracked.set(p.repo, { tab: tab.id, group: group.name, name: p.name, license: p.license || null });
       }
     }

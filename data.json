@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-12T08:12:47.631Z",
+  "generatedAt": "2026-08-12T16:09:02.031Z",
   "owner": "sortilege-inc",
   "counts": {
-    "tracked": 67,
-    "org": 77,
-    "untracked": 10,
+    "tracked": 71,
+    "org": 78,
+    "untracked": 7,
     "accessLimited": 0,
-    "openTasks": 112,
+    "openTasks": 122,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -1105,6 +1105,58 @@
         }
       ]
     },
+    "titterpig-dsl-7pp": {
+      "slug": "titterpig-dsl-7pp",
+      "description": "Seven Part Pact",
+      "pushedAt": "2026-08-09T14:12:44Z",
+      "archived": false,
+      "visibility": "private",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": true,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
     "titterpig-rules-lawyer": {
       "slug": "titterpig-rules-lawyer",
       "description": "Titterpig Rules Lawyer",
@@ -1142,7 +1194,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-08-11T08:07:35Z",
+      "pushedAt": "2026-08-12T08:13:22Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1155,8 +1207,8 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": null,
-        "created_at": "2026-08-12T08:12:40Z",
+        "conclusion": "success",
+        "created_at": "2026-08-12T08:13:23Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2223,6 +2275,46 @@
         }
       ]
     },
+    "mastra-and-commander-server": {
+      "slug": "mastra-and-commander-server",
+      "description": "Mastra and Commander Server",
+      "pushedAt": "2026-08-11T14:15:49Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "TypeScript",
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-08-11T14:15:51Z",
+        "head_branch": "main",
+        "name": "Deploy to GitHub Pages",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": true
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
     "ragtime": {
       "slug": "ragtime",
       "description": "RAG Setup",
@@ -2707,6 +2799,58 @@
         }
       ]
     },
+    "city-of-winter": {
+      "slug": "city-of-winter",
+      "description": "City of Winter",
+      "pushedAt": "2026-08-12T05:35:22Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
     "war-of-princes": {
       "slug": "war-of-princes",
       "description": "Vampire: the Dark Ages - War of Princes",
@@ -2736,6 +2880,107 @@
       },
       "hasBacklog": false,
       "tasks": [
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
+    "return-to-dolmenwood": {
+      "slug": "return-to-dolmenwood",
+      "description": "Return to Dolmenwood",
+      "pushedAt": "2026-08-08T15:03:22Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "main",
+      "language": "HTML",
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-08-08T15:03:23Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
+      "standards": {
+        "readme": true,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
+        }
+      ]
+    },
+    "fragilepeace": {
+      "slug": "fragilepeace",
+      "description": "The Fragile Peace",
+      "pushedAt": "2026-08-12T15:18:43Z",
+      "archived": false,
+      "visibility": "public",
+      "defaultBranch": "",
+      "language": null,
+      "license": null,
+      "declaredLicense": null,
+      "topics": [],
+      "hasIssues": true,
+      "freshness": "fresh",
+      "isDslCorpus": false,
+      "openItems": 0,
+      "lastRun": null,
+      "standards": {
+        "readme": false,
+        "license": false,
+        "ci": false
+      },
+      "hasBacklog": false,
+      "tasks": [
+        {
+          "text": "Add a README",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "docs"
+          ],
+          "source": "standards"
+        },
+        {
+          "text": "Add a LICENSE",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "standards"
+          ],
+          "source": "standards"
+        },
         {
           "text": "Add a CI workflow",
           "done": false,
@@ -2816,55 +3061,6 @@
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a CI workflow",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "ci"
-          ],
-          "source": "standards"
-        }
-      ]
-    },
-    "return-to-dolmenwood": {
-      "slug": "return-to-dolmenwood",
-      "description": "Return to Dolmenwood",
-      "pushedAt": "2026-08-08T15:03:22Z",
-      "archived": false,
-      "visibility": "public",
-      "defaultBranch": "main",
-      "language": "HTML",
-      "license": null,
-      "declaredLicense": null,
-      "topics": [],
-      "hasIssues": true,
-      "freshness": "fresh",
-      "isDslCorpus": false,
-      "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-08-08T15:03:23Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
-      "standards": {
-        "readme": true,
-        "license": false,
-        "ci": false
-      },
-      "hasBacklog": false,
-      "tasks": [
-        {
-          "text": "Add a LICENSE",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "standards"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a CI workflow",
           "done": false,
