@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-12T16:09:02.031Z",
+  "generatedAt": "2026-08-13T08:15:58.478Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
     "org": 78,
     "untracked": 7,
     "accessLimited": 0,
-    "openTasks": 122,
+    "openTasks": 118,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -1108,10 +1108,10 @@
     "titterpig-dsl-7pp": {
       "slug": "titterpig-dsl-7pp",
       "description": "Seven Part Pact",
-      "pushedAt": "2026-08-09T14:12:44Z",
+      "pushedAt": "2026-08-12T18:05:19Z",
       "archived": false,
       "visibility": "private",
-      "defaultBranch": "",
+      "defaultBranch": "main",
       "language": null,
       "license": null,
       "declaredLicense": null,
@@ -1122,21 +1122,12 @@
       "openItems": 0,
       "lastRun": null,
       "standards": {
-        "readme": false,
+        "readme": true,
         "license": false,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a README",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "docs"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a LICENSE",
           "done": false,
@@ -1194,7 +1185,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-08-12T08:13:22Z",
+      "pushedAt": "2026-08-12T16:22:57Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1207,8 +1198,8 @@
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-08-12T08:13:23Z",
+        "conclusion": null,
+        "created_at": "2026-08-13T08:15:51Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1474,7 +1465,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-08-11T23:55:24Z",
+      "pushedAt": "2026-08-13T00:55:38Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2235,7 +2226,7 @@
     "mastra-and-commander": {
       "slug": "mastra-and-commander",
       "description": "Mastra and Commander",
-      "pushedAt": "2026-08-11T13:02:18Z",
+      "pushedAt": "2026-08-13T05:41:16Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2633,7 +2624,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-08-10T16:50:57Z",
+      "pushedAt": "2026-08-13T06:05:22Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2647,7 +2638,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-10T16:50:58Z",
+        "created_at": "2026-08-13T06:05:23Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2673,7 +2664,7 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-08-07T20:49:28Z",
+      "pushedAt": "2026-08-13T03:34:43Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2687,7 +2678,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-07T20:49:30Z",
+        "created_at": "2026-08-13T03:34:45Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2753,7 +2744,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-08-12T06:05:46Z",
+      "pushedAt": "2026-08-12T17:10:35Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2767,7 +2758,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-12T06:05:47Z",
+        "created_at": "2026-08-12T17:10:37Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2802,11 +2793,11 @@
     "city-of-winter": {
       "slug": "city-of-winter",
       "description": "City of Winter",
-      "pushedAt": "2026-08-12T05:35:22Z",
+      "pushedAt": "2026-08-13T01:12:32Z",
       "archived": false,
       "visibility": "public",
-      "defaultBranch": "",
-      "language": null,
+      "defaultBranch": "main",
+      "language": "JavaScript",
       "license": null,
       "declaredLicense": null,
       "topics": [],
@@ -2814,38 +2805,26 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": null,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-08-13T01:12:34Z",
+        "head_branch": "main",
+        "name": "Deploy web/ to GitHub Pages",
+        "status": "completed"
+      },
       "standards": {
-        "readme": false,
+        "readme": true,
         "license": false,
-        "ci": false
+        "ci": true
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a README",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "docs"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a LICENSE",
           "done": false,
           "priority": 3,
           "tags": [
             "standards"
-          ],
-          "source": "standards"
-        },
-        {
-          "text": "Add a CI workflow",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "ci"
           ],
           "source": "standards"
         }
@@ -2943,11 +2922,11 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-08-12T15:18:43Z",
+      "pushedAt": "2026-08-13T04:05:25Z",
       "archived": false,
       "visibility": "public",
-      "defaultBranch": "",
-      "language": null,
+      "defaultBranch": "main",
+      "language": "HTML",
       "license": null,
       "declaredLicense": null,
       "topics": [],
@@ -2957,21 +2936,12 @@
       "openItems": 0,
       "lastRun": null,
       "standards": {
-        "readme": false,
+        "readme": true,
         "license": false,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a README",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "docs"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a LICENSE",
           "done": false,
@@ -3074,33 +3044,6 @@
     }
   },
   "untracked": [
-    {
-      "slug": "city-of-winter",
-      "description": "City of Winter",
-      "pushedAt": "2026-08-12T05:35:22Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "mastra-and-commander-server",
-      "description": "Mastra and Commander Server",
-      "pushedAt": "2026-08-11T14:15:49Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "titterpig-dsl-7pp",
-      "description": "Seven Part Pact",
-      "pushedAt": "2026-08-09T14:12:44Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": true
-    },
     {
       "slug": "expanse-ships-pack",
       "description": "Foundry Compendium: Expanse Ship Pack",
