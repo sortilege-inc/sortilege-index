@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T08:15:58.478Z",
+  "generatedAt": "2026-08-14T08:10:46.361Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
@@ -1185,7 +1185,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-08-12T16:22:57Z",
+      "pushedAt": "2026-08-13T08:16:28Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1199,7 +1199,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-08-13T08:15:51Z",
+        "created_at": "2026-08-14T08:10:40Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2624,7 +2624,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-08-13T06:05:22Z",
+      "pushedAt": "2026-08-13T18:38:08Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2638,7 +2638,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-13T06:05:23Z",
+        "created_at": "2026-08-13T18:38:10Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2744,7 +2744,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-08-12T17:10:35Z",
+      "pushedAt": "2026-08-14T03:36:09Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2758,7 +2758,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-12T17:10:37Z",
+        "created_at": "2026-08-14T03:36:10Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2922,7 +2922,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-08-13T04:05:25Z",
+      "pushedAt": "2026-08-13T18:39:35Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2934,7 +2934,13 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": null,
+      "lastRun": {
+        "conclusion": "success",
+        "created_at": "2026-08-13T18:39:36Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
       "standards": {
         "readme": true,
         "license": false,
