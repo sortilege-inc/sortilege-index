@@ -122,17 +122,18 @@
           "name": "Conventions",
           "blurb": "Convention appearances and events.",
           "projects": [
-            { "name": "NOVA Open — Curseborne / Onyx Path", "desc": "" },
-            { "name": "Wrecking Crew GenCon 2027", "desc": "" },
-            { "name": "Con of the North 2027", "desc": "" },
-            { "name": "Tentative: Gamehole Con 2026", "desc": "" },
-            { "name": "Tentative: Twin Cities Con 2026", "desc": "" },
-            { "name": "CONvergence 2027", "desc": "" },
-            { "name": "Tentative: 2D Con Unplugged", "desc": "" },
-            { "name": "Tentative: 2D Con Prime 2027", "desc": "" },
-            { "name": "WPG RPG Con 2027", "desc": "" },
-            { "name": "Tentative: Keycon 2027", "desc": "" },
-            { "name": "Tentative: Game-itoba 2027", "desc": "" }
+            { "name": "NOVA Open — Curseborne / Onyx Path", "desc": "Sep 2–6, 2026 · Washington, DC. Ticket held.", "web": "https://www.novaopen.com" },
+            { "name": "Arkham Con 2026", "desc": "Oct 22–25, 2026 · Roseville, MN. Ticket held. (Arkham Horror: The Card Game.)", "web": "https://arkhamcon.org" },
+            { "name": "Wrecking Crew GenCon 2027", "desc": "Aug 5–8, 2027 · Indianapolis.", "web": "https://www.gencon.com" },
+            { "name": "Con of the North 2027", "desc": "Feb 12–14, 2027 · Bloomington, MN.", "web": "https://www.conofthenorth.org/" },
+            { "name": "Tentative: Gamehole Con 2026", "desc": "Oct 15–18, 2026 · Madison, WI.", "web": "https://www.gameholecon.com/" },
+            { "name": "Tentative: Twin Cities Con 2026", "desc": "Nov 20–22, 2026 · Minneapolis.", "web": "https://www.twincitiescon.com/" },
+            { "name": "CONvergence 2027", "desc": "Jul 1–4, 2027 · Minneapolis.", "web": "https://www.convergence-con.org/" },
+            { "name": "Tentative: 2D Con Unplugged", "desc": "Dates TBA · Bloomington, MN (2026 was Jan 30–Feb 1).", "web": "https://www.2dcon.net/unplugged/" },
+            { "name": "Tentative: 2D Con Prime 2027", "desc": "2027 dates TBA · Bloomington, MN (2026 was Aug 21–23).", "web": "https://www.2dcon.net/" },
+            { "name": "WPG RPG Con 2027", "desc": "2027 dates TBA · Winnipeg (2026 was May 1–3).", "web": "http://wpgrpgcon.com/" },
+            { "name": "Tentative: Keycon 2027", "desc": "May 21–23, 2027 · Winnipeg.", "web": "https://keycon.org/" },
+            { "name": "Tentative: Game-itoba 2027", "desc": "Jan 29–31, 2027 · Manitoba.", "web": "https://game-itoba.ca/" }
           ]
         },
         {
@@ -170,7 +171,7 @@
             { "name": "Caul", "desc": "A Wyldwolf Daggerheart Campaign set in the Age of Umbra", "repo": "caul", "license": "Proprietary", "web": "https://caul.sortilege.online/", "status": "In Progress" },
             { "name": "A Gibbous Moon Over Constantinople", "desc": "A D&D 5e campaign in the City of Crescent — Ottoman Constantinople.", "repo": "a-gibbous-moon", "license": "Proprietary", "web": "https://ottoman.sortilege.online/", "status": "In Progress" },
             { "name": "Portents & Fortunes", "desc": "A solo L5R 5e campaign — Togashi Norikage, a Dragon Clan monk.", "repo": "portents-and-fortunes", "web": "https://sortilege-inc.github.io/portents-and-fortunes/", "status": "In Progress" },
-            { "name": "City of Winter", "desc": "", "repo": "city-of-winter", "status": "In Progress" }
+            { "name": "City of Winter", "desc": "", "repo": "city-of-winter", "web": "https://cityofwinter.sortilege.online/", "status": "In Progress" }
           ]
         }
       ]
