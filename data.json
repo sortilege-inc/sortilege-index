@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-08T11:56:41.650Z",
+  "generatedAt": "2026-09-09T12:06:56.434Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
-    "org": 84,
-    "untracked": 13,
+    "org": 85,
+    "untracked": 14,
     "accessLimited": 0,
     "openTasks": 118,
     "backlogRepos": 2,
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-08-27T14:34:27Z",
+      "pushedAt": "2026-09-08T23:01:44Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -510,7 +510,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-09-02T17:49:47Z",
+      "pushedAt": "2026-09-08T23:01:36Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -979,7 +979,7 @@
     "titterpig-dsl-dnd5.5e": {
       "slug": "titterpig-dsl-dnd5.5e",
       "description": "Titterpig Dungeons & Dragons 5.5e",
-      "pushedAt": "2026-07-25T16:17:30Z",
+      "pushedAt": "2026-09-08T22:07:50Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -988,7 +988,7 @@
       "declaredLicense": "CC-BY-4.0",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1022,7 +1022,7 @@
     "titterpig-dsl-dnd5e-3rdparty": {
       "slug": "titterpig-dsl-dnd5e-3rdparty",
       "description": "Titterpig D&D 5e Third Party",
-      "pushedAt": "2026-07-23T22:01:33Z",
+      "pushedAt": "2026-09-08T23:01:29Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1031,7 +1031,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1185,7 +1185,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-07T13:14:28Z",
+      "pushedAt": "2026-09-08T11:57:14Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1199,7 +1199,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-08T11:56:35Z",
+        "created_at": "2026-09-09T12:06:47Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -3051,9 +3051,27 @@
   },
   "untracked": [
     {
+      "slug": "wyldwolf-axis",
+      "description": "Wyldwolf Axis",
+      "pushedAt": "2026-09-09T05:29:53Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-doublecheck",
+      "description": "",
+      "pushedAt": "2026-09-08T22:07:46Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
       "slug": "sortilege-l5r5e-pregens",
       "description": "Legend of the Five Rings Pregens",
-      "pushedAt": "2026-09-07T19:09:05Z",
+      "pushedAt": "2026-09-08T21:12:27Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3072,15 +3090,6 @@
       "slug": "mastra-collectibles",
       "description": "",
       "pushedAt": "2026-09-04T13:35:50Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "titterpig-doublecheck",
-      "description": "",
-      "pushedAt": "2026-09-02T17:13:32Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
