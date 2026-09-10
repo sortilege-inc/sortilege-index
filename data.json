@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T12:06:56.434Z",
+  "generatedAt": "2026-09-10T12:00:39.552Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-09-08T23:01:44Z",
+      "pushedAt": "2026-09-09T18:20:24Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -859,7 +859,7 @@
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
       "description": "The One Ring 2e Titterpig",
-      "pushedAt": "2026-07-25T19:05:00Z",
+      "pushedAt": "2026-09-09T18:20:16Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -868,7 +868,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1185,7 +1185,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-08T11:57:14Z",
+      "pushedAt": "2026-09-09T12:07:42Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1199,7 +1199,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-09T12:06:47Z",
+        "created_at": "2026-09-10T12:00:33Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2744,7 +2744,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-08-26T23:57:38Z",
+      "pushedAt": "2026-09-10T03:29:34Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2758,7 +2758,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-26T23:57:39Z",
+        "created_at": "2026-09-10T03:29:36Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3051,20 +3051,20 @@
   },
   "untracked": [
     {
-      "slug": "wyldwolf-axis",
-      "description": "Wyldwolf Axis",
-      "pushedAt": "2026-09-09T05:29:53Z",
+      "slug": "titterpig-doublecheck",
+      "description": "",
+      "pushedAt": "2026-09-09T18:20:21Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
     {
-      "slug": "titterpig-doublecheck",
-      "description": "",
-      "pushedAt": "2026-09-08T22:07:46Z",
+      "slug": "wyldwolf-axis",
+      "description": "Wyldwolf Axis",
+      "pushedAt": "2026-09-09T16:26:09Z",
       "archived": false,
-      "visibility": "private",
+      "visibility": "public",
       "freshness": "fresh",
       "isDslCorpus": false
     },
