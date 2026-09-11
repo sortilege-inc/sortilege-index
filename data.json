@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T12:00:39.552Z",
+  "generatedAt": "2026-09-11T11:59:27.980Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
@@ -1185,7 +1185,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-09T12:07:42Z",
+      "pushedAt": "2026-09-10T12:01:22Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1199,7 +1199,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-10T12:00:33Z",
+        "created_at": "2026-09-11T11:59:17Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1677,7 +1677,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false,
       "openItems": 2,
       "lastRun": {
