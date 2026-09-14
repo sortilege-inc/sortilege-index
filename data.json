@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T12:30:07.699Z",
+  "generatedAt": "2026-09-14T13:35:24.390Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-09-09T18:20:24Z",
+      "pushedAt": "2026-09-13T19:00:45Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -757,7 +757,7 @@
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
       "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-25T19:04:56Z",
+      "pushedAt": "2026-09-13T18:58:35Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -766,7 +766,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -859,7 +859,7 @@
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
       "description": "The One Ring 2e Titterpig",
-      "pushedAt": "2026-09-09T18:20:16Z",
+      "pushedAt": "2026-09-13T18:59:24Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1185,7 +1185,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-12T11:26:36Z",
+      "pushedAt": "2026-09-13T12:30:42Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1199,7 +1199,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-13T12:30:00Z",
+        "created_at": "2026-09-14T13:34:40Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1465,7 +1465,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-09-12T16:30:33Z",
+      "pushedAt": "2026-09-14T12:46:47Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2624,7 +2624,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-09-13T03:55:56Z",
+      "pushedAt": "2026-09-13T13:48:00Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2638,7 +2638,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-13T03:55:57Z",
+        "created_at": "2026-09-13T13:48:01Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2704,7 +2704,7 @@
     "a-gibbous-moon": {
       "slug": "a-gibbous-moon",
       "description": "A Gibbous Moon Over Constantinople",
-      "pushedAt": "2026-08-20T19:25:37Z",
+      "pushedAt": "2026-09-13T17:31:19Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2718,7 +2718,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-20T19:25:39Z",
+        "created_at": "2026-09-13T17:31:20Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2744,7 +2744,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-09-10T03:29:34Z",
+      "pushedAt": "2026-09-13T13:48:11Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2758,7 +2758,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-10T03:29:36Z",
+        "created_at": "2026-09-13T13:48:12Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2793,7 +2793,7 @@
     "city-of-winter": {
       "slug": "city-of-winter",
       "description": "City of Winter",
-      "pushedAt": "2026-08-13T01:12:32Z",
+      "pushedAt": "2026-09-13T13:48:07Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2802,7 +2802,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
@@ -2873,7 +2873,7 @@
     "return-to-dolmenwood": {
       "slug": "return-to-dolmenwood",
       "description": "Return to Dolmenwood",
-      "pushedAt": "2026-08-08T15:03:22Z",
+      "pushedAt": "2026-09-13T13:48:15Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2882,12 +2882,12 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-08-08T15:03:23Z",
+        "created_at": "2026-09-13T13:48:16Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2922,7 +2922,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-09-13T12:09:02Z",
+      "pushedAt": "2026-09-14T13:14:43Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2936,7 +2936,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-13T12:09:03Z",
+        "created_at": "2026-09-14T13:14:45Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3053,9 +3053,18 @@
     {
       "slug": "titterpig-doublecheck",
       "description": "",
-      "pushedAt": "2026-09-09T18:20:21Z",
+      "pushedAt": "2026-09-14T12:59:12Z",
       "archived": false,
       "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-l5r5e-pregens",
+      "description": "Legend of the Five Rings Pregens",
+      "pushedAt": "2026-09-13T14:02:04Z",
+      "archived": false,
+      "visibility": "public",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3063,15 +3072,6 @@
       "slug": "wyldwolf-axis",
       "description": "Wyldwolf Axis",
       "pushedAt": "2026-09-09T16:26:09Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-l5r5e-pregens",
-      "description": "Legend of the Five Rings Pregens",
-      "pushedAt": "2026-09-08T21:12:27Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
