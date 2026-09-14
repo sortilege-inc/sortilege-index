@@ -185,8 +185,8 @@
           "blurb": "",
           "projects": [
             { "name": "War of Princes", "desc": "A Vampire: the Masquerade - Dark Ages Chronicle.", "repo": "war-of-princes", "license": "Proprietary", "web": "https://sortilege-inc.github.io/war-of-princes/", "status": "In Progress" },
-            { "name": "Return to Dolmenwood", "desc": "A Dolmenwood campaign.", "repo": "return-to-dolmenwood", "status": "In Progress" },
-            { "name": "The Fragile Peace", "desc": "", "repo": "fragilepeace", "status": "In Progress" }
+            { "name": "Return to Dolmenwood", "desc": "A Dolmenwood campaign.", "repo": "return-to-dolmenwood", "web": "https://dolmenwood.sortilege.online/", "status": "In Progress" },
+            { "name": "The Fragile Peace", "desc": "", "repo": "fragilepeace", "web": "https://fragilepeace.sortilege.online/", "status": "In Progress" }
           ]
         }
       ]
