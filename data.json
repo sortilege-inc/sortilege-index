@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T13:35:24.390Z",
+  "generatedAt": "2026-09-15T12:24:59.344Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-09-13T19:00:45Z",
+      "pushedAt": "2026-09-15T11:34:43Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -476,7 +476,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-09-05T18:41:33Z",
+      "pushedAt": "2026-09-15T11:27:39Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -510,7 +510,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-09-08T23:01:36Z",
+      "pushedAt": "2026-09-15T11:33:46Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -578,7 +578,7 @@
     "titterpig-dsl-callofcthulhu7e": {
       "slug": "titterpig-dsl-callofcthulhu7e",
       "description": "Titterpig Call of Cthulhu 7e",
-      "pushedAt": "2026-07-23T22:01:16Z",
+      "pushedAt": "2026-09-15T10:34:32Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -587,7 +587,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -612,7 +612,7 @@
     "titterpig-dsl-root": {
       "slug": "titterpig-dsl-root",
       "description": "Titterpig Root",
-      "pushedAt": "2026-07-23T22:01:18Z",
+      "pushedAt": "2026-09-15T09:56:42Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -621,7 +621,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -646,7 +646,7 @@
     "titterpig-dsl-daggerheart": {
       "slug": "titterpig-dsl-daggerheart",
       "description": "Daggerheart - Titterpig DSL Implementation",
-      "pushedAt": "2026-07-23T22:01:19Z",
+      "pushedAt": "2026-09-15T11:03:47Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -655,7 +655,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -680,7 +680,7 @@
     "titterpig-dsl-dnd5e": {
       "slug": "titterpig-dsl-dnd5e",
       "description": "Titterpig Dungeons & Dragons 5th Edition",
-      "pushedAt": "2026-07-25T16:17:26Z",
+      "pushedAt": "2026-09-15T09:57:09Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -689,7 +689,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -714,7 +714,7 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-08-03T03:13:43Z",
+      "pushedAt": "2026-09-15T10:15:06Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -723,7 +723,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -757,7 +757,7 @@
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
       "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-13T18:58:35Z",
+      "pushedAt": "2026-09-15T09:56:51Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -791,7 +791,7 @@
     "titterpig-dsl-draw-steel": {
       "slug": "titterpig-dsl-draw-steel",
       "description": "Draw Steel Titterpig DSL Implementation",
-      "pushedAt": "2026-07-25T19:05:04Z",
+      "pushedAt": "2026-09-15T09:56:16Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -800,7 +800,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -825,7 +825,7 @@
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-07T02:41:30Z",
+      "pushedAt": "2026-09-15T10:52:12Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -859,7 +859,7 @@
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
       "description": "The One Ring 2e Titterpig",
-      "pushedAt": "2026-09-13T18:59:24Z",
+      "pushedAt": "2026-09-15T11:26:08Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -893,7 +893,7 @@
     "titterpig-dsl-invisiblesun": {
       "slug": "titterpig-dsl-invisiblesun",
       "description": "Titterpig Invisible Sun",
-      "pushedAt": "2026-07-23T22:01:29Z",
+      "pushedAt": "2026-09-15T09:56:30Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -902,7 +902,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -936,7 +936,7 @@
     "titterpig-dsl-expanse": {
       "slug": "titterpig-dsl-expanse",
       "description": "Titterpig The Expanse",
-      "pushedAt": "2026-07-23T22:01:31Z",
+      "pushedAt": "2026-09-15T09:56:25Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -945,7 +945,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -979,7 +979,7 @@
     "titterpig-dsl-dnd5.5e": {
       "slug": "titterpig-dsl-dnd5.5e",
       "description": "Titterpig Dungeons & Dragons 5.5e",
-      "pushedAt": "2026-09-08T22:07:50Z",
+      "pushedAt": "2026-09-15T09:55:46Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1022,7 +1022,7 @@
     "titterpig-dsl-dnd5e-3rdparty": {
       "slug": "titterpig-dsl-dnd5e-3rdparty",
       "description": "Titterpig D&D 5e Third Party",
-      "pushedAt": "2026-09-08T23:01:29Z",
+      "pushedAt": "2026-09-15T09:56:05Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1065,7 +1065,7 @@
     "titterpig-dsl-l5r5e-3rdparty": {
       "slug": "titterpig-dsl-l5r5e-3rdparty",
       "description": "Titterpig Legend of the Five Rings 5e Third Party",
-      "pushedAt": "2026-07-23T22:01:34Z",
+      "pushedAt": "2026-09-15T11:34:22Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1074,7 +1074,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1185,7 +1185,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-13T12:30:42Z",
+      "pushedAt": "2026-09-14T22:29:52Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1199,7 +1199,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-14T13:34:40Z",
+        "created_at": "2026-09-15T12:24:53Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2278,7 +2278,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
@@ -2922,7 +2922,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-09-14T13:14:43Z",
+      "pushedAt": "2026-09-14T19:52:18Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2936,7 +2936,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-14T13:14:45Z",
+        "created_at": "2026-09-14T19:52:19Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3051,9 +3051,18 @@
   },
   "untracked": [
     {
+      "slug": "titterpig-dsl-curseborne",
+      "description": "Titterpig DSL Curseborne",
+      "pushedAt": "2026-09-15T09:55:28Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
       "slug": "titterpig-doublecheck",
       "description": "",
-      "pushedAt": "2026-09-14T12:59:12Z",
+      "pushedAt": "2026-09-15T08:37:35Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3103,15 +3112,6 @@
       "visibility": "public",
       "freshness": "fresh",
       "isDslCorpus": false
-    },
-    {
-      "slug": "titterpig-dsl-curseborne",
-      "description": "Titterpig DSL Curseborne",
-      "pushedAt": "2026-08-27T14:27:08Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": true
     },
     {
       "slug": "expanse-ships-pack",
