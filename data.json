@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T12:24:59.344Z",
+  "generatedAt": "2026-09-16T12:22:50.837Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-09-15T11:34:43Z",
+      "pushedAt": "2026-09-15T13:01:00Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -510,7 +510,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-09-15T11:33:46Z",
+      "pushedAt": "2026-09-15T13:17:06Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -578,7 +578,7 @@
     "titterpig-dsl-callofcthulhu7e": {
       "slug": "titterpig-dsl-callofcthulhu7e",
       "description": "Titterpig Call of Cthulhu 7e",
-      "pushedAt": "2026-09-15T10:34:32Z",
+      "pushedAt": "2026-09-15T12:33:42Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -646,7 +646,7 @@
     "titterpig-dsl-daggerheart": {
       "slug": "titterpig-dsl-daggerheart",
       "description": "Daggerheart - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-15T11:03:47Z",
+      "pushedAt": "2026-09-15T17:17:15Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -825,7 +825,7 @@
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-15T10:52:12Z",
+      "pushedAt": "2026-09-15T13:18:13Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -859,7 +859,7 @@
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
       "description": "The One Ring 2e Titterpig",
-      "pushedAt": "2026-09-15T11:26:08Z",
+      "pushedAt": "2026-09-15T13:00:56Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1185,7 +1185,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-14T22:29:52Z",
+      "pushedAt": "2026-09-15T12:25:34Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1199,7 +1199,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-15T12:24:53Z",
+        "created_at": "2026-09-16T12:22:44Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -3051,6 +3051,15 @@
   },
   "untracked": [
     {
+      "slug": "titterpig-doublecheck",
+      "description": "",
+      "pushedAt": "2026-09-15T12:35:39Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
       "slug": "titterpig-dsl-curseborne",
       "description": "Titterpig DSL Curseborne",
       "pushedAt": "2026-09-15T09:55:28Z",
@@ -3058,15 +3067,6 @@
       "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": true
-    },
-    {
-      "slug": "titterpig-doublecheck",
-      "description": "",
-      "pushedAt": "2026-09-15T08:37:35Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
     },
     {
       "slug": "sortilege-l5r5e-pregens",
