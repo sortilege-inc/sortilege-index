@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-21T13:33:37.071Z",
+  "generatedAt": "2026-09-22T12:17:55.311Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
-    "org": 91,
-    "untracked": 20,
+    "org": 94,
+    "untracked": 23,
     "accessLimited": 0,
     "openTasks": 117,
     "backlogRepos": 2,
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-09-20T17:18:55Z",
+      "pushedAt": "2026-09-21T18:08:04Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -510,7 +510,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-09-21T03:47:51Z",
+      "pushedAt": "2026-09-21T16:23:04Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -612,7 +612,7 @@
     "titterpig-dsl-root": {
       "slug": "titterpig-dsl-root",
       "description": "Titterpig Root",
-      "pushedAt": "2026-09-21T12:50:33Z",
+      "pushedAt": "2026-09-21T16:23:08Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -714,7 +714,7 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-15T10:15:06Z",
+      "pushedAt": "2026-09-21T16:23:19Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -757,7 +757,7 @@
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
       "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-15T09:56:51Z",
+      "pushedAt": "2026-09-22T00:47:51Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -791,11 +791,11 @@
     "titterpig-dsl-draw-steel": {
       "slug": "titterpig-dsl-draw-steel",
       "description": "Draw Steel Titterpig DSL Implementation",
-      "pushedAt": "2026-09-15T09:56:16Z",
+      "pushedAt": "2026-09-21T18:07:55Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
-      "language": "Python",
+      "language": "Arc",
       "license": null,
       "declaredLicense": "Per-file",
       "topics": [],
@@ -893,7 +893,7 @@
     "titterpig-dsl-invisiblesun": {
       "slug": "titterpig-dsl-invisiblesun",
       "description": "Titterpig Invisible Sun",
-      "pushedAt": "2026-09-21T13:29:01Z",
+      "pushedAt": "2026-09-21T22:48:48Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1176,7 +1176,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-20T11:58:52Z",
+      "pushedAt": "2026-09-21T13:34:13Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1190,7 +1190,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-21T13:33:29Z",
+        "created_at": "2026-09-22T12:17:48Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1456,7 +1456,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-09-21T03:28:56Z",
+      "pushedAt": "2026-09-21T18:12:07Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -3044,20 +3044,56 @@
     {
       "slug": "sortilege-vtt-invisiblesun",
       "description": "Invisible Sun VTT",
-      "pushedAt": "2026-09-21T13:31:07Z",
+      "pushedAt": "2026-09-22T03:37:31Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
       "isDslCorpus": false
     },
     {
-      "slug": "registration",
-      "description": "Event Registration for sortilege.online",
-      "pushedAt": "2026-09-20T20:21:29Z",
+      "slug": "blood-and-other-drugs",
+      "description": "Blood & Other Drugs",
+      "pushedAt": "2026-09-22T03:04:23Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
       "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-dsl-vtm5e-3rdparty",
+      "description": "VtM DSL 3rd Party",
+      "pushedAt": "2026-09-22T01:40:45Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "registration",
+      "description": "Event Registration for sortilege.online",
+      "pushedAt": "2026-09-21T18:34:08Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-drawsteel",
+      "description": "Draw Steel VTT",
+      "pushedAt": "2026-09-21T16:35:45Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-dsl-teeth",
+      "description": "TEETH",
+      "pushedAt": "2026-09-21T16:23:12Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
     },
     {
       "slug": "sortilege-vtt-teeth",
@@ -3067,15 +3103,6 @@
       "visibility": "public",
       "freshness": "fresh",
       "isDslCorpus": false
-    },
-    {
-      "slug": "titterpig-dsl-teeth",
-      "description": "TEETH",
-      "pushedAt": "2026-09-19T15:46:48Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": true
     },
     {
       "slug": "colossi-of-the-drylands",
