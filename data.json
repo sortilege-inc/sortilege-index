@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-22T12:17:55.311Z",
+  "generatedAt": "2026-09-23T12:30:32.872Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
-    "org": 94,
-    "untracked": 23,
+    "org": 100,
+    "untracked": 29,
     "accessLimited": 0,
-    "openTasks": 117,
+    "openTasks": 118,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -253,7 +253,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-09-21T18:08:04Z",
+      "pushedAt": "2026-09-22T12:27:53Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -273,6 +273,13 @@
       },
       "hasBacklog": true,
       "tasks": [
+        {
+          "text": "**tor2e eval harness still parses the 0.4 adversary shape (found 2026-09-21).**",
+          "done": false,
+          "priority": null,
+          "tags": [],
+          "source": "backlog"
+        },
         {
           "text": "**Virtue/Flaw alias → caret-ref mapping — GRAMMAR RESOLVED (DECISION-6, 2026-07-14).**",
           "done": true,
@@ -476,7 +483,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-09-19T04:35:39Z",
+      "pushedAt": "2026-09-22T21:26:46Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -510,7 +517,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-09-21T16:23:04Z",
+      "pushedAt": "2026-09-22T21:36:40Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -578,7 +585,7 @@
     "titterpig-dsl-callofcthulhu7e": {
       "slug": "titterpig-dsl-callofcthulhu7e",
       "description": "Titterpig Call of Cthulhu 7e",
-      "pushedAt": "2026-09-15T12:33:42Z",
+      "pushedAt": "2026-09-22T12:26:51Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -612,11 +619,11 @@
     "titterpig-dsl-root": {
       "slug": "titterpig-dsl-root",
       "description": "Titterpig Root",
-      "pushedAt": "2026-09-21T16:23:08Z",
+      "pushedAt": "2026-09-22T12:27:35Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
-      "language": "Arc",
+      "language": "Python",
       "license": null,
       "declaredLicense": "Per-file",
       "topics": [],
@@ -646,7 +653,7 @@
     "titterpig-dsl-daggerheart": {
       "slug": "titterpig-dsl-daggerheart",
       "description": "Daggerheart - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-19T04:50:42Z",
+      "pushedAt": "2026-09-22T12:26:56Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -680,7 +687,7 @@
     "titterpig-dsl-dnd5e": {
       "slug": "titterpig-dsl-dnd5e",
       "description": "Titterpig Dungeons & Dragons 5th Edition",
-      "pushedAt": "2026-09-15T09:57:09Z",
+      "pushedAt": "2026-09-22T12:27:06Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -757,7 +764,7 @@
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
       "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-22T00:47:51Z",
+      "pushedAt": "2026-09-22T16:08:39Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -791,7 +798,7 @@
     "titterpig-dsl-draw-steel": {
       "slug": "titterpig-dsl-draw-steel",
       "description": "Draw Steel Titterpig DSL Implementation",
-      "pushedAt": "2026-09-21T18:07:55Z",
+      "pushedAt": "2026-09-22T12:27:13Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -825,7 +832,7 @@
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-15T13:18:13Z",
+      "pushedAt": "2026-09-22T12:27:26Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -859,7 +866,7 @@
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
       "description": "The One Ring 2e Titterpig",
-      "pushedAt": "2026-09-15T13:00:56Z",
+      "pushedAt": "2026-09-22T19:29:03Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -893,7 +900,7 @@
     "titterpig-dsl-invisiblesun": {
       "slug": "titterpig-dsl-invisiblesun",
       "description": "Titterpig Invisible Sun",
-      "pushedAt": "2026-09-21T22:48:48Z",
+      "pushedAt": "2026-09-22T12:27:17Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -970,7 +977,7 @@
     "titterpig-dsl-dnd5.5e": {
       "slug": "titterpig-dsl-dnd5.5e",
       "description": "Titterpig Dungeons & Dragons 5.5e",
-      "pushedAt": "2026-09-15T09:55:46Z",
+      "pushedAt": "2026-09-22T12:27:01Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1013,7 +1020,7 @@
     "titterpig-dsl-dnd5e-3rdparty": {
       "slug": "titterpig-dsl-dnd5e-3rdparty",
       "description": "Titterpig D&D 5e Third Party",
-      "pushedAt": "2026-09-15T09:56:05Z",
+      "pushedAt": "2026-09-22T12:27:10Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1056,7 +1063,7 @@
     "titterpig-dsl-l5r5e-3rdparty": {
       "slug": "titterpig-dsl-l5r5e-3rdparty",
       "description": "Titterpig Legend of the Five Rings 5e Third Party",
-      "pushedAt": "2026-09-15T11:34:22Z",
+      "pushedAt": "2026-09-22T12:27:31Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1142,7 +1149,7 @@
     "titterpig-rules-lawyer": {
       "slug": "titterpig-rules-lawyer",
       "description": "Titterpig Rules Lawyer",
-      "pushedAt": "2026-07-28T03:16:48Z",
+      "pushedAt": "2026-09-22T12:28:03Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1151,7 +1158,7 @@
       "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -1176,7 +1183,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-21T13:34:13Z",
+      "pushedAt": "2026-09-22T12:18:32Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1190,7 +1197,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-22T12:17:48Z",
+        "created_at": "2026-09-23T12:30:26Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2615,7 +2622,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-09-20T22:06:15Z",
+      "pushedAt": "2026-09-22T16:46:53Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2629,7 +2636,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-20T22:06:17Z",
+        "created_at": "2026-09-22T16:46:55Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2824,7 +2831,7 @@
     "war-of-princes": {
       "slug": "war-of-princes",
       "description": "Vampire: the Dark Ages - War of Princes",
-      "pushedAt": "2026-09-12T18:05:09Z",
+      "pushedAt": "2026-09-22T12:28:07Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2838,7 +2845,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-12T18:05:10Z",
+        "created_at": "2026-09-22T12:28:09Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3042,6 +3049,78 @@
   },
   "untracked": [
     {
+      "slug": "titterpig-dsl-coyotecrow",
+      "description": "Coyote & Crow",
+      "pushedAt": "2026-09-22T21:37:04Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "titterpig-dsl-troika",
+      "description": "Troika",
+      "pushedAt": "2026-09-22T21:27:39Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "sortilege-vtt-troika",
+      "description": "Troika VTT",
+      "pushedAt": "2026-09-22T21:23:19Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-dsl-modernage",
+      "description": "Modern AGE",
+      "pushedAt": "2026-09-22T19:50:45Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "titterpig-dsl-vtm5e-3rdparty",
+      "description": "VtM DSL 3rd Party",
+      "pushedAt": "2026-09-22T19:27:21Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "titterpig-dsl-tor2e-3rdparty",
+      "description": "The One Ring 2e Third Party",
+      "pushedAt": "2026-09-22T15:58:55Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "titterpig-doublecheck",
+      "description": "",
+      "pushedAt": "2026-09-22T14:13:35Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-vtm5e",
+      "description": "Vampire: the Masquerade 5e VTT",
+      "pushedAt": "2026-09-22T14:04:04Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
       "slug": "sortilege-vtt-invisiblesun",
       "description": "Invisible Sun VTT",
       "pushedAt": "2026-09-22T03:37:31Z",
@@ -3058,15 +3137,6 @@
       "visibility": "public",
       "freshness": "fresh",
       "isDslCorpus": false
-    },
-    {
-      "slug": "titterpig-dsl-vtm5e-3rdparty",
-      "description": "VtM DSL 3rd Party",
-      "pushedAt": "2026-09-22T01:40:45Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": true
     },
     {
       "slug": "registration",
@@ -3110,15 +3180,6 @@
       "pushedAt": "2026-09-19T15:24:23Z",
       "archived": false,
       "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "titterpig-doublecheck",
-      "description": "",
-      "pushedAt": "2026-09-18T18:30:12Z",
-      "archived": false,
-      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
