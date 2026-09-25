@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-23T12:30:32.872Z",
+  "generatedAt": "2026-09-25T12:30:58.257Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
-    "org": 100,
-    "untracked": 29,
+    "org": 107,
+    "untracked": 36,
     "accessLimited": 0,
-    "openTasks": 118,
+    "openTasks": 117,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -63,35 +63,32 @@
     "banes-of-beleriand": {
       "slug": "banes-of-beleriand",
       "description": "Banes of Beleriand",
-      "pushedAt": "2026-07-15T18:50:54Z",
+      "pushedAt": "2026-09-25T05:50:20Z",
       "archived": false,
       "visibility": "public",
-      "defaultBranch": "",
-      "language": null,
+      "defaultBranch": "main",
+      "language": "JavaScript",
       "license": null,
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": null,
+      "lastRun": {
+        "conclusion": "failure",
+        "created_at": "2026-09-25T05:50:22Z",
+        "head_branch": "main",
+        "name": "pages build and deployment",
+        "status": "completed"
+      },
       "standards": {
-        "readme": false,
+        "readme": true,
         "license": false,
         "ci": false
       },
       "hasBacklog": false,
       "tasks": [
-        {
-          "text": "Add a README",
-          "done": false,
-          "priority": 3,
-          "tags": [
-            "docs"
-          ],
-          "source": "standards"
-        },
         {
           "text": "Add a LICENSE",
           "done": false,
@@ -253,7 +250,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-09-22T12:27:53Z",
+      "pushedAt": "2026-09-24T04:23:56Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -483,7 +480,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-09-22T21:26:46Z",
+      "pushedAt": "2026-09-23T14:35:56Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -517,7 +514,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-09-22T21:36:40Z",
+      "pushedAt": "2026-09-23T23:01:45Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -653,7 +650,7 @@
     "titterpig-dsl-daggerheart": {
       "slug": "titterpig-dsl-daggerheart",
       "description": "Daggerheart - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-22T12:26:56Z",
+      "pushedAt": "2026-09-24T16:50:06Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -764,7 +761,7 @@
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
       "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-22T16:08:39Z",
+      "pushedAt": "2026-09-25T05:38:57Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -832,7 +829,7 @@
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-22T12:27:26Z",
+      "pushedAt": "2026-09-24T01:36:35Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -866,7 +863,7 @@
     "titterpig-dsl-tor2e": {
       "slug": "titterpig-dsl-tor2e",
       "description": "The One Ring 2e Titterpig",
-      "pushedAt": "2026-09-22T19:29:03Z",
+      "pushedAt": "2026-09-24T13:41:46Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1183,7 +1180,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-22T12:18:32Z",
+      "pushedAt": "2026-09-23T12:31:18Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1197,7 +1194,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-23T12:30:26Z",
+        "created_at": "2026-09-25T12:30:51Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1361,7 +1358,7 @@
       "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -1463,7 +1460,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-09-21T18:12:07Z",
+      "pushedAt": "2026-09-25T03:55:26Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2662,12 +2659,12 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-09-12T15:35:32Z",
+      "pushedAt": "2026-09-25T03:34:51Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
       "language": "HTML",
-      "license": "other",
+      "license": null,
       "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
@@ -2676,7 +2673,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-12T15:35:33Z",
+        "created_at": "2026-09-25T03:34:52Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2742,7 +2739,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-09-20T19:47:05Z",
+      "pushedAt": "2026-09-24T18:43:07Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2756,7 +2753,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-20T19:47:06Z",
+        "created_at": "2026-09-24T18:43:09Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3049,13 +3046,139 @@
   },
   "untracked": [
     {
-      "slug": "titterpig-dsl-coyotecrow",
-      "description": "Coyote & Crow",
-      "pushedAt": "2026-09-22T21:37:04Z",
+      "slug": "blood-and-other-drugs",
+      "description": "Blood & Other Drugs",
+      "pushedAt": "2026-09-25T06:21:10Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-tor2e",
+      "description": "The One Ring 2e",
+      "pushedAt": "2026-09-25T06:20:33Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-vtm5e",
+      "description": "Vampire: the Masquerade 5e VTT",
+      "pushedAt": "2026-09-25T06:20:31Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-dsl-vtm5e-3rdparty",
+      "description": "VtM DSL 3rd Party",
+      "pushedAt": "2026-09-25T05:38:59Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": true
+    },
+    {
+      "slug": "sortilege-vtt-daggerheart",
+      "description": "Daggerheart VTT",
+      "pushedAt": "2026-09-24T22:55:54Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-aegean",
+      "description": "Aegean VTT",
+      "pushedAt": "2026-09-24T18:41:02Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-invisiblesun",
+      "description": "Invisible Sun VTT",
+      "pushedAt": "2026-09-24T18:41:00Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-troika",
+      "description": "Troika VTT",
+      "pushedAt": "2026-09-24T18:40:58Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-teeth",
+      "description": "TEETH",
+      "pushedAt": "2026-09-24T18:40:55Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-l5r5e",
+      "description": "Legend of the Five Rings 5e VTT",
+      "pushedAt": "2026-09-24T18:24:37Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "l5r-lore",
+      "description": "L5R Lore",
+      "pushedAt": "2026-09-24T16:53:15Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-dsl-coyotecrow",
+      "description": "Coyote & Crow",
+      "pushedAt": "2026-09-23T18:22:27Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "titterpig-dsl-aegean",
+      "description": "Aegean",
+      "pushedAt": "2026-09-23T18:22:20Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "the-fallow-season-aegean",
+      "description": "The Fallow Season (Aegean)",
+      "pushedAt": "2026-09-23T15:50:45Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-doublecheck",
+      "description": "",
+      "pushedAt": "2026-09-23T14:36:02Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
     },
     {
       "slug": "titterpig-dsl-troika",
@@ -3067,27 +3190,9 @@
       "isDslCorpus": true
     },
     {
-      "slug": "sortilege-vtt-troika",
-      "description": "Troika VTT",
-      "pushedAt": "2026-09-22T21:23:19Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
       "slug": "titterpig-dsl-modernage",
       "description": "Modern AGE",
       "pushedAt": "2026-09-22T19:50:45Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": true
-    },
-    {
-      "slug": "titterpig-dsl-vtm5e-3rdparty",
-      "description": "VtM DSL 3rd Party",
-      "pushedAt": "2026-09-22T19:27:21Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3101,42 +3206,6 @@
       "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": true
-    },
-    {
-      "slug": "titterpig-doublecheck",
-      "description": "",
-      "pushedAt": "2026-09-22T14:13:35Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-vtm5e",
-      "description": "Vampire: the Masquerade 5e VTT",
-      "pushedAt": "2026-09-22T14:04:04Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-invisiblesun",
-      "description": "Invisible Sun VTT",
-      "pushedAt": "2026-09-22T03:37:31Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "blood-and-other-drugs",
-      "description": "Blood & Other Drugs",
-      "pushedAt": "2026-09-22T03:04:23Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
     },
     {
       "slug": "registration",
@@ -3164,15 +3233,6 @@
       "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": true
-    },
-    {
-      "slug": "sortilege-vtt-teeth",
-      "description": "TEETH",
-      "pushedAt": "2026-09-20T14:14:17Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
     },
     {
       "slug": "colossi-of-the-drylands",
