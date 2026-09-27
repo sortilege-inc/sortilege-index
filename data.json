@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-26T12:00:51.629Z",
+  "generatedAt": "2026-09-27T12:39:36.026Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
-    "org": 109,
-    "untracked": 38,
+    "org": 117,
+    "untracked": 46,
     "accessLimited": 0,
     "openTasks": 117,
     "backlogRepos": 2,
@@ -63,7 +63,7 @@
     "banes-of-beleriand": {
       "slug": "banes-of-beleriand",
       "description": "Banes of Beleriand",
-      "pushedAt": "2026-09-25T19:47:01Z",
+      "pushedAt": "2026-09-26T14:02:59Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -77,7 +77,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-25T19:47:02Z",
+        "created_at": "2026-09-26T14:03:01Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -761,7 +761,7 @@
     "titterpig-dsl-vtm5e": {
       "slug": "titterpig-dsl-vtm5e",
       "description": "Vampire: the Masquerade 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-09-26T03:27:43Z",
+      "pushedAt": "2026-09-26T13:37:10Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1180,7 +1180,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-09-25T12:31:36Z",
+      "pushedAt": "2026-09-26T12:01:26Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1194,7 +1194,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-09-26T12:00:46Z",
+        "created_at": "2026-09-27T12:39:29Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2659,7 +2659,7 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-09-25T03:34:51Z",
+      "pushedAt": "2026-09-27T02:54:07Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2673,7 +2673,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-25T03:34:52Z",
+        "created_at": "2026-09-27T02:54:09Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2917,7 +2917,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-09-17T03:22:52Z",
+      "pushedAt": "2026-09-26T17:01:39Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2931,7 +2931,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-17T03:22:53Z",
+        "created_at": "2026-09-26T17:01:40Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3046,9 +3046,108 @@
   },
   "untracked": [
     {
+      "slug": "the-bushi-oni",
+      "description": "The Bushi Oni",
+      "pushedAt": "2026-09-27T02:57:16Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-daggerheart",
+      "description": "Daggerheart VTT",
+      "pushedAt": "2026-09-27T02:52:32Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-coyotecrow",
+      "description": "Coyote & Crow VTT",
+      "pushedAt": "2026-09-26T17:10:14Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-dsl-coyotecrow",
+      "description": "Coyote & Crow",
+      "pushedAt": "2026-09-26T16:10:32Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "sortilege-vtt-dnd5e",
+      "description": "D&D 5e VTT",
+      "pushedAt": "2026-09-26T14:15:35Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "naadag-hasaka",
+      "description": "Naadag Hasaka",
+      "pushedAt": "2026-09-26T14:13:05Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "x-front",
+      "description": "X-FRONT",
+      "pushedAt": "2026-09-26T14:08:53Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-dsl-pendragon7e",
+      "description": "Pendragon 7e",
+      "pushedAt": "2026-09-26T14:08:19Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "titterpig-dsl-monsterhearts2e",
+      "description": "Monsterhearts 2e",
+      "pushedAt": "2026-09-26T14:07:31Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "titterpig-dsl-marvelmultiverse",
+      "description": "Marvel Multiverse RPG",
+      "pushedAt": "2026-09-26T14:06:30Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "blood-and-other-drugs",
+      "description": "Blood & Other Drugs",
+      "pushedAt": "2026-09-26T13:50:33Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
       "slug": "fall-of-london-2023",
       "description": "Fall of London",
-      "pushedAt": "2026-09-26T03:39:24Z",
+      "pushedAt": "2026-09-26T13:46:19Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3057,16 +3156,7 @@
     {
       "slug": "physician-heal-thyself",
       "description": "Physician Heal Thyself",
-      "pushedAt": "2026-09-26T03:39:20Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "blood-and-other-drugs",
-      "description": "Blood & Other Drugs",
-      "pushedAt": "2026-09-26T03:31:25Z",
+      "pushedAt": "2026-09-26T13:42:14Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3075,7 +3165,7 @@
     {
       "slug": "sortilege-vtt-vtm5e",
       "description": "Vampire: the Masquerade 5e VTT",
-      "pushedAt": "2026-09-26T03:28:26Z",
+      "pushedAt": "2026-09-26T13:37:22Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3145,15 +3235,6 @@
       "isDslCorpus": false
     },
     {
-      "slug": "sortilege-vtt-daggerheart",
-      "description": "Daggerheart VTT",
-      "pushedAt": "2026-09-25T15:22:09Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
       "slug": "sortilege-vtt-aegean",
       "description": "Aegean VTT",
       "pushedAt": "2026-09-25T15:22:07Z",
@@ -3170,15 +3251,6 @@
       "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
-    },
-    {
-      "slug": "titterpig-dsl-coyotecrow",
-      "description": "Coyote & Crow",
-      "pushedAt": "2026-09-23T18:22:27Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": true
     },
     {
       "slug": "titterpig-dsl-aegean",
@@ -3321,7 +3393,7 @@
       "pushedAt": "2026-08-27T17:28:55Z",
       "archived": false,
       "visibility": "public",
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false
     },
     {
