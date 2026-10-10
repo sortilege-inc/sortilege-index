@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-09T14:04:39.795Z",
+  "generatedAt": "2026-10-10T13:14:54.593Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
-    "org": 126,
-    "untracked": 55,
+    "org": 127,
+    "untracked": 56,
     "accessLimited": 0,
-    "openTasks": 117,
+    "openTasks": 118,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -63,7 +63,7 @@
     "banes-of-beleriand": {
       "slug": "banes-of-beleriand",
       "description": "Banes of Beleriand",
-      "pushedAt": "2026-10-09T14:00:13Z",
+      "pushedAt": "2026-10-09T14:20:47Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -77,7 +77,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-09T14:00:14Z",
+        "created_at": "2026-10-09T14:20:49Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -250,7 +250,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-10-08T22:18:58Z",
+      "pushedAt": "2026-10-10T02:04:16Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -718,7 +718,7 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-10-08T23:50:46Z",
+      "pushedAt": "2026-10-10T02:40:27Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1180,7 +1180,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-10-08T14:20:22Z",
+      "pushedAt": "2026-10-09T14:05:22Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1194,7 +1194,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-10-09T14:04:32Z",
+        "created_at": "2026-10-10T13:14:47Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2659,7 +2659,7 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-10-09T14:00:09Z",
+      "pushedAt": "2026-10-09T14:20:44Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2673,7 +2673,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-09T14:00:11Z",
+        "created_at": "2026-10-09T14:20:45Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2739,7 +2739,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-10-09T14:00:33Z",
+      "pushedAt": "2026-10-09T14:21:07Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2753,7 +2753,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-09T14:00:35Z",
+        "created_at": "2026-10-09T14:21:09Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2788,11 +2788,11 @@
     "city-of-winter": {
       "slug": "city-of-winter",
       "description": "City of Winter",
-      "pushedAt": "2026-10-09T13:54:06Z",
+      "pushedAt": "2026-10-09T14:40:52Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
-      "language": "JavaScript",
+      "language": "Python",
       "license": null,
       "declaredLicense": null,
       "topics": [],
@@ -2810,7 +2810,7 @@
       "standards": {
         "readme": true,
         "license": false,
-        "ci": true
+        "ci": false
       },
       "hasBacklog": false,
       "tasks": [
@@ -2822,13 +2822,22 @@
             "standards"
           ],
           "source": "standards"
+        },
+        {
+          "text": "Add a CI workflow",
+          "done": false,
+          "priority": 3,
+          "tags": [
+            "ci"
+          ],
+          "source": "standards"
         }
       ]
     },
     "war-of-princes": {
       "slug": "war-of-princes",
       "description": "Vampire: the Dark Ages - War of Princes",
-      "pushedAt": "2026-10-09T14:00:47Z",
+      "pushedAt": "2026-10-09T14:21:21Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2842,7 +2851,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-09T14:00:49Z",
+        "created_at": "2026-10-09T14:21:23Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2917,7 +2926,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-10-09T14:00:19Z",
+      "pushedAt": "2026-10-09T14:20:54Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2931,7 +2940,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-09T14:00:20Z",
+        "created_at": "2026-10-09T14:20:55Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3046,9 +3055,18 @@
   },
   "untracked": [
     {
+      "slug": "sortilege-vtt-cityofwinter",
+      "description": "City of Winter — the family's table, the atlas and the traditions, played by everyone (Sortilege VTT family)",
+      "pushedAt": "2026-10-09T15:55:18Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
       "slug": "the-bushi-oni",
       "description": "The Bushi Oni",
-      "pushedAt": "2026-10-09T14:00:39Z",
+      "pushedAt": "2026-10-09T14:21:14Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3057,7 +3075,7 @@
     {
       "slug": "x-front",
       "description": "X-FRONT",
-      "pushedAt": "2026-10-09T14:00:27Z",
+      "pushedAt": "2026-10-09T14:21:01Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3066,7 +3084,7 @@
     {
       "slug": "war-of-the-dragon-banners",
       "description": "War of the Dragon Banners",
-      "pushedAt": "2026-10-09T14:00:23Z",
+      "pushedAt": "2026-10-09T14:20:57Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3075,7 +3093,7 @@
     {
       "slug": "blood-and-other-drugs",
       "description": "Blood & Other Drugs",
-      "pushedAt": "2026-10-09T14:00:05Z",
+      "pushedAt": "2026-10-09T14:20:40Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3084,7 +3102,7 @@
     {
       "slug": "naadag-hasaka",
       "description": "Naadag Hasaka",
-      "pushedAt": "2026-10-09T14:00:00Z",
+      "pushedAt": "2026-10-09T14:20:36Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3093,7 +3111,7 @@
     {
       "slug": "fall-of-london-2023",
       "description": "Fall of London",
-      "pushedAt": "2026-10-09T13:59:57Z",
+      "pushedAt": "2026-10-09T14:20:32Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3102,7 +3120,7 @@
     {
       "slug": "physician-heal-thyself",
       "description": "Physician Heal Thyself",
-      "pushedAt": "2026-10-09T13:59:53Z",
+      "pushedAt": "2026-10-09T14:20:28Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3111,7 +3129,7 @@
     {
       "slug": "sortilege-vtt-vtm5e",
       "description": "Vampire: the Masquerade 5e VTT",
-      "pushedAt": "2026-10-09T13:59:35Z",
+      "pushedAt": "2026-10-09T14:20:12Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3120,7 +3138,7 @@
     {
       "slug": "sortilege-vtt-troika",
       "description": "Troika VTT",
-      "pushedAt": "2026-10-09T13:59:33Z",
+      "pushedAt": "2026-10-09T14:20:10Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3129,7 +3147,7 @@
     {
       "slug": "sortilege-vtt-tor2e",
       "description": "The One Ring 2e",
-      "pushedAt": "2026-10-09T13:59:31Z",
+      "pushedAt": "2026-10-09T14:20:08Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3138,7 +3156,7 @@
     {
       "slug": "sortilege-vtt-pendragon6e",
       "description": "Pendragon 6e VTT",
-      "pushedAt": "2026-10-09T13:59:29Z",
+      "pushedAt": "2026-10-09T14:20:06Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3147,7 +3165,7 @@
     {
       "slug": "sortilege-vtt-marvelmultiverse",
       "description": "Marvel Multiverse RPG VTT",
-      "pushedAt": "2026-10-09T13:59:27Z",
+      "pushedAt": "2026-10-09T14:20:04Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3156,7 +3174,7 @@
     {
       "slug": "sortilege-vtt-l5r5e",
       "description": "Legend of the Five Rings 5e VTT",
-      "pushedAt": "2026-10-09T13:59:24Z",
+      "pushedAt": "2026-10-09T14:20:02Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3165,7 +3183,7 @@
     {
       "slug": "sortilege-vtt-invisiblesun",
       "description": "Invisible Sun VTT",
-      "pushedAt": "2026-10-09T13:59:22Z",
+      "pushedAt": "2026-10-09T14:20:00Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3174,7 +3192,7 @@
     {
       "slug": "sortilege-vtt-dnd5e",
       "description": "D&D 5e VTT",
-      "pushedAt": "2026-10-09T13:59:20Z",
+      "pushedAt": "2026-10-09T14:19:58Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3183,7 +3201,7 @@
     {
       "slug": "sortilege-vtt-daggerheart",
       "description": "Daggerheart VTT",
-      "pushedAt": "2026-10-09T13:59:18Z",
+      "pushedAt": "2026-10-09T14:19:55Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3192,7 +3210,7 @@
     {
       "slug": "sortilege-vtt-coyotecrow",
       "description": "Coyote & Crow VTT",
-      "pushedAt": "2026-10-09T13:59:16Z",
+      "pushedAt": "2026-10-09T14:19:53Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3201,7 +3219,7 @@
     {
       "slug": "sortilege-vtt-aegean",
       "description": "Aegean VTT",
-      "pushedAt": "2026-10-09T13:59:13Z",
+      "pushedAt": "2026-10-09T14:19:51Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -3210,7 +3228,7 @@
     {
       "slug": "sortilege-vtt-teeth",
       "description": "TEETH",
-      "pushedAt": "2026-10-09T13:52:39Z",
+      "pushedAt": "2026-10-09T14:04:46Z",
       "archived": false,
       "visibility": "public",
       "freshness": "fresh",
@@ -3456,7 +3474,7 @@
       "pushedAt": "2026-09-09T16:26:09Z",
       "archived": false,
       "visibility": "public",
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false
     },
     {
