@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-13T14:45:01.915Z",
+  "generatedAt": "2026-10-15T12:25:03.784Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
-    "org": 127,
-    "untracked": 56,
+    "org": 128,
+    "untracked": 57,
     "accessLimited": 0,
     "openTasks": 118,
     "backlogRepos": 2,
@@ -250,7 +250,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-10-11T21:48:35Z",
+      "pushedAt": "2026-10-14T01:43:12Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -480,7 +480,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-10-07T01:38:08Z",
+      "pushedAt": "2026-10-14T01:42:57Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -718,7 +718,7 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-10-11T21:45:36Z",
+      "pushedAt": "2026-10-14T01:43:10Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -940,7 +940,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1180,7 +1180,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-10-12T16:25:52Z",
+      "pushedAt": "2026-10-13T14:45:47Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1194,7 +1194,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-10-13T14:44:54Z",
+        "created_at": "2026-10-15T12:24:56Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1383,7 +1383,7 @@
     "marginalia": {
       "slug": "marginalia",
       "description": "A Solo TTRPG Structure powered by Claude and Titterpig",
-      "pushedAt": "2026-07-23T21:48:56Z",
+      "pushedAt": "2026-10-14T01:43:33Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1392,7 +1392,7 @@
       "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -2619,7 +2619,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-10-10T19:25:30Z",
+      "pushedAt": "2026-10-14T01:43:53Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2633,7 +2633,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-10T19:25:32Z",
+        "created_at": "2026-10-14T01:43:55Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2699,7 +2699,7 @@
     "a-gibbous-moon": {
       "slug": "a-gibbous-moon",
       "description": "A Gibbous Moon Over Constantinople",
-      "pushedAt": "2026-09-27T23:41:20Z",
+      "pushedAt": "2026-10-14T04:07:13Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2713,7 +2713,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-09-27T23:41:21Z",
+        "created_at": "2026-10-14T04:07:15Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2975,7 +2975,7 @@
     "children-of-fear": {
       "slug": "children-of-fear",
       "description": "Children of Fear",
-      "pushedAt": "2026-07-23T22:00:59Z",
+      "pushedAt": "2026-10-14T04:16:03Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2984,12 +2984,12 @@
       "declaredLicense": "Proprietary",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-07-23T22:01:01Z",
+        "created_at": "2026-10-14T04:16:04Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3054,6 +3054,15 @@
     }
   },
   "untracked": [
+    {
+      "slug": "oaths-new-horizons-sortilege",
+      "description": "Oath: New Horizons",
+      "pushedAt": "2026-10-14T04:29:55Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
     {
       "slug": "titterpig-dsl-arm5e-3rdparty",
       "description": "Ars Magica 3rd Party (5th edition & Definitive Edition)",
@@ -3456,7 +3465,7 @@
       "pushedAt": "2026-09-15T09:55:28Z",
       "archived": false,
       "visibility": "private",
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": true
     },
     {
