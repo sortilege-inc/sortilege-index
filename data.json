@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T12:25:03.784Z",
+  "generatedAt": "2026-10-17T11:18:48.580Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
@@ -63,7 +63,7 @@
     "banes-of-beleriand": {
       "slug": "banes-of-beleriand",
       "description": "Banes of Beleriand",
-      "pushedAt": "2026-10-11T18:26:37Z",
+      "pushedAt": "2026-10-17T02:55:57Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -77,7 +77,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-11T18:26:39Z",
+        "created_at": "2026-10-17T02:55:58Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -1180,7 +1180,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-10-13T14:45:47Z",
+      "pushedAt": "2026-10-15T12:25:53Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1194,7 +1194,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-10-15T12:24:56Z",
+        "created_at": "2026-10-17T11:18:42Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2619,7 +2619,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-10-14T01:43:53Z",
+      "pushedAt": "2026-10-15T16:00:32Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2633,7 +2633,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-14T01:43:55Z",
+        "created_at": "2026-10-15T16:00:34Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2659,7 +2659,7 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-10-11T18:26:24Z",
+      "pushedAt": "2026-10-17T02:55:54Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2673,7 +2673,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-11T18:26:25Z",
+        "created_at": "2026-10-17T02:55:56Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2739,7 +2739,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-10-11T18:38:06Z",
+      "pushedAt": "2026-10-17T02:56:08Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2753,7 +2753,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-11T18:38:07Z",
+        "created_at": "2026-10-17T02:56:10Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2837,7 +2837,7 @@
     "war-of-princes": {
       "slug": "war-of-princes",
       "description": "Vampire: the Dark Ages - War of Princes",
-      "pushedAt": "2026-10-11T18:38:13Z",
+      "pushedAt": "2026-10-17T02:56:14Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2851,7 +2851,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-11T18:38:15Z",
+        "created_at": "2026-10-17T02:56:16Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -2926,7 +2926,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-10-11T18:38:02Z",
+      "pushedAt": "2026-10-17T02:56:00Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2940,7 +2940,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-11T18:38:04Z",
+        "created_at": "2026-10-17T02:56:01Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3055,6 +3055,186 @@
   },
   "untracked": [
     {
+      "slug": "the-bushi-oni",
+      "description": "The Bushi Oni",
+      "pushedAt": "2026-10-17T02:56:11Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "x-front",
+      "description": "X-FRONT",
+      "pushedAt": "2026-10-17T02:56:06Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "war-of-the-dragon-banners",
+      "description": "War of the Dragon Banners",
+      "pushedAt": "2026-10-17T02:56:03Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "blood-and-other-drugs",
+      "description": "Blood & Other Drugs",
+      "pushedAt": "2026-10-17T02:55:51Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "naadag-hasaka",
+      "description": "Naadag Hasaka",
+      "pushedAt": "2026-10-17T02:55:48Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "fall-of-london-2023",
+      "description": "Fall of London",
+      "pushedAt": "2026-10-17T02:55:46Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "physician-heal-thyself",
+      "description": "Physician Heal Thyself",
+      "pushedAt": "2026-10-17T02:55:43Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-vtm5e",
+      "description": "Vampire: the Masquerade 5e VTT",
+      "pushedAt": "2026-10-17T02:55:03Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-troika",
+      "description": "Troika VTT",
+      "pushedAt": "2026-10-17T02:55:01Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-tor2e",
+      "description": "The One Ring 2e",
+      "pushedAt": "2026-10-17T02:54:59Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-teeth",
+      "description": "TEETH",
+      "pushedAt": "2026-10-17T02:54:56Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-pendragon6e",
+      "description": "Pendragon 6e VTT",
+      "pushedAt": "2026-10-17T02:54:54Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-marvelmultiverse",
+      "description": "Marvel Multiverse RPG VTT",
+      "pushedAt": "2026-10-17T02:54:52Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-l5r5e",
+      "description": "Legend of the Five Rings 5e VTT",
+      "pushedAt": "2026-10-17T02:54:50Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-invisiblesun",
+      "description": "Invisible Sun VTT",
+      "pushedAt": "2026-10-17T02:54:48Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-dnd5e",
+      "description": "D&D 5e VTT",
+      "pushedAt": "2026-10-17T02:54:46Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-daggerheart",
+      "description": "Daggerheart VTT",
+      "pushedAt": "2026-10-17T02:54:44Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-coyotecrow",
+      "description": "Coyote & Crow VTT",
+      "pushedAt": "2026-10-17T02:54:42Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-cityofwinter",
+      "description": "City of Winter — the family's table, the atlas and the traditions, played by everyone (Sortilege VTT family)",
+      "pushedAt": "2026-10-17T02:54:40Z",
+      "archived": false,
+      "visibility": "public",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-aegean",
+      "description": "Aegean VTT",
+      "pushedAt": "2026-10-17T02:54:38Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
       "slug": "oaths-new-horizons-sortilege",
       "description": "Oath: New Horizons",
       "pushedAt": "2026-10-14T04:29:55Z",
@@ -3071,186 +3251,6 @@
       "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": true
-    },
-    {
-      "slug": "the-bushi-oni",
-      "description": "The Bushi Oni",
-      "pushedAt": "2026-10-11T18:38:09Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "x-front",
-      "description": "X-FRONT",
-      "pushedAt": "2026-10-11T18:27:01Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "war-of-the-dragon-banners",
-      "description": "War of the Dragon Banners",
-      "pushedAt": "2026-10-11T18:26:54Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "blood-and-other-drugs",
-      "description": "Blood & Other Drugs",
-      "pushedAt": "2026-10-11T18:26:16Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "naadag-hasaka",
-      "description": "Naadag Hasaka",
-      "pushedAt": "2026-10-11T18:26:00Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "fall-of-london-2023",
-      "description": "Fall of London",
-      "pushedAt": "2026-10-11T18:25:54Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "physician-heal-thyself",
-      "description": "Physician Heal Thyself",
-      "pushedAt": "2026-10-11T18:25:44Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-vtm5e",
-      "description": "Vampire: the Masquerade 5e VTT",
-      "pushedAt": "2026-10-11T18:13:09Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-troika",
-      "description": "Troika VTT",
-      "pushedAt": "2026-10-11T18:13:06Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-tor2e",
-      "description": "The One Ring 2e",
-      "pushedAt": "2026-10-11T18:13:04Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-teeth",
-      "description": "TEETH",
-      "pushedAt": "2026-10-11T18:13:01Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-pendragon6e",
-      "description": "Pendragon 6e VTT",
-      "pushedAt": "2026-10-11T18:12:59Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-marvelmultiverse",
-      "description": "Marvel Multiverse RPG VTT",
-      "pushedAt": "2026-10-11T18:12:56Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-l5r5e",
-      "description": "Legend of the Five Rings 5e VTT",
-      "pushedAt": "2026-10-11T18:12:53Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-invisiblesun",
-      "description": "Invisible Sun VTT",
-      "pushedAt": "2026-10-11T18:12:50Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-dnd5e",
-      "description": "D&D 5e VTT",
-      "pushedAt": "2026-10-11T18:12:47Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-daggerheart",
-      "description": "Daggerheart VTT",
-      "pushedAt": "2026-10-11T18:12:45Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-coyotecrow",
-      "description": "Coyote & Crow VTT",
-      "pushedAt": "2026-10-11T18:12:43Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-aegean",
-      "description": "Aegean VTT",
-      "pushedAt": "2026-10-11T18:12:40Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-cityofwinter",
-      "description": "City of Winter — the family's table, the atlas and the traditions, played by everyone (Sortilege VTT family)",
-      "pushedAt": "2026-10-11T18:05:22Z",
-      "archived": false,
-      "visibility": "public",
-      "freshness": "fresh",
-      "isDslCorpus": false
     },
     {
       "slug": "registration",
@@ -3456,7 +3456,7 @@
       "pushedAt": "2026-09-17T02:57:34Z",
       "archived": false,
       "visibility": "public",
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false
     },
     {
