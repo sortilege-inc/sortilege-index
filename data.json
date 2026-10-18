@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T11:18:48.580Z",
+  "generatedAt": "2026-10-18T11:55:01.404Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 71,
@@ -16,7 +16,7 @@
       "description": "Bellum Arborem",
       "pushedAt": "2026-07-18T14:26:11Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
@@ -26,13 +26,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-07-18T14:26:13Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -65,7 +59,7 @@
       "description": "Banes of Beleriand",
       "pushedAt": "2026-10-17T02:55:57Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
@@ -75,13 +69,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T02:55:58Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -114,7 +102,7 @@
       "description": "Collateral",
       "pushedAt": "2026-07-15T18:50:35Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "",
       "language": null,
       "license": null,
@@ -166,7 +154,7 @@
       "description": "The One Ring 2e: Company, Character, and Adversary app",
       "pushedAt": "2024-12-22T04:25:50Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
@@ -250,7 +238,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": "",
-      "pushedAt": "2026-10-14T01:43:12Z",
+      "pushedAt": "2026-10-17T22:45:19Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -480,7 +468,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-10-14T01:42:57Z",
+      "pushedAt": "2026-10-17T22:52:23Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -514,7 +502,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-10-01T14:37:06Z",
+      "pushedAt": "2026-10-17T22:52:21Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -718,9 +706,9 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-10-14T01:43:10Z",
+      "pushedAt": "2026-10-17T22:59:09Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "Python",
       "license": null,
@@ -831,7 +819,7 @@
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
       "pushedAt": "2026-10-02T18:12:40Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "Arc",
       "license": null,
@@ -1148,7 +1136,7 @@
       "description": "Titterpig Rules Lawyer",
       "pushedAt": "2026-09-22T12:28:03Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": "mpl-2.0",
@@ -1180,7 +1168,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-10-15T12:25:53Z",
+      "pushedAt": "2026-10-17T11:19:28Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1194,7 +1182,7 @@
       "openItems": 0,
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-10-17T11:18:42Z",
+        "created_at": "2026-10-18T11:54:55Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -1460,7 +1448,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-10-11T17:24:41Z",
+      "pushedAt": "2026-10-17T19:25:56Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1582,7 +1570,7 @@
       "description": "Deep dives on constructed player characters",
       "pushedAt": "2026-08-17T23:09:32Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": "other",
@@ -1592,13 +1580,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-08-17T23:09:33Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -1705,7 +1687,7 @@
       "description": "Invisible Sun Maker's Matrix",
       "pushedAt": "2022-10-25T21:21:49Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": "bsd-3-clause",
@@ -1739,7 +1721,7 @@
       "description": "Maker's Matrix API",
       "pushedAt": "2022-10-18T17:00:10Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": null,
@@ -1825,7 +1807,7 @@
       "description": "Trading Card Game Database",
       "pushedAt": "2026-06-13T01:42:56Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "TypeScript",
       "license": null,
@@ -1835,13 +1817,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-06-13T01:42:59Z",
-        "head_branch": "main",
-        "name": "ci",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -1899,7 +1875,7 @@
       "description": "Gods of the Dead",
       "pushedAt": "2026-07-23T22:01:04Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "GDScript",
       "license": "other",
@@ -2223,7 +2199,7 @@
       "description": "Mastra and Commander",
       "pushedAt": "2026-08-18T15:24:04Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "Ruby",
       "license": null,
@@ -2374,7 +2350,7 @@
       "description": "GM Binder files for my Invisible Sun campaign",
       "pushedAt": "2026-07-23T22:00:46Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "master",
       "language": null,
       "license": "other",
@@ -2442,7 +2418,7 @@
       "description": "Nine Eyes TCG",
       "pushedAt": "2026-07-23T22:00:36Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "master",
       "language": "Ruby",
       "license": "other",
@@ -2476,7 +2452,7 @@
       "description": "Be Slightly Evil - the Trading Card Game",
       "pushedAt": "2026-07-23T22:00:38Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "master",
       "language": null,
       "license": "other",
@@ -2510,7 +2486,7 @@
       "description": "",
       "pushedAt": "2026-07-23T22:00:39Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "master",
       "language": "SCSS",
       "license": "other",
@@ -2544,7 +2520,7 @@
       "description": "",
       "pushedAt": "2015-04-13T22:51:04Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "master",
       "language": null,
       "license": "cc0-1.0",
@@ -2619,9 +2595,9 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-10-15T16:00:32Z",
+      "pushedAt": "2026-10-18T04:15:00Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": "other",
@@ -2631,13 +2607,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-15T16:00:34Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -2661,7 +2631,7 @@
       "description": "Caul",
       "pushedAt": "2026-10-17T02:55:54Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": null,
@@ -2671,13 +2641,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T02:55:56Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -2701,7 +2665,7 @@
       "description": "A Gibbous Moon Over Constantinople",
       "pushedAt": "2026-10-14T04:07:13Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": "other",
@@ -2711,13 +2675,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-14T04:07:15Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -2741,7 +2699,7 @@
       "description": "Portents & Fortunes",
       "pushedAt": "2026-10-17T02:56:08Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
@@ -2751,13 +2709,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T02:56:10Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -2790,7 +2742,7 @@
       "description": "City of Winter",
       "pushedAt": "2026-10-09T14:40:52Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "Python",
       "license": null,
@@ -2800,13 +2752,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-08T03:24:03Z",
-        "head_branch": "main",
-        "name": "Deploy web/ to GitHub Pages",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -2839,7 +2785,7 @@
       "description": "Vampire: the Dark Ages - War of Princes",
       "pushedAt": "2026-10-17T02:56:14Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "JavaScript",
       "license": null,
@@ -2849,13 +2795,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T02:56:16Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -2879,7 +2819,7 @@
       "description": "Return to Dolmenwood",
       "pushedAt": "2026-09-20T20:51:28Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": null,
@@ -2889,13 +2829,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-09-20T20:51:29Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -2928,7 +2862,7 @@
       "description": "The Fragile Peace",
       "pushedAt": "2026-10-17T02:56:00Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": null,
@@ -2938,13 +2872,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T02:56:01Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -2977,7 +2905,7 @@
       "description": "Children of Fear",
       "pushedAt": "2026-10-14T04:16:03Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": "other",
@@ -2987,13 +2915,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-14T04:16:04Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -3017,7 +2939,7 @@
       "description": "Home is Where We Make Our Fire",
       "pushedAt": "2026-09-12T20:25:17Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "defaultBranch": "main",
       "language": "HTML",
       "license": "other",
@@ -3027,13 +2949,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-09-12T20:25:19Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -3059,7 +2975,7 @@
       "description": "The Bushi Oni",
       "pushedAt": "2026-10-17T02:56:11Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3068,7 +2984,7 @@
       "description": "X-FRONT",
       "pushedAt": "2026-10-17T02:56:06Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3077,7 +2993,7 @@
       "description": "War of the Dragon Banners",
       "pushedAt": "2026-10-17T02:56:03Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3086,7 +3002,7 @@
       "description": "Blood & Other Drugs",
       "pushedAt": "2026-10-17T02:55:51Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3095,7 +3011,7 @@
       "description": "Naadag Hasaka",
       "pushedAt": "2026-10-17T02:55:48Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3104,7 +3020,7 @@
       "description": "Fall of London",
       "pushedAt": "2026-10-17T02:55:46Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3113,7 +3029,7 @@
       "description": "Physician Heal Thyself",
       "pushedAt": "2026-10-17T02:55:43Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3131,7 +3047,7 @@
       "description": "Troika VTT",
       "pushedAt": "2026-10-17T02:55:01Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3149,7 +3065,7 @@
       "description": "TEETH",
       "pushedAt": "2026-10-17T02:54:56Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3185,7 +3101,7 @@
       "description": "Invisible Sun VTT",
       "pushedAt": "2026-10-17T02:54:48Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3221,7 +3137,7 @@
       "description": "City of Winter — the family's table, the atlas and the traditions, played by everyone (Sortilege VTT family)",
       "pushedAt": "2026-10-17T02:54:40Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3266,7 +3182,7 @@
       "description": "Colossi of the Drylands",
       "pushedAt": "2026-10-08T03:23:17Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3275,7 +3191,7 @@
       "description": "Only Lovers Left Alive",
       "pushedAt": "2026-10-07T18:38:44Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3293,7 +3209,7 @@
       "description": "A Daggerheart adventure in Night City",
       "pushedAt": "2026-10-03T17:35:45Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3392,7 +3308,7 @@
       "description": "The Fallow Season (Aegean)",
       "pushedAt": "2026-09-23T15:50:45Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3428,7 +3344,7 @@
       "description": "Draw Steel VTT",
       "pushedAt": "2026-09-21T16:35:45Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "fresh",
       "isDslCorpus": false
     },
@@ -3455,7 +3371,7 @@
       "description": "Season of Magic",
       "pushedAt": "2026-09-17T02:57:34Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "active",
       "isDslCorpus": false
     },
@@ -3473,7 +3389,7 @@
       "description": "Legend of the Five Rings Pregens",
       "pushedAt": "2026-09-13T14:02:04Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "active",
       "isDslCorpus": false
     },
@@ -3482,7 +3398,7 @@
       "description": "Wyldwolf Axis",
       "pushedAt": "2026-09-09T16:26:09Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "active",
       "isDslCorpus": false
     },
@@ -3500,7 +3416,7 @@
       "description": "NOVA Open 2026",
       "pushedAt": "2026-08-27T17:28:55Z",
       "archived": false,
-      "visibility": "public",
+      "visibility": "private",
       "freshness": "active",
       "isDslCorpus": false
     },
