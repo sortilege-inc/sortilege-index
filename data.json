@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-02T19:20:24.894Z",
+  "generatedAt": "2026-11-02T19:52:43.019Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 133,
     "org": 133,
     "untracked": 0,
     "accessLimited": 0,
-    "openTasks": 247,
+    "openTasks": 246,
     "backlogRepos": 2,
     "errors": 0
   },
@@ -26,14 +26,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/bellum-arborem/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:33:19Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -1814,14 +1807,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://cityofwinter.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-26T17:37:57Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -2045,14 +2031,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://actuality.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-26T17:37:59Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -2224,14 +2203,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://teeth.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-26T17:38:00Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -2317,14 +2289,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://troika.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-26T17:37:22Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -2398,7 +2363,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-10-21T12:40:50Z",
+      "pushedAt": "2026-11-02T19:52:26Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2412,11 +2377,11 @@
       "openItems": 0,
       "pagesUrl": "https://sortilege-inc.github.io/sortilege-index/",
       "lastRun": {
-        "conclusion": "failure",
-        "created_at": "2026-11-02T16:45:52Z",
+        "conclusion": null,
+        "created_at": "2026-11-02T19:52:35Z",
         "head_branch": "main",
         "name": "Refresh live state",
-        "status": "completed"
+        "status": "in_progress"
       },
       "standards": {
         "readme": false,
@@ -2492,8 +2457,8 @@
           "source": "backlog"
         },
         {
-          "text": "Correct the arm5e catalog badge — currently `0.4-compliant`, but titterpig-dsl-arm5e is only partially converted (armdef spells only; no arm5e/ 5e-edition namespace, 0.1–0.3 still present). Drop to In Progress once confirmed.",
-          "done": false,
+          "text": "Correct the arm5e catalog badge — resolved 2026-11-02: arm5e is now on spec 0.5 with core + 20+ supplements (titterpig-dsl-atlas), so it reads `0.5-compliant`; every corpus badge was re-checked against the atlas the same day.",
+          "done": true,
           "priority": 3,
           "tags": [
             "dashboard",
@@ -2811,14 +2776,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/dossiers/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-31T04:46:39Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -3122,14 +3080,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/sortilege-l5r5e-pregens/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:44:20Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -3172,14 +3123,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://schedule.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-28T21:02:28Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -4119,14 +4063,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/wyldwolf-axis/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:46:15Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -4212,14 +4149,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/novaopen2026/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:40:49Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -4577,14 +4507,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sjorseidr.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-11-02T12:46:05Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -4618,14 +4541,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://caul.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:25:59Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -4659,14 +4575,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://ottoman.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-11-02T13:08:57Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -4700,14 +4609,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://portents.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:24:55Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -4793,14 +4695,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/the-bushi-oni/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:28:07Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -4843,14 +4738,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://killfee.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-30T15:14:34Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -4884,14 +4772,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/fall-of-london-2023/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-26T17:38:26Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -4934,14 +4815,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/banes-of-beleriand/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-26T17:38:28Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5036,14 +4910,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/only-lovers-left-alive/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:41:22Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5138,14 +5005,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://warofprinces.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-28T00:42:49Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -5179,14 +5039,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://dolmenwood.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:42:17Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5229,14 +5082,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://fragilepeace.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:26:58Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5279,14 +5125,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://colossi.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:35:25Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -5320,14 +5159,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://season-of-magic.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:43:23Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -5361,14 +5193,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/war-of-the-dragon-banners/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:29:46Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5411,14 +5236,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/blood-and-other-drugs/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-26T17:39:04Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5461,14 +5279,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/physician-heal-thyself/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-26T17:38:25Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5511,14 +5322,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/naadag-hasaka/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:29:15Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5561,14 +5365,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/x-front/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:23:06Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
@@ -5611,14 +5408,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://sortilege-inc.github.io/children-of-fear/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:34:16Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -5652,14 +5442,7 @@
       "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://celenneth.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-17T16:38:31Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": true,
@@ -5693,14 +5476,7 @@
       "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
-      "pagesUrl": "https://yongardy.sortilege.online/",
-      "lastRun": {
-        "conclusion": "success",
-        "created_at": "2026-10-27T15:06:02Z",
-        "head_branch": "main",
-        "name": "pages build and deployment",
-        "status": "completed"
-      },
+      "lastRun": null,
       "standards": {
         "readme": true,
         "license": false,
