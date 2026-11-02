@@ -206,6 +206,42 @@ function deriveStandardsTasks(out) {
 
 // ---- main -----------------------------------------------------------------
 
+async function fetchOrgRepos(owner) {
+  let lastErr;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      const { stdout } = await runGh(
+        ["api", "--paginate", `orgs/${owner}/repos?per_page=100&type=all`, "--jq", ".[]"],
+        { maxBuffer: 64 * 1024 * 1024 },
+      );
+      return stdout.split("\n").filter((l) => l.trim()).map((l) => {
+        const r = JSON.parse(l);
+        return {
+          name: r.name,
+          description: r.description,
+          pushedAt: r.pushed_at,
+          isArchived: !!r.archived,
+          isPrivate: !!r.private,
+          visibility: r.visibility || (r.private ? "private" : "public"),
+          defaultBranchRef: r.default_branch ? { name: r.default_branch } : null,
+          primaryLanguage: r.language ? { name: r.language } : null,
+          // REST reports an undetectable license file as NOASSERTION; GraphQL said "other".
+          licenseInfo: r.license
+            ? { spdxId: r.license.spdx_id === "NOASSERTION" ? "other" : r.license.spdx_id, key: r.license.key }
+            : null,
+          repositoryTopics: (r.topics || []).map((name) => ({ name })),
+          hasIssuesEnabled: !!r.has_issues,
+          hasPages: !!r.has_pages,
+        };
+      });
+    } catch (err) {
+      lastErr = err;
+      await sleep(2000 * 2 ** attempt); // 2s, 4s, 8s, 16s
+    }
+  }
+  throw lastErr;
+}
+
 async function main() {
   const now = Date.now();
   const catalog = JSON.parse(await readFile(join(ROOT, "catalog.json"), "utf8"));
@@ -224,11 +260,12 @@ async function main() {
     }
   }
 
-  // One call for the whole org's baseline state.
-  const orgList = await gh([
-    "repo", "list", owner, "--limit", "300", "--no-archived=false",
-    "--json", "name,description,pushedAt,isArchived,isPrivate,visibility,defaultBranchRef,primaryLanguage,licenseInfo,repositoryTopics,hasIssuesEnabled",
-  ]);
+  // The whole org's baseline state, via the paginated REST listing (the GraphQL
+  // `gh repo list` intermittently errors on a 128-repo org and took the daily
+  // refresh down every other run). Mapped onto the field names the rest of this
+  // file already uses. Retried on ANY failure — one flaky page must not cost the
+  // run.
+  const orgList = await fetchOrgRepos(owner);
   const orgByName = new Map(orgList.map((r) => [r.name, r]));
 
   const limit = pLimit(4);
@@ -266,6 +303,14 @@ async function main() {
       }
       out.openItems = meta.value;
 
+      // Live site URL straight from the repo's Pages settings, so the index's
+      // Website links follow custom-domain changes instead of rotting in the
+      // catalog (the catalog `web` is now only a fallback for Pages-less repos).
+      if (base?.hasPages) {
+        const pages = await ghApiJqSoft(`repos/${owner}/${slug}/pages`, ".html_url");
+        if (!pages.forbidden && pages.value) out.pagesUrl = pages.value;
+      }
+
       // Latest Actions run needs Actions:read; a 403 just means "no CI
       // visibility" (common — the read-only token may omit Actions), not a
       // failure. Treat it as unknown rather than erroring the whole repo.
@@ -292,7 +337,18 @@ async function main() {
       const backlog = await ghRawSoft(`repos/${owner}/${slug}/contents/TASKS.md`);
       const authored = backlog.ok && backlog.value ? parseTasks(backlog.value) : [];
       out.hasBacklog = !!(backlog.ok && backlog.value);
-      out.tasks = [...authored, ...deriveStandardsTasks(out)];
+      if (out.visibility === "private" && authored.length) {
+        // This page and data.json are public: a private repo's backlog text
+        // stays private. Publish counts only; generic standards-debt tasks
+        // (no repo content in them) are still listed.
+        out.privateBacklog = {
+          open: authored.filter((t) => !t.done).length,
+          done: authored.filter((t) => t.done).length,
+        };
+        out.tasks = deriveStandardsTasks(out);
+      } else {
+        out.tasks = [...authored, ...deriveStandardsTasks(out)];
+      }
     } catch (err) {
       errors.push({ slug, error: String(err.stderr || err.message || err).slice(0, 300) });
     }
@@ -337,7 +393,7 @@ async function main() {
       untracked: untracked.length,
       accessLimited: Object.values(repos).filter((r) => r.accessLimited).length,
       openTasks: Object.values(repos).reduce(
-        (n, r) => n + ((r.tasks || []).filter((t) => !t.done).length), 0),
+        (n, r) => n + ((r.tasks || []).filter((t) => !t.done).length) + (r.privateBacklog?.open || 0), 0),
       backlogRepos: Object.values(repos).filter((r) => r.hasBacklog).length,
       errors: errors.length,
     },

@@ -30,6 +30,6 @@ parsed out; everything else here is just normal Markdown that renders on GitHub.
 
 ## Dashboard polish
 
-- [ ] (p3) Correct the arm5e catalog badge — currently `0.4-compliant`, but titterpig-dsl-arm5e is only partially converted (armdef spells only; no arm5e/ 5e-edition namespace, 0.1–0.3 still present). Drop to In Progress once confirmed. #dashboard #accuracy
+- [x] (p3) Correct the arm5e catalog badge — resolved 2026-11-02: arm5e is now on spec 0.5 with core + 20+ supplements (titterpig-dsl-atlas), so it reads `0.5-compliant`; every corpus badge was re-checked against the atlas the same day. #dashboard #accuracy
 - [ ] (p3) Consider a "stale backlog" signal when TASKS.md itself goes untouched #polish
 - [ ] (p3) Let the Tasks tab deep-link via URL hash (e.g. #tasks?repo=caul) #polish

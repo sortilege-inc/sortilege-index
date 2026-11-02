@@ -148,6 +148,36 @@
     }
     .group > p.blurb { margin: 0.1rem 0 1.25rem; color: var(--ink-soft); font-size: 1.02rem; }
 
+    /* Collapsible groups: the heading is the toggle; a caret turns when open. */
+    details.group { margin-top: clamp(1.4rem, 3vw, 2rem); }
+    details.group:first-of-type { margin-top: 0; }
+    details.group > summary { list-style: none; cursor: pointer; padding: 0.35rem 0; }
+    details.group > summary::-webkit-details-marker { display: none; }
+    details.group > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    details.group > summary .chev {
+      margin-left: auto; font-size: 0.9em; color: var(--ink-soft);
+      transition: transform 0.15s ease;
+    }
+    details.group[open] > summary .chev { transform: rotate(90deg); }
+    details.group > summary:hover h2 { filter: brightness(1.1); }
+    details.group[open] > summary { margin-bottom: 0.4rem; }
+
+    /* Filter / expand-collapse bar above the project tabs. */
+    .list-tools { display: flex; flex-wrap: wrap; gap: 0.5rem 0.7rem; align-items: center; margin: 0 0 1.6rem; }
+    .list-tools[hidden] { display: none; }
+    .list-tools input[type="search"] {
+      flex: 1 1 16rem; font-family: inherit; font-size: 0.95rem; padding: 0.42rem 0.75rem;
+      border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--ink);
+    }
+    .list-tools .lt-btn {
+      font: 500 0.86rem/1 "EB Garamond", serif; cursor: pointer; padding: 0.4rem 0.75rem;
+      border: 1px solid var(--line); border-radius: 999px; background: var(--panel); color: var(--ink-soft);
+    }
+    .list-tools .lt-btn:hover { color: var(--ink); border-color: var(--ink-soft); }
+    .list-tools .lt-note { color: var(--ink-soft); font-size: 0.88rem; font-style: italic; }
+    tbody tr[hidden] { display: none; }
+    details.group[hidden] { display: none; }
+
     /* ---------- Project table (one row per project) ---------- */
     .panel { padding: clamp(0.4rem, 1.4vw, 0.9rem) clamp(0.7rem, 2vw, 1.3rem); overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; }
@@ -191,6 +221,8 @@
     a.pill.gh:hover { background: var(--ink); color: var(--panel); border-color: var(--ink); }
     a.pill.web { background: var(--accent); color: var(--panel); }
     a.pill.web:hover { filter: brightness(1.08); }
+    a.pill .lock { font-size: 0.8em; margin-left: -0.1rem; }
+    a.pill.app { border-style: dashed; }
 
     /* Editorial status set by hand reads solid; a status inferred from activity
        is drawn with a dashed ring so the two are never confused. */
@@ -347,6 +379,13 @@
 
     <p class="meta-line" id="metaLine"></p>
 
+    <div class="list-tools" id="listTools">
+      <input type="search" id="listFilter" placeholder="Filter projects by name, description or repo…" aria-label="Filter projects" />
+      <button class="lt-btn" id="expandAll" type="button">Expand all</button>
+      <button class="lt-btn" id="collapseAll" type="button">Collapse all</button>
+      <span class="lt-note" id="filterNote"></span>
+    </div>
+
     <main>
       <div class="tabpanel" id="panel-projects" role="tabpanel" aria-labelledby="tab-projects"></div>
       <div class="tabpanel" id="panel-gm" role="tabpanel" aria-labelledby="tab-gm" hidden>
@@ -383,6 +422,7 @@
     // Status label -> badge color. Add your own; "Unknown" is the default.
     const STATUS = {
       "Unknown":       "var(--ink-soft)",
+      "0.5-compliant": "var(--navy)",
       "0.4-compliant": "var(--terracotta)",
       "Live":        "var(--teal)",
       "Active":      "var(--slate)",
@@ -454,10 +494,11 @@
 
     function tasksCountCell(st, slug) {
       const tasks = (st && st.tasks) || [];
-      const open = tasks.filter(t => !t.done).length;
+      const hidden = (st && st.privateBacklog && st.privateBacklog.open) || 0;
+      const open = tasks.filter(t => !t.done).length + hidden;
       if (!open) return `<span class="tcount zero" title="no open tasks">—</span>`;
       const p1 = tasks.filter(t => !t.done && t.priority === 1).length;
-      const title = `${open} open task${open !== 1 ? "s" : ""}${p1 ? ` · ${p1} P1` : ""} — view in Tasks`;
+      const title = `${open} open task${open !== 1 ? "s" : ""}${p1 ? ` · ${p1} P1` : ""}${hidden ? ` · ${hidden} private` : ""} — view in Tasks`;
       return `<button class="tcount${p1 ? " has-p1" : ""}" title="${esc(title)}" onclick="showTasksForRepo('${esc(slug)}')">${open}</button>`;
     }
 
@@ -470,18 +511,44 @@
       return `<span class="badge${derived ? " derived" : ""}" style="color:${color}"${derived ? ' title="inferred from activity"' : ""}>${esc(label)}</span>`;
     }
 
-    function buildGroups(groups, owner, repos) {
+    // Open/closed state per group, remembered per viewer. Storage can throw
+    // (private windows, blocked site data) — fall back to the default.
+    const OPEN_KEY = "sortilege-index:open-groups";
+    function loadOpenState() {
+      try { return JSON.parse(localStorage.getItem(OPEN_KEY) || "{}") || {}; } catch (e) { return {}; }
+    }
+    function saveOpenState(state) {
+      try { localStorage.setItem(OPEN_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
+    }
+    let OPEN_STATE = loadOpenState();
+
+    const LOCK = `<span class="lock" aria-hidden="true">🔒</span>`;
+
+    function buildGroups(groups, owner, repos, tabId, defaultOpen) {
       return groups.map((g, gi) => {
         if (!g.projects || !g.projects.length) return "";
         const accent = ACCENTS[gi % ACCENTS.length];
+        const gid = `${tabId}:${g.name}`;
+        const isOpen = gid in OPEN_STATE ? OPEN_STATE[gid] : defaultOpen;
         const rows = g.projects.map(p => {
           const st = repos && repos[p.repo];
           const links = [];
-          if (p.repo) links.push(`<a class="pill gh" href="${esc(ghUrl(owner, p.repo))}" target="_blank" rel="noopener">${GH_ICON} GitHub</a>`);
-          if (p.web) links.push(`<a class="pill web" href="${esc(p.web)}" target="_blank" rel="noopener">${WEB_ICON} Website</a>`);
+          if (p.repo) {
+            const priv = st && st.visibility === "private";
+            links.push(`<a class="pill gh" href="${esc(ghUrl(owner, p.repo))}" target="_blank" rel="noopener"${priv ? ' title="Private repository — visible to sortilege-inc members only"' : ""}>${GH_ICON} GitHub${priv ? " " + LOCK : ""}</a>`);
+          }
+          // The live Pages URL (from data.json) is the site link; a catalog `web`
+          // is a fallback for repos without Pages, or an external site (e.g. a
+          // convention) — in which case the repo's own Pages site becomes "App".
+          const pages = st && st.pagesUrl;
+          const site = p.web || pages;
+          if (site) links.push(`<a class="pill web" href="${esc(site)}" target="_blank" rel="noopener">${WEB_ICON} Website</a>`);
+          if (p.web && pages && p.web.replace(/\/$/, "") !== pages.replace(/\/$/, ""))
+            links.push(`<a class="pill app" href="${esc(pages)}" target="_blank" rel="noopener" title="This repo's own site">${WEB_ICON} App</a>`);
           const updated = isoDate(st && st.pushedAt) || p.updated || "—";
           const desc = p.desc ? `<div class="proj-desc">${esc(p.desc)}</div>` : `<div class="proj-desc empty">no description</div>`;
-          return `<tr>
+          const search = [p.name, p.desc, p.repo, p.status, p.license].filter(Boolean).join(" ").toLowerCase();
+          return `<tr data-search="${esc(search)}">
             <td>
               <div class="proj-name">${esc(p.name)}</div>
               ${desc}
@@ -494,8 +561,9 @@
             <td class="col-links"><div class="links">${links.join("")}</div></td>
           </tr>`;
         }).join("");
-        return `<section class="group" style="--accent:${accent}">
-          <h2>${esc(g.name)} <span class="count">${g.projects.length} project${g.projects.length !== 1 ? "s" : ""}</span></h2>
+        const n = g.projects.length;
+        return `<details class="group" style="--accent:${accent}" data-gid="${esc(gid)}" data-default-open="${defaultOpen ? 1 : 0}"${isOpen ? " open" : ""}>
+          <summary><h2>${esc(g.name)} <span class="count" data-total="${n}">${n} project${n !== 1 ? "s" : ""}</span><span class="chev" aria-hidden="true">▸</span></h2></summary>
           ${g.blurb ? `<p class="blurb">${esc(g.blurb)}</p>` : ""}
           <div class="panel frame">
             <table>
@@ -511,7 +579,7 @@
               <tbody>${rows}</tbody>
             </table>
           </div>
-        </section>`;
+        </details>`;
       }).join("");
     }
 
@@ -528,11 +596,74 @@
       </section>`;
     }
 
-    function renderTab(panelId, groups, owner, repos, accentVar, fallback, extra) {
-      const html = (buildGroups(groups, owner, repos) + (extra || "")).trim();
-      document.getElementById(panelId).innerHTML = html ||
+    function renderTab(panelId, groups, owner, repos, accentVar, fallback, extra, tabId, defaultOpen) {
+      const html = (buildGroups(groups, owner, repos, tabId, defaultOpen) + (extra || "")).trim();
+      const panel = document.getElementById(panelId);
+      panel.innerHTML = html ||
         `<div class="placeholder frame" style="--accent:${accentVar}">${fallback}</div>`;
+      // Remember the viewer's own open/close choices — but not the automatic
+      // opening the filter does, which is undone when the filter clears.
+      // `toggle` also fires for programmatic changes (including a details element
+      // parsed with `open`). Those always land on the expected state, so saving
+      // only a *departure* from it records real clicks and nothing else.
+      panel.querySelectorAll("details.group").forEach(d => d.addEventListener("toggle", () => {
+        if (FILTER_ACTIVE || d.open === expectedOpen(d)) return;
+        OPEN_STATE[d.dataset.gid] = d.open;
+        saveOpenState(OPEN_STATE);
+      }));
     }
+
+    function expectedOpen(d) {
+      const gid = d.dataset.gid;
+      return gid in OPEN_STATE ? OPEN_STATE[gid] : d.dataset.defaultOpen === "1";
+    }
+
+    function setOpen(d, open) { if (d.open !== open) d.open = open; }
+
+    /* ---------- Project filter + expand/collapse all ---------- */
+    let FILTER_ACTIVE = false;
+    const projectPanels = () => [...document.querySelectorAll(".tabpanel:not(#panel-tasks)")];
+
+    function applyFilter(raw) {
+      const q = raw.trim().toLowerCase();
+      FILTER_ACTIVE = !!q;
+      let shown = 0, total = 0;
+      projectPanels().forEach(panel => panel.querySelectorAll("details.group").forEach(d => {
+        const rows = [...d.querySelectorAll("tbody tr")];
+        let n = 0;
+        rows.forEach(r => { const m = !q || (r.dataset.search || "").includes(q); r.hidden = !m; if (m) n++; });
+        total += rows.length; shown += n;
+        d.hidden = !!q && n === 0;
+        const c = d.querySelector(".count");
+        if (c) c.textContent = q ? `${n} of ${rows.length}` : `${rows.length} project${rows.length !== 1 ? "s" : ""}`;
+        if (q) { if (n) setOpen(d, true); }
+        else setOpen(d, expectedOpen(d));
+      }));
+      // Per-tab match counts so a hit on another tab is discoverable.
+      document.querySelectorAll(".tab").forEach(t => {
+        if (!t.dataset.label) t.dataset.label = t.textContent;
+        const panel = document.getElementById(t.getAttribute("aria-controls"));
+        if (!q || panel.id === "panel-tasks") { t.textContent = t.dataset.label; return; }
+        const hits = panel.querySelectorAll("tbody tr:not([hidden])").length;
+        t.textContent = `${t.dataset.label} (${hits})`;
+      });
+      const note = document.getElementById("filterNote");
+      if (note) note.textContent = q ? `${shown} of ${total} match` : "";
+    }
+
+    function setAllOpen(open) {
+      const panel = projectPanels().find(p => !p.hidden);
+      if (!panel) return;
+      panel.querySelectorAll("details.group:not([hidden])").forEach(d => {
+        if (!FILTER_ACTIVE) OPEN_STATE[d.dataset.gid] = open;   // set first, so the toggle reads as expected
+        setOpen(d, open);
+      });
+      saveOpenState(OPEN_STATE);
+    }
+
+    document.getElementById("listFilter").addEventListener("input", e => applyFilter(e.target.value));
+    document.getElementById("expandAll").addEventListener("click", () => setAllOpen(true));
+    document.getElementById("collapseAll").addEventListener("click", () => setAllOpen(false));
 
     /* ---------------------------------------------------------------------------
        Tasks tab — cross-repo queue aggregated from every repo's tasks
@@ -552,6 +683,17 @@
       Object.entries(repos).forEach(([slug, st]) => {
         const m = meta[slug] || { name: slug, accent: "var(--slate)" };
         (st.tasks || []).forEach(t => ALL_TASKS.push({ ...t, repo: slug, repoName: m.name, accent: m.accent }));
+        // Private repos publish backlog counts only (gen.mjs withholds the text).
+        const pb = st.privateBacklog;
+        if (pb) {
+          const row = (n, done) => ALL_TASKS.push({
+            text: `${n} ${done ? "done" : "open"} backlog item${n !== 1 ? "s" : ""} — private repo, text not published`,
+            done, priority: null, tags: [], source: "backlog", count: n, private: true,
+            repo: slug, repoName: m.name, accent: m.accent,
+          });
+          if (pb.open) row(pb.open, false);
+          if (pb.done) row(pb.done, true);
+        }
       });
     }
 
@@ -576,7 +718,7 @@
       const tags = t.tags.map(x => `<span class="tag-chip">#${esc(x)}</span>`).join(" ");
       return `<div class="task-row ${t.done ? "is-done" : ""}" style="--accent:${t.accent}">
         <span class="prio ${cls}" title="priority">${label}</span>
-        <span class="task-text">${esc(t.text)}${tags ? " " + tags : ""}</span>
+        <span class="task-text">${t.private ? "🔒 " : ""}${esc(t.text)}${tags ? " " + tags : ""}</span>
         <span class="task-meta">
           <button class="repo-chip" onclick="showTasksForRepo('${esc(t.repo)}')" title="filter to ${esc(t.repo)}">${esc(t.repoName)}</button>
           <span class="src ${t.source}" title="${t.source === "standards" ? "auto-derived from standards gaps" : "from TASKS.md"}">${t.source === "standards" ? "auto" : "backlog"}</span>
@@ -592,12 +734,15 @@
         : `<p class="task-empty">No tasks match the current filters.</p>`;
 
       const open = ALL_TASKS.filter(t => !t.done);
+      const weight = t => t.count || 1;   // a private-backlog row stands for `count` items
+      const sumOf = list => list.reduce((n, t) => n + weight(t), 0);
       const nRepos = new Set(open.map(t => t.repo)).size;
-      const backlog = open.filter(t => t.source === "backlog").length;
-      const std = open.filter(t => t.source === "standards").length;
+      const backlog = sumOf(open.filter(t => t.source === "backlog"));
+      const std = sumOf(open.filter(t => t.source === "standards"));
+      const total = sumOf(open);
       const sum = document.getElementById("task-summary");
       if (sum) sum.innerHTML =
-        `<strong>${open.length}</strong> open task${open.length !== 1 ? "s" : ""} across <strong>${nRepos}</strong> repo${nRepos !== 1 ? "s" : ""} · ${backlog} hand-authored · ${std} standards-debt`;
+        `<strong>${total}</strong> open task${total !== 1 ? "s" : ""} across <strong>${nRepos}</strong> repo${nRepos !== 1 ? "s" : ""} · ${backlog} hand-authored · ${std} standards-debt`;
 
       // sync control pressed-states + active-repo note
       document.querySelectorAll("#panel-tasks [data-prio]").forEach(b =>
@@ -669,14 +814,16 @@
       const repos = (data && data.repos) || {};
       const byId = Object.fromEntries((catalog.tabs || []).map(t => [t.id, t]));
 
+      // Projects holds ~120 repos, so its groups start collapsed; the campaign
+      // tabs are short and start open. A viewer's own choices override both.
       renderTab("panel-projects", (byId.projects || {}).groups || [], owner, repos,
-        "var(--terracotta)", "No projects yet.", buildUntracked(owner, data && data.untracked));
+        "var(--terracotta)", "No projects yet.", buildUntracked(owner, data && data.untracked), "projects", false);
       renderTab("panel-gm", (byId.gm || {}).groups || [], owner, repos,
-        "var(--slate)", "Game Master content coming soon.");
+        "var(--slate)", "Game Master content coming soon.", "", "gm", true);
       renderTab("panel-player", (byId.player || {}).groups || [], owner, repos,
-        "var(--terracotta)", "Player content coming soon.");
+        "var(--terracotta)", "Player content coming soon.", "", "player", true);
       renderTab("panel-solo", (byId.solo || {}).groups || [], owner, repos,
-        "var(--violet)", "Solo content coming soon.");
+        "var(--violet)", "Solo content coming soon.", "", "solo", true);
 
       buildTaskIndex(catalog, repos);
       renderTasksTab();
@@ -712,6 +859,8 @@
         t.tabIndex = selected ? 0 : -1;
         document.getElementById(t.getAttribute('aria-controls')).hidden = !selected;
       });
+      const tools = document.getElementById('listTools');
+      if (tools) tools.hidden = tab.id === 'tab-tasks';
     }
     tabs.forEach((tab, i) => {
       tab.addEventListener('click', () => activate(tab));

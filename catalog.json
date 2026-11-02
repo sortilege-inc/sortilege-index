@@ -11,44 +11,87 @@
           "name": "Games, Campaigns & Companions",
           "blurb": "Playable modules, campaign material, and companion apps.",
           "projects": [
-            { "name": "Bellum Arborem", "desc": "Companion web app for the Root roleplaying game.", "repo": "bellum-arborem", "web": "https://sortilege-inc.github.io/bellum-arborem/", "status": "Active" },
-            { "name": "Banes of Beleriand", "desc": "", "repo": "banes-of-beleriand" },
-            { "name": "Collateral", "desc": "", "repo": "collateral" },
+            { "name": "Bellum Arborem", "desc": "Companion web app for the Root roleplaying game.", "repo": "bellum-arborem", "status": "Active" },
             { "name": "Istya", "desc": "The One Ring 2e — company, character & adversary app.", "repo": "istya" },
             { "name": "Arcs 2026", "desc": "Arcs narrative playthrough.", "repo": "arcs-2026", "license": "Proprietary" }
           ]
         },
         {
-          "name": "Titterpig — DSL, Corpora & Tooling",
-          "blurb": "The system-agnostic TTRPG DSL engine, its rules corpora, and authoring tools.",
+          "name": "Titterpig — Spec & Tooling",
+          "blurb": "The system-agnostic TTRPG DSL, its compiler, and authoring/verification tools.",
           "projects": [
             { "name": "Titterpig Mastra", "desc": "Ingestion & authoring pipeline that turns rulebooks into DSL.", "repo": "titterpig-mastra", "license": "MPL-2.0" },
-            { "name": "Titterpig Synthesist", "desc": "", "repo": "titterpig-synthesist", "license": "MPL-2.0", "status": "0.4-compliant" },
-            { "name": "Titterpig DSL", "desc": "Core Titterpig DSL grammar & specification.", "repo": "titterpig-dsl", "license": "MPL-2.0", "status": "0.4-compliant" },
+            { "name": "Titterpig Synthesist", "desc": "", "repo": "titterpig-synthesist", "license": "MPL-2.0", "status": "0.5-compliant" },
+            { "name": "Titterpig DSL", "desc": "Core Titterpig DSL grammar & specification.", "repo": "titterpig-dsl", "license": "MPL-2.0", "status": "0.5-compliant" },
             { "name": "Sublime TTRPG Syntax", "desc": "Titterpig syntax highlighting for Sublime Text.", "repo": "sublime-ttrpg-syntax", "license": "GPL-3.0" },
-            { "name": "DSL · Call of Cthulhu 7e", "desc": "Call of Cthulhu 7th Edition rules corpus.", "repo": "titterpig-dsl-callofcthulhu7e", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · Root", "desc": "Root RPG rules corpus.", "repo": "titterpig-dsl-root", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · Daggerheart", "desc": "Daggerheart rules corpus.", "repo": "titterpig-dsl-daggerheart", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · D&D 5e", "desc": "Dungeons & Dragons 5th Edition rules corpus.", "repo": "titterpig-dsl-dnd5e", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · Ars Magica 5e", "desc": "Ars Magica 5th Edition rules corpus.", "repo": "titterpig-dsl-arm5e", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · Vampire 5e", "desc": "Vampire: The Masquerade 5e rules corpus.", "repo": "titterpig-dsl-vtm5e", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · Draw Steel", "desc": "Draw Steel rules corpus.", "repo": "titterpig-dsl-draw-steel", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · Legend of the Five Rings 5e", "desc": "L5R 5th Edition rules corpus.", "repo": "titterpig-dsl-l5r5e", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · The One Ring 2e", "desc": "The One Ring 2nd Edition rules corpus.", "repo": "titterpig-dsl-tor2e", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · Invisible Sun", "desc": "Invisible Sun rules corpus.", "repo": "titterpig-dsl-invisiblesun", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · The Expanse", "desc": "The Expanse RPG rules corpus.", "repo": "titterpig-dsl-expanse", "license": "Per-file", "status": "0.4-compliant" },
-            { "name": "DSL · D&D 2024 (5.2.1)", "desc": "Dungeons & Dragons 2024 (SRD 5.2.1) rules corpus.", "repo": "titterpig-dsl-dnd5.5e", "license": "CC-BY-4.0" },
+            { "name": "Titterpig Rules Lawyer", "desc": "", "repo": "titterpig-rules-lawyer", "license": "MPL-2.0" },
+            { "name": "Titterpig Doublecheck", "desc": "PDF-source verifier for converted corpora.", "repo": "titterpig-doublecheck" },
+            { "name": "L5R Lore", "desc": "Searchable L5R wiki index; backs the L5R5e VTT's GM Lore pane.", "repo": "l5r-lore" }
+          ]
+        },
+        {
+          "name": "Titterpig — Corpora",
+          "blurb": "Rules corpora encoded in the Titterpig DSL, one repo per game (and per 3rd-party set).",
+          "projects": [
+            { "name": "DSL · Aegean", "desc": "Aegean rules corpus.", "repo": "titterpig-dsl-aegean", "status": "0.5-compliant" },
+            { "name": "DSL · Ars Magica (3rd-party)", "desc": "Ars Magica (3rd-party) rules corpus.", "repo": "titterpig-dsl-arm5e-3rdparty", "status": "0.5-compliant" },
+            { "name": "DSL · Ars Magica 5e", "desc": "Ars Magica 5th Edition rules corpus.", "repo": "titterpig-dsl-arm5e", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · Call of Cthulhu 7e", "desc": "Call of Cthulhu 7th Edition rules corpus.", "repo": "titterpig-dsl-callofcthulhu7e", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · Coyote & Crow", "desc": "Coyote & Crow rules corpus.", "repo": "titterpig-dsl-coyotecrow", "status": "0.5-compliant" },
+            { "name": "DSL · Curseborne", "desc": "Curseborne rules corpus.", "repo": "titterpig-dsl-curseborne", "status": "0.5-compliant" },
+            { "name": "DSL · D&D 2024 (5.2.1)", "desc": "Dungeons & Dragons 2024 (SRD 5.2.1) rules corpus.", "repo": "titterpig-dsl-dnd5.5e", "license": "CC-BY-4.0", "status": "0.5-compliant" },
+            { "name": "DSL · D&D 5e", "desc": "Dungeons & Dragons 5th Edition rules corpus.", "repo": "titterpig-dsl-dnd5e", "license": "Per-file", "status": "0.5-compliant" },
             { "name": "DSL · D&D 5e (3rd-party)", "desc": "Third-party D&D 5e content — Historica Arcanum: The City of Crescent.", "repo": "titterpig-dsl-dnd5e-3rdparty", "license": "Per-file" },
-            { "name": "DSL · L5R 5e (3rd-party)", "desc": "Third-party Legend of the Five Rings 5e content.", "repo": "titterpig-dsl-l5r5e-3rdparty", "license": "Per-file" },
-            { "name": "DSL · Seven Part Pact", "desc": "The Seven-Part Pact rules corpus.", "repo": "titterpig-dsl-7pp" },
-            { "name": "Titterpig Rules Lawyer", "desc": "", "repo": "titterpig-rules-lawyer", "license": "MPL-2.0" }
+            { "name": "DSL · Daggerheart", "desc": "Daggerheart rules corpus.", "repo": "titterpig-dsl-daggerheart", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · Daggerheart (3rd-party)", "desc": "Daggerheart (3rd-party) rules corpus.", "repo": "titterpig-dsl-daggerheart-3rdparty", "status": "0.5-compliant" },
+            { "name": "DSL · Draw Steel", "desc": "Draw Steel rules corpus.", "repo": "titterpig-dsl-draw-steel", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · Invisible Sun", "desc": "Invisible Sun rules corpus.", "repo": "titterpig-dsl-invisiblesun", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · L5R 5e (3rd-party)", "desc": "Third-party Legend of the Five Rings 5e content.", "repo": "titterpig-dsl-l5r5e-3rdparty", "license": "Per-file", "status": "0.4-compliant" },
+            { "name": "DSL · Legend of the Five Rings 5e", "desc": "L5R 5th Edition rules corpus.", "repo": "titterpig-dsl-l5r5e", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · Marvel Multiverse", "desc": "Marvel Multiverse rules corpus.", "repo": "titterpig-dsl-marvelmultiverse", "status": "0.5-compliant" },
+            { "name": "DSL · Modern AGE", "desc": "Placeholder repo — no content yet.", "repo": "titterpig-dsl-modernage", "status": "Draft" },
+            { "name": "DSL · Monsterhearts 2e", "desc": "Placeholder repo — no content yet.", "repo": "titterpig-dsl-monsterhearts2e", "status": "Draft" },
+            { "name": "DSL · Mythic GME 2e", "desc": "Mythic Game Master Emulator 2e rules corpus.", "repo": "titterpig-mythic-gme2", "status": "0.5-compliant" },
+            { "name": "DSL · Pendragon 5e", "desc": "Pendragon 5e rules corpus.", "repo": "titterpig-dsl-pendragon5e", "status": "0.5-compliant" },
+            { "name": "DSL · Pendragon 6e", "desc": "Pendragon 6e rules corpus.", "repo": "titterpig-dsl-pendragon6e", "status": "0.5-compliant" },
+            { "name": "DSL · Root", "desc": "Root RPG rules corpus.", "repo": "titterpig-dsl-root", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · Seven Part Pact", "desc": "Placeholder repo — no content yet.", "repo": "titterpig-dsl-7pp", "status": "Draft" },
+            { "name": "DSL · TEETH", "desc": "TEETH rules corpus.", "repo": "titterpig-dsl-teeth", "status": "0.5-compliant" },
+            { "name": "DSL · The Expanse", "desc": "The Expanse RPG rules corpus.", "repo": "titterpig-dsl-expanse", "license": "Per-file", "status": "0.4-compliant" },
+            { "name": "DSL · The One Ring 2e", "desc": "The One Ring 2nd Edition rules corpus.", "repo": "titterpig-dsl-tor2e", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · The One Ring 2e (3rd-party)", "desc": "Placeholder repo — no content yet.", "repo": "titterpig-dsl-tor2e-3rdparty", "status": "Draft" },
+            { "name": "DSL · Troika!", "desc": "Troika! rules corpus.", "repo": "titterpig-dsl-troika", "status": "0.5-compliant" },
+            { "name": "DSL · Troika! (3rd-party)", "desc": "Third-party Troika! books.", "repo": "titterpig-dsl-troika-3rdparty", "status": "0.5-compliant" },
+            { "name": "DSL · Vampire 5e", "desc": "Vampire: The Masquerade 5e rules corpus.", "repo": "titterpig-dsl-vtm5e", "license": "Per-file", "status": "0.5-compliant" },
+            { "name": "DSL · Vampire 5e (3rd-party)", "desc": "Vampire 5e (3rd-party) rules corpus.", "repo": "titterpig-dsl-vtm5e-3rdparty", "status": "0.5-compliant" }
+          ]
+        },
+        {
+          "name": "Sortilege VTT",
+          "blurb": "The VTT engine family; campaign sites in the GM/Player tabs are instances of these.",
+          "projects": [
+            { "name": "VTT · Aegean", "desc": "Sortilege VTT engine for Aegean.", "repo": "sortilege-vtt-aegean" },
+            { "name": "VTT · Ars Magica (Definitive Edition)", "desc": "Sortilege VTT engine for Ars Magica (Definitive Edition).", "repo": "sortilege-vtt-arsmagica" },
+            { "name": "VTT · City of Winter", "desc": "City of Winter table — no GM; every seated player plays.", "repo": "sortilege-vtt-cityofwinter" },
+            { "name": "VTT · Coyote & Crow", "desc": "Sortilege VTT engine for Coyote & Crow.", "repo": "sortilege-vtt-coyotecrow" },
+            { "name": "VTT · Daggerheart", "desc": "Sortilege VTT engine for Daggerheart.", "repo": "sortilege-vtt-daggerheart" },
+            { "name": "VTT · D&D 5e", "desc": "Sortilege VTT engine for D&D 5e.", "repo": "sortilege-vtt-dnd5e" },
+            { "name": "VTT · Draw Steel", "desc": "Sortilege VTT engine for Draw Steel.", "repo": "sortilege-vtt-drawsteel" },
+            { "name": "VTT · Invisible Sun", "desc": "Sortilege VTT engine for Invisible Sun.", "repo": "sortilege-vtt-invisiblesun" },
+            { "name": "VTT · Legend of the Five Rings 5e", "desc": "Sortilege VTT engine for Legend of the Five Rings 5e.", "repo": "sortilege-vtt-l5r5e" },
+            { "name": "VTT · Marvel Multiverse", "desc": "Sortilege VTT engine for Marvel Multiverse.", "repo": "sortilege-vtt-marvelmultiverse" },
+            { "name": "VTT · Pendragon 6e", "desc": "Sortilege VTT engine for Pendragon 6e.", "repo": "sortilege-vtt-pendragon6e" },
+            { "name": "VTT · TEETH", "desc": "Sortilege VTT engine for TEETH.", "repo": "sortilege-vtt-teeth" },
+            { "name": "VTT · The One Ring 2e", "desc": "Sortilege VTT engine for The One Ring 2e.", "repo": "sortilege-vtt-tor2e" },
+            { "name": "VTT · Troika!", "desc": "Sortilege VTT engine for Troika!.", "repo": "sortilege-vtt-troika" },
+            { "name": "VTT · Vampire: the Masquerade 5e", "desc": "Sortilege VTT engine for Vampire: the Masquerade 5e.", "repo": "sortilege-vtt-vtm5e" }
           ]
         },
         {
           "name": "Engines, Dashboards & Wikis",
           "blurb": "Runtime engines, dashboards, and knowledge bases.",
           "projects": [
-            { "name": "Sortilege Index", "desc": "This project index — a cross-repo state dashboard for all Sortilege repositories.", "repo": "sortilege-index", "license": "Proprietary", "web": "https://sortilege-inc.github.io/sortilege-index/", "status": "Active" },
+            { "name": "Sortilege Index", "desc": "This project index — a cross-repo state dashboard for all Sortilege repositories.", "repo": "sortilege-index", "license": "Proprietary", "status": "Active" },
             { "name": "Titterpig Engine", "desc": "", "repo": "titterpig-engine", "license": "MPL-2.0" },
             { "name": "Titterpig Dashboard (Web)", "desc": "", "repo": "titterpig-dashboard-web", "license": "MPL-2.0" },
             { "name": "Marginalia", "desc": "", "repo": "marginalia", "license": "MPL-2.0" },
@@ -62,11 +105,16 @@
           "projects": [
             { "name": "Un Coup de Dés", "desc": "", "repo": "un-coup-de-des", "license": "Proprietary" },
             { "name": "Dossier Studio", "desc": "", "repo": "dossier-studio" },
-            { "name": "Dossiers", "desc": "Deep dives on constructed player characters.", "repo": "dossiers", "license": "Proprietary", "web": "https://sortilege-inc.github.io/dossiers/" },
+            { "name": "Dossiers", "desc": "Deep dives on constructed player characters.", "repo": "dossiers", "license": "Proprietary" },
             { "name": "Quorum", "desc": "", "repo": "quorum" },
             { "name": "Spiders", "desc": "", "repo": "spiders-game" },
             { "name": "Maker's Matrix", "desc": "Invisible Sun Maker's Matrix.", "repo": "makers-matrix" },
-            { "name": "Maker's Matrix API", "desc": "Maker's Matrix API.", "repo": "makers-matrix-api" }
+            { "name": "Maker's Matrix API", "desc": "Maker's Matrix API.", "repo": "makers-matrix-api" },
+            { "name": "Sortilege Landing", "desc": "Landing page for sortilege.online.", "repo": "landing" },
+            { "name": "Event Registration", "desc": "Event registration for sortilege.online.", "repo": "registration" },
+            { "name": "L5R5e Pregens", "desc": "Legend of the Five Rings 5e pregenerated characters.", "repo": "sortilege-l5r5e-pregens" },
+            { "name": "Schedule", "desc": "Booking page for schedule.sortilege.online.", "repo": "schedule" },
+            { "name": "Tokenizer", "desc": "Image in, round VTT token out: web app and CLI.", "repo": "tokenizer" }
           ]
         },
         {
@@ -75,7 +123,8 @@
           "projects": [
             { "name": "TCGGG", "desc": "", "repo": "tcggg" },
             { "name": "TCG DB", "desc": "Trading Card Game database.", "repo": "tcgdb" },
-            { "name": "SNAFU DB", "desc": "", "repo": "snafu-db" }
+            { "name": "SNAFU DB", "desc": "", "repo": "snafu-db" },
+            { "name": "Oath: New Horizons", "desc": "", "repo": "oaths-new-horizons-sortilege" }
           ]
         },
         {
@@ -100,7 +149,14 @@
             { "name": "FVTT · L5R 5e", "desc": "", "repo": "sortilege-fvtt-compendia-l5r5e", "license": "Publisher-owned" },
             { "name": "FVTT · Marvel Multiverse", "desc": "", "repo": "sortilege-fvtt-compendia-marvel-multiverse", "license": "Publisher-owned" },
             { "name": "L5R 5e Compendia", "desc": "", "repo": "l5r5e-compendia-sortilege", "license": "Publisher-owned" },
-            { "name": "FVTT · Vampire 5e", "desc": "", "repo": "sortilege-fvtt-compendia-vtm5e", "license": "Publisher-owned" }
+            { "name": "FVTT · Vampire 5e", "desc": "", "repo": "sortilege-fvtt-compendia-vtm5e", "license": "Publisher-owned" },
+            { "name": "AGE System (Foundry)", "desc": "Unofficial AGE System (Green Ronin) implementation for Foundry VTT.", "repo": "age-system" },
+            { "name": "The Expanse (Foundry)", "desc": "Green Ronin's official Expanse system for Foundry VTT.", "repo": "expanse" },
+            { "name": "Expanse Bonus Pack", "desc": "Foundry compendium.", "repo": "expanse-bonus-pack" },
+            { "name": "Expanse Gear Pack", "desc": "Foundry compendium.", "repo": "expanse-gear-pack" },
+            { "name": "Expanse NPC Pack", "desc": "Foundry compendium.", "repo": "expanse-npc-pack" },
+            { "name": "Expanse Ships Pack", "desc": "Foundry compendium.", "repo": "expanse-ships-pack" },
+            { "name": "Expanse Character Generator", "desc": "Character generator for The Expanse RPG.", "repo": "expanse-chargen" }
           ]
         },
         {
@@ -110,19 +166,20 @@
             { "name": "Hegemony CCG", "desc": "", "repo": "hegemonyccg", "license": "Proprietary" },
             { "name": "Networked Futures", "desc": "", "repo": "networked-futures", "license": "Proprietary" },
             { "name": "Mastra and Commander", "desc": "Squib card-generation pipeline on the Lens frame system.", "repo": "mastra-and-commander" },
-            { "name": "Mastra and Commander (Server)", "desc": "Server for the Mastra and Commander card pipeline.", "repo": "mastra-and-commander-server", "web": "https://sortilege-inc.github.io/mastra-and-commander-server/" },
+            { "name": "Mastra and Commander (Server)", "desc": "Server for the Mastra and Commander card pipeline.", "repo": "mastra-and-commander-server" },
             { "name": "Roll20 VTT Modules — Axis", "desc": "" },
             { "name": "Modern AGE Module Development", "desc": "" },
-            { "name": "Wyldwolf Module Prototype — Mikko", "desc": "" },
+            { "name": "Wyldwolf Module Prototype — Mikko", "desc": "The Exorcism of Mikko — GM table tool.", "repo": "wyldwolf-axis" },
             { "name": "Dragons, Dungeons & Drinks — Winnipeg", "desc": "" },
-            { "name": "Belgian Club — Tues TTRPG", "desc": "" }
+            { "name": "Belgian Club — Tues TTRPG", "desc": "" },
+            { "name": "Mastra Collectibles", "desc": "Mastra collection cards.", "repo": "mastra-collectibles" }
           ]
         },
         {
           "name": "Conventions",
           "blurb": "Convention appearances and events.",
           "projects": [
-            { "name": "NOVA Open — Curseborne / Onyx Path", "desc": "Sep 2–6, 2026 · Washington, DC. Ticket held.", "web": "https://www.novaopen.com" },
+            { "name": "NOVA Open — Curseborne / Onyx Path", "desc": "Sep 2–6, 2026 · Washington, DC. Ticket held.", "web": "https://www.novaopen.com", "repo": "novaopen2026" },
             { "name": "Arkham Con 2026", "desc": "Oct 22–25, 2026 · Roseville, MN. Ticket held. (Arkham Horror: The Card Game.)", "web": "https://arkhamcon.org" },
             { "name": "Wrecking Crew GenCon 2027", "desc": "Aug 5–8, 2027 · Indianapolis.", "web": "https://www.gencon.com" },
             { "name": "Con of the North 2027", "desc": "Feb 12–14, 2027 · Bloomington, MN.", "web": "https://www.conofthenorth.org/" },
@@ -167,11 +224,24 @@
           "name": "Campaigns",
           "blurb": "",
           "projects": [
-            { "name": "Sjórseiðr", "desc": "A startplaying.games Ars Magica Campaign", "repo": "sjorseidr", "license": "Proprietary", "web": "https://sortilege-inc.github.io/sjorseidr/", "status": "In Progress" },
-            { "name": "Caul", "desc": "A Wyldwolf Daggerheart Campaign set in the Age of Umbra", "repo": "caul", "license": "Proprietary", "web": "https://caul.sortilege.online/", "status": "In Progress" },
-            { "name": "A Gibbous Moon Over Constantinople", "desc": "A D&D 5e campaign in the City of Crescent — Ottoman Constantinople.", "repo": "a-gibbous-moon", "license": "Proprietary", "web": "https://ottoman.sortilege.online/", "status": "In Progress" },
-            { "name": "Portents & Fortunes", "desc": "A solo L5R 5e campaign — Togashi Norikage, a Dragon Clan monk.", "repo": "portents-and-fortunes", "web": "https://sortilege-inc.github.io/portents-and-fortunes/", "status": "In Progress" },
-            { "name": "City of Winter", "desc": "", "repo": "city-of-winter", "web": "https://cityofwinter.sortilege.online/", "status": "In Progress" }
+            { "name": "Sjórseiðr", "desc": "A startplaying.games Ars Magica Campaign", "repo": "sjorseidr", "license": "Proprietary", "status": "In Progress" },
+            { "name": "Caul", "desc": "A Wyldwolf Daggerheart Campaign set in the Age of Umbra", "repo": "caul", "license": "Proprietary", "status": "In Progress" },
+            { "name": "A Gibbous Moon Over Constantinople", "desc": "A D&D 5e campaign in the City of Crescent — Ottoman Constantinople.", "repo": "a-gibbous-moon", "license": "Proprietary", "status": "In Progress" },
+            { "name": "Portents & Fortunes", "desc": "A solo L5R 5e campaign — Togashi Norikage, a Dragon Clan monk.", "repo": "portents-and-fortunes", "status": "In Progress" },
+            { "name": "City of Winter", "desc": "A City of Winter campaign at the family table (City of Winter VTT).", "repo": "city-of-winter", "web": "https://cityofwinter.sortilege.online/", "status": "In Progress" },
+            { "name": "The Bushi Oni", "desc": "A multi-player L5R 5e murder-conspiracy campaign (L5R5e VTT instance).", "repo": "the-bushi-oni", "status": "In Progress" },
+            { "name": "Kill Fee", "desc": "A Daggerheart mini-campaign in Night City.", "repo": "kill-fee", "status": "In Progress" },
+            { "name": "Fall of London", "desc": "Renegade's published VtM5e chronicle, 2023–24 (VtM5e VTT instance).", "repo": "fall-of-london-2023" },
+            { "name": "Banes of Beleriand", "desc": "A The One Ring 2e campaign (TOR2e VTT instance).", "repo": "banes-of-beleriand", "status": "In Progress" }
+          ]
+        },
+        {
+          "name": "Forthcoming",
+          "blurb": "Campaigns in preparation.",
+          "projects": [
+            { "name": "Collateral", "desc": "", "repo": "collateral" },
+            { "name": "Only Lovers Left Alive", "desc": "A two-character VtM5e play page.", "repo": "only-lovers-left-alive" },
+            { "name": "The Fallow Season", "desc": "An Aegean campaign.", "repo": "the-fallow-season-aegean" }
           ]
         }
       ]
@@ -184,9 +254,16 @@
           "name": "Campaigns",
           "blurb": "",
           "projects": [
-            { "name": "War of Princes", "desc": "A Vampire: the Masquerade - Dark Ages Chronicle.", "repo": "war-of-princes", "license": "Proprietary", "web": "https://sortilege-inc.github.io/war-of-princes/", "status": "In Progress" },
-            { "name": "Return to Dolmenwood", "desc": "A Dolmenwood campaign.", "repo": "return-to-dolmenwood", "web": "https://dolmenwood.sortilege.online/", "status": "In Progress" },
-            { "name": "The Fragile Peace", "desc": "", "repo": "fragilepeace", "web": "https://fragilepeace.sortilege.online/", "status": "In Progress" }
+            { "name": "War of Princes", "desc": "A Vampire: the Masquerade - Dark Ages Chronicle.", "repo": "war-of-princes", "license": "Proprietary", "status": "In Progress" },
+            { "name": "Return to Dolmenwood", "desc": "A Dolmenwood campaign.", "repo": "return-to-dolmenwood", "status": "In Progress" },
+            { "name": "The Fragile Peace", "desc": "An L5R 5e campaign.", "repo": "fragilepeace", "status": "In Progress" },
+            { "name": "Colossi of the Drylands", "desc": "A Daggerheart frame campaign.", "repo": "colossi-of-the-drylands", "status": "In Progress" },
+            { "name": "Season of Magic", "desc": "A D&D 2024 campaign.", "repo": "season-of-magic", "status": "In Progress" },
+            { "name": "War of the Dragon Banners", "desc": "A Pendragon 6e campaign (Pendragon VTT instance).", "repo": "war-of-the-dragon-banners", "status": "In Progress" },
+            { "name": "Blood & Other Drugs", "desc": "A Toronto VtM5e chronicle (VtM5e VTT instance).", "repo": "blood-and-other-drugs", "status": "In Progress" },
+            { "name": "Physician, Heal Thyself", "desc": "A 2021 Quebec City VtM5e chronicle (VtM5e VTT instance).", "repo": "physician-heal-thyself" },
+            { "name": "Naadag Hasaka", "desc": "A 2023 Coyote & Crow saga (Coyote & Crow VTT instance).", "repo": "naadag-hasaka" },
+            { "name": "X-FRONT", "desc": "A Marvel Multiverse campaign (Marvel Multiverse VTT instance).", "repo": "x-front" }
           ]
         }
       ]
@@ -199,8 +276,9 @@
           "name": "Campaigns",
           "blurb": "",
           "projects": [
-            { "name": "Children of Fear", "desc": "A solo Call of Cthulhu campaign.", "repo": "children-of-fear", "license": "Proprietary", "web": "https://sortilege-inc.github.io/children-of-fear/", "status": "In Progress" },
-            { "name": "Home Is Where We Make Our Fire", "desc": "Celenneth — a solo The One Ring 2e campaign.", "repo": "home-is-where-we-make-our-fire", "license": "Proprietary", "web": "https://celenneth.sortilege.online/", "status": "In Progress" }
+            { "name": "Children of Fear", "desc": "A solo Call of Cthulhu campaign.", "repo": "children-of-fear", "license": "Proprietary", "status": "In Progress" },
+            { "name": "Home Is Where We Make Our Fire", "desc": "Celenneth — a solo The One Ring 2e campaign.", "repo": "home-is-where-we-make-our-fire", "license": "Proprietary", "status": "In Progress" },
+            { "name": "Down In Yongardy", "desc": "A solo Troika! run (Troika! VTT instance).", "repo": "yongardy", "status": "In Progress" }
           ]
         }
       ]
