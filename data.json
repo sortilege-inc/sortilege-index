@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T14:48:59.108Z",
+  "generatedAt": "2026-11-04T15:01:11.677Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 133,
@@ -2363,7 +2363,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-11-02T19:53:50Z",
+      "pushedAt": "2026-11-03T14:50:12Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2378,7 +2378,7 @@
       "pagesUrl": "https://sortilege-inc.github.io/sortilege-index/",
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-11-03T14:48:47Z",
+        "created_at": "2026-11-04T15:01:03Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2764,7 +2764,7 @@
     "dossiers": {
       "slug": "dossiers",
       "description": "Deep dives on constructed player characters",
-      "pushedAt": "2026-11-03T04:24:19Z",
+      "pushedAt": "2026-11-03T21:35:56Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4495,7 +4495,7 @@
     "sjorseidr": {
       "slug": "sjorseidr",
       "description": "Sjórseiðr Campaign",
-      "pushedAt": "2026-11-02T23:43:08Z",
+      "pushedAt": "2026-11-03T16:00:05Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5353,7 +5353,7 @@
     "x-front": {
       "slug": "x-front",
       "description": "X-FRONT",
-      "pushedAt": "2026-10-17T02:56:06Z",
+      "pushedAt": "2026-11-03T21:39:26Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
