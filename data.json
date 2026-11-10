@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T17:05:03.872Z",
+  "generatedAt": "2026-11-10T15:22:36.572Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 133,
@@ -2062,7 +2062,7 @@
     "sortilege-vtt-l5r5e": {
       "slug": "sortilege-vtt-l5r5e",
       "description": "Legend of the Five Rings 5e VTT",
-      "pushedAt": "2026-10-17T02:54:50Z",
+      "pushedAt": "2026-11-10T05:29:36Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2363,7 +2363,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-11-08T14:02:15Z",
+      "pushedAt": "2026-11-09T17:06:18Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2378,7 +2378,7 @@
       "pagesUrl": "https://sortilege-inc.github.io/sortilege-index/",
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-11-09T17:04:56Z",
+        "created_at": "2026-11-10T15:22:26Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2764,7 +2764,7 @@
     "dossiers": {
       "slug": "dossiers",
       "description": "Deep dives on constructed player characters",
-      "pushedAt": "2026-11-03T21:35:56Z",
+      "pushedAt": "2026-11-10T14:40:52Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4563,7 +4563,7 @@
     "a-gibbous-moon": {
       "slug": "a-gibbous-moon",
       "description": "A Gibbous Moon Over Constantinople",
-      "pushedAt": "2026-11-08T20:14:40Z",
+      "pushedAt": "2026-11-09T18:00:37Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4597,7 +4597,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-10-17T02:56:08Z",
+      "pushedAt": "2026-11-10T05:29:45Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4683,7 +4683,7 @@
     "the-bushi-oni": {
       "slug": "the-bushi-oni",
       "description": "The Bushi Oni",
-      "pushedAt": "2026-10-17T02:56:11Z",
+      "pushedAt": "2026-11-10T05:29:48Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5070,7 +5070,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-11-03T04:26:21Z",
+      "pushedAt": "2026-11-10T05:29:41Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5353,7 +5353,7 @@
     "x-front": {
       "slug": "x-front",
       "description": "X-FRONT",
-      "pushedAt": "2026-11-03T21:39:26Z",
+      "pushedAt": "2026-11-09T17:37:33Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
