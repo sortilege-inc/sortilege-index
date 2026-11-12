@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T14:52:47.286Z",
+  "generatedAt": "2026-11-12T15:43:40.632Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 133,
@@ -215,7 +215,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-10-17T22:52:21Z",
+      "pushedAt": "2026-11-12T15:35:02Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -1700,7 +1700,7 @@
     "sortilege-vtt-aegean": {
       "slug": "sortilege-vtt-aegean",
       "description": "Aegean VTT",
-      "pushedAt": "2026-10-26T17:37:53Z",
+      "pushedAt": "2026-11-11T20:08:33Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1795,7 +1795,7 @@
     "sortilege-vtt-cityofwinter": {
       "slug": "sortilege-vtt-cityofwinter",
       "description": "City of Winter — the family's table, the atlas and the traditions, played by everyone (Sortilege VTT family)",
-      "pushedAt": "2026-10-26T17:37:55Z",
+      "pushedAt": "2026-11-11T20:08:36Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1838,7 +1838,7 @@
     "sortilege-vtt-coyotecrow": {
       "slug": "sortilege-vtt-coyotecrow",
       "description": "Coyote & Crow VTT",
-      "pushedAt": "2026-10-17T02:54:42Z",
+      "pushedAt": "2026-11-11T20:08:38Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1881,7 +1881,7 @@
     "sortilege-vtt-daggerheart": {
       "slug": "sortilege-vtt-daggerheart",
       "description": "Daggerheart VTT",
-      "pushedAt": "2026-10-17T02:54:44Z",
+      "pushedAt": "2026-11-11T20:08:39Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1924,7 +1924,7 @@
     "sortilege-vtt-dnd5e": {
       "slug": "sortilege-vtt-dnd5e",
       "description": "D&D 5e VTT",
-      "pushedAt": "2026-11-09T00:12:11Z",
+      "pushedAt": "2026-11-11T20:08:41Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2019,7 +2019,7 @@
     "sortilege-vtt-invisiblesun": {
       "slug": "sortilege-vtt-invisiblesun",
       "description": "Invisible Sun VTT",
-      "pushedAt": "2026-10-26T17:37:56Z",
+      "pushedAt": "2026-11-11T20:08:43Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2062,7 +2062,7 @@
     "sortilege-vtt-l5r5e": {
       "slug": "sortilege-vtt-l5r5e",
       "description": "Legend of the Five Rings 5e VTT",
-      "pushedAt": "2026-11-10T05:29:36Z",
+      "pushedAt": "2026-11-12T02:18:52Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2105,7 +2105,7 @@
     "sortilege-vtt-marvelmultiverse": {
       "slug": "sortilege-vtt-marvelmultiverse",
       "description": "Marvel Multiverse RPG VTT",
-      "pushedAt": "2026-10-17T02:54:52Z",
+      "pushedAt": "2026-11-11T20:08:44Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2148,7 +2148,7 @@
     "sortilege-vtt-pendragon6e": {
       "slug": "sortilege-vtt-pendragon6e",
       "description": "Pendragon 6e VTT",
-      "pushedAt": "2026-10-17T02:54:54Z",
+      "pushedAt": "2026-11-11T20:08:46Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2191,7 +2191,7 @@
     "sortilege-vtt-teeth": {
       "slug": "sortilege-vtt-teeth",
       "description": "TEETH",
-      "pushedAt": "2026-10-26T17:37:58Z",
+      "pushedAt": "2026-11-11T20:08:47Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2234,7 +2234,7 @@
     "sortilege-vtt-tor2e": {
       "slug": "sortilege-vtt-tor2e",
       "description": "The One Ring 2e",
-      "pushedAt": "2026-10-26T17:37:59Z",
+      "pushedAt": "2026-11-11T20:08:49Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2277,7 +2277,7 @@
     "sortilege-vtt-troika": {
       "slug": "sortilege-vtt-troika",
       "description": "Troika VTT",
-      "pushedAt": "2026-10-26T17:37:20Z",
+      "pushedAt": "2026-11-11T20:08:50Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2320,7 +2320,7 @@
     "sortilege-vtt-vtm5e": {
       "slug": "sortilege-vtt-vtm5e",
       "description": "Vampire: the Masquerade 5e VTT",
-      "pushedAt": "2026-10-26T17:38:01Z",
+      "pushedAt": "2026-11-11T20:08:52Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2363,7 +2363,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-11-10T15:23:52Z",
+      "pushedAt": "2026-11-11T14:53:48Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2378,7 +2378,7 @@
       "pagesUrl": "https://sortilege-inc.github.io/sortilege-index/",
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-11-11T14:52:40Z",
+        "created_at": "2026-11-12T15:43:34Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2644,7 +2644,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-11-06T16:05:30Z",
+      "pushedAt": "2026-11-11T23:57:54Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4529,7 +4529,7 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-10-17T02:55:54Z",
+      "pushedAt": "2026-11-11T20:09:55Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4597,7 +4597,7 @@
     "portents-and-fortunes": {
       "slug": "portents-and-fortunes",
       "description": "Portents & Fortunes",
-      "pushedAt": "2026-11-10T05:29:45Z",
+      "pushedAt": "2026-11-12T02:21:31Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4683,7 +4683,7 @@
     "the-bushi-oni": {
       "slug": "the-bushi-oni",
       "description": "The Bushi Oni",
-      "pushedAt": "2026-11-10T05:29:48Z",
+      "pushedAt": "2026-11-12T02:23:26Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4726,7 +4726,7 @@
     "kill-fee": {
       "slug": "kill-fee",
       "description": "A Daggerheart adventure in Night City",
-      "pushedAt": "2026-10-30T15:14:33Z",
+      "pushedAt": "2026-11-11T20:15:55Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4760,7 +4760,7 @@
     "fall-of-london-2023": {
       "slug": "fall-of-london-2023",
       "description": "Fall of London",
-      "pushedAt": "2026-10-26T17:38:25Z",
+      "pushedAt": "2026-11-11T20:09:49Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4803,7 +4803,7 @@
     "banes-of-beleriand": {
       "slug": "banes-of-beleriand",
       "description": "Banes of Beleriand",
-      "pushedAt": "2026-10-26T17:38:26Z",
+      "pushedAt": "2026-11-11T20:09:48Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4993,7 +4993,7 @@
     "war-of-princes": {
       "slug": "war-of-princes",
       "description": "Vampire: the Dark Ages - War of Princes",
-      "pushedAt": "2026-10-28T00:42:48Z",
+      "pushedAt": "2026-11-11T20:09:44Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5070,7 +5070,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-11-10T05:29:41Z",
+      "pushedAt": "2026-11-12T02:23:04Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5181,7 +5181,7 @@
     "war-of-the-dragon-banners": {
       "slug": "war-of-the-dragon-banners",
       "description": "War of the Dragon Banners",
-      "pushedAt": "2026-10-17T02:56:03Z",
+      "pushedAt": "2026-11-11T20:09:52Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5224,7 +5224,7 @@
     "blood-and-other-drugs": {
       "slug": "blood-and-other-drugs",
       "description": "Blood & Other Drugs",
-      "pushedAt": "2026-10-26T17:39:03Z",
+      "pushedAt": "2026-11-11T20:09:57Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5267,7 +5267,7 @@
     "physician-heal-thyself": {
       "slug": "physician-heal-thyself",
       "description": "Physician Heal Thyself",
-      "pushedAt": "2026-10-26T17:38:23Z",
+      "pushedAt": "2026-11-11T20:09:54Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5310,7 +5310,7 @@
     "naadag-hasaka": {
       "slug": "naadag-hasaka",
       "description": "Naadag Hasaka",
-      "pushedAt": "2026-10-17T02:55:48Z",
+      "pushedAt": "2026-11-11T20:09:51Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5353,7 +5353,7 @@
     "x-front": {
       "slug": "x-front",
       "description": "X-FRONT",
-      "pushedAt": "2026-11-09T17:37:33Z",
+      "pushedAt": "2026-11-11T20:09:46Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5464,7 +5464,7 @@
     "yongardy": {
       "slug": "yongardy",
       "description": "Down In Yongardy — a solo run on the Troika! VTT (an instance of sortilege-vtt-troika)",
-      "pushedAt": "2026-11-06T16:31:53Z",
+      "pushedAt": "2026-11-11T20:09:59Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
