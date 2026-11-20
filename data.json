@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T16:14:38.142Z",
+  "generatedAt": "2026-11-20T15:53:03.793Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 133,
@@ -143,7 +143,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": null,
-      "pushedAt": "2026-11-19T15:05:12Z",
+      "pushedAt": "2026-11-20T14:50:45Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -181,7 +181,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-11-19T15:05:13Z",
+      "pushedAt": "2026-11-20T14:06:27Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -215,7 +215,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-11-19T12:54:38Z",
+      "pushedAt": "2026-11-20T14:22:35Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -317,7 +317,7 @@
     "titterpig-doublecheck": {
       "slug": "titterpig-doublecheck",
       "description": null,
-      "pushedAt": "2026-10-03T21:34:01Z",
+      "pushedAt": "2026-11-19T16:53:49Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -326,7 +326,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -661,16 +661,16 @@
     "titterpig-dsl-dnd5.5e": {
       "slug": "titterpig-dsl-dnd5.5e",
       "description": "Titterpig Dungeons & Dragons 5.5e",
-      "pushedAt": "2026-09-30T16:27:40Z",
+      "pushedAt": "2026-11-20T01:42:20Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
-      "language": "Shell",
+      "language": "Python",
       "license": "CC-BY-4.0",
       "declaredLicense": "CC-BY-4.0",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -738,7 +738,7 @@
     "titterpig-dsl-dnd5e-3rdparty": {
       "slug": "titterpig-dsl-dnd5e-3rdparty",
       "description": "Titterpig D&D 5e Third Party",
-      "pushedAt": "2026-11-19T15:05:10Z",
+      "pushedAt": "2026-11-20T03:44:33Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -781,16 +781,16 @@
     "titterpig-dsl-daggerheart": {
       "slug": "titterpig-dsl-daggerheart",
       "description": "Daggerheart - Titterpig DSL Implementation",
-      "pushedAt": "2026-10-02T18:34:12Z",
+      "pushedAt": "2026-11-20T14:06:19Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
-      "language": null,
+      "language": "Python",
       "license": null,
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -815,16 +815,16 @@
     "titterpig-dsl-daggerheart-3rdparty": {
       "slug": "titterpig-dsl-daggerheart-3rdparty",
       "description": "Daggerheart 3rd Party",
-      "pushedAt": "2026-10-02T04:14:56Z",
+      "pushedAt": "2026-11-20T14:22:32Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
-      "language": "Shell",
+      "language": "Python",
       "license": null,
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1881,7 +1881,7 @@
     "sortilege-vtt-daggerheart": {
       "slug": "sortilege-vtt-daggerheart",
       "description": "Daggerheart VTT",
-      "pushedAt": "2026-11-15T16:56:08Z",
+      "pushedAt": "2026-11-20T14:49:53Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1924,7 +1924,7 @@
     "sortilege-vtt-dnd5e": {
       "slug": "sortilege-vtt-dnd5e",
       "description": "D&D 5e VTT",
-      "pushedAt": "2026-11-19T14:12:58Z",
+      "pushedAt": "2026-11-20T01:42:24Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2182,7 +2182,7 @@
     "sortilege-vtt-teeth": {
       "slug": "sortilege-vtt-teeth",
       "description": "TEETH",
-      "pushedAt": "2026-11-18T03:47:29Z",
+      "pushedAt": "2026-11-20T13:24:47Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2354,7 +2354,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-11-18T16:08:29Z",
+      "pushedAt": "2026-11-19T16:15:44Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2369,7 +2369,7 @@
       "pagesUrl": "https://sortilege-inc.github.io/sortilege-index/",
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-11-19T16:14:32Z",
+        "created_at": "2026-11-20T15:52:57Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2755,7 +2755,7 @@
     "dossiers": {
       "slug": "dossiers",
       "description": "Deep dives on constructed player characters",
-      "pushedAt": "2026-11-18T23:38:38Z",
+      "pushedAt": "2026-11-20T14:50:22Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4042,7 +4042,7 @@
     "wyldwolf-axis": {
       "slug": "wyldwolf-axis",
       "description": "Wyldwolf Axis",
-      "pushedAt": "2026-09-09T16:26:09Z",
+      "pushedAt": "2026-11-20T04:11:33Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4051,7 +4051,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -4520,7 +4520,7 @@
     "caul": {
       "slug": "caul",
       "description": "Caul",
-      "pushedAt": "2026-11-15T16:57:14Z",
+      "pushedAt": "2026-11-20T14:51:20Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4554,7 +4554,7 @@
     "a-gibbous-moon": {
       "slug": "a-gibbous-moon",
       "description": "A Gibbous Moon Over Constantinople",
-      "pushedAt": "2026-11-19T15:56:55Z",
+      "pushedAt": "2026-11-20T01:42:28Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -4717,7 +4717,7 @@
     "kill-fee": {
       "slug": "kill-fee",
       "description": "A Daggerheart adventure in Night City",
-      "pushedAt": "2026-11-11T20:15:55Z",
+      "pushedAt": "2026-11-20T14:50:35Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5489,27 +5489,9 @@
   },
   "untracked": [
     {
-      "slug": "npc-tarot",
-      "description": "NPC Tarot",
-      "pushedAt": "2026-11-18T19:36:03Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
       "slug": "tccon26",
       "description": "Twin Cities Con 2026",
-      "pushedAt": "2026-11-18T03:50:19Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": false
-    },
-    {
-      "slug": "sortilege-vtt-cyborg",
-      "description": "CY_BORG virtual tabletop (Speed Run)",
-      "pushedAt": "2026-11-18T03:50:11Z",
+      "pushedAt": "2026-11-20T14:15:53Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -5518,7 +5500,7 @@
     {
       "slug": "sortilege-vtt-eclipsephase1e",
       "description": "Eclipse Phase 1e VTT",
-      "pushedAt": "2026-11-18T03:50:09Z",
+      "pushedAt": "2026-11-20T14:15:26Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -5527,7 +5509,34 @@
     {
       "slug": "sortilege-vtt-thingswebecome",
       "description": null,
-      "pushedAt": "2026-11-18T03:50:08Z",
+      "pushedAt": "2026-11-20T13:24:50Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "sortilege-vtt-cyborg",
+      "description": "CY_BORG virtual tabletop (Speed Run)",
+      "pushedAt": "2026-11-20T13:24:49Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
+    {
+      "slug": "titterpig-dsl-eclipsephase1e",
+      "description": "Eclipse Phase 1e",
+      "pushedAt": "2026-11-20T04:44:58Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
+      "slug": "npc-tarot",
+      "description": "NPC Tarot",
+      "pushedAt": "2026-11-18T19:36:03Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
@@ -5555,15 +5564,6 @@
       "slug": "titterpig-dsl-cy_borg",
       "description": "Cy_Borg",
       "pushedAt": "2026-11-17T15:46:07Z",
-      "archived": false,
-      "visibility": "private",
-      "freshness": "fresh",
-      "isDslCorpus": true
-    },
-    {
-      "slug": "titterpig-dsl-eclipsephase1e",
-      "description": "Eclipse Phase 1e",
-      "pushedAt": "2026-11-17T13:17:03Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
