@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T18:35:01.494Z",
+  "generatedAt": "2026-11-25T17:45:18.842Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 133,
@@ -143,7 +143,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": null,
-      "pushedAt": "2026-11-24T08:55:51Z",
+      "pushedAt": "2026-11-25T14:40:05Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -181,7 +181,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-11-24T02:31:28Z",
+      "pushedAt": "2026-11-25T14:40:09Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -498,7 +498,7 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-11-24T02:30:06Z",
+      "pushedAt": "2026-11-25T16:06:54Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -618,7 +618,7 @@
     "titterpig-dsl-curseborne": {
       "slug": "titterpig-dsl-curseborne",
       "description": "Titterpig DSL Curseborne",
-      "pushedAt": "2026-09-15T09:55:28Z",
+      "pushedAt": "2026-11-25T14:16:49Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -627,7 +627,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1159,7 +1159,7 @@
     "titterpig-mythic-gme2": {
       "slug": "titterpig-mythic-gme2",
       "description": "Mythic Game Master Emulator 2",
-      "pushedAt": "2026-11-02T18:50:55Z",
+      "pushedAt": "2026-11-25T14:16:57Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1202,7 +1202,7 @@
     "titterpig-dsl-pendragon5e": {
       "slug": "titterpig-dsl-pendragon5e",
       "description": "Pendragon 5e",
-      "pushedAt": "2026-09-29T18:37:47Z",
+      "pushedAt": "2026-11-25T14:16:36Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1211,7 +1211,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1288,7 +1288,7 @@
     "titterpig-dsl-root": {
       "slug": "titterpig-dsl-root",
       "description": "Titterpig Root",
-      "pushedAt": "2026-09-22T12:27:35Z",
+      "pushedAt": "2026-11-25T14:16:44Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -1297,7 +1297,7 @@
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -1408,16 +1408,16 @@
     "titterpig-dsl-expanse": {
       "slug": "titterpig-dsl-expanse",
       "description": "Titterpig The Expanse",
-      "pushedAt": "2026-09-15T09:56:25Z",
+      "pushedAt": "2026-11-25T14:16:53Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
-      "language": null,
+      "language": "Python",
       "license": null,
       "declaredLicense": "Per-file",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": true,
       "openItems": 0,
       "lastRun": null,
@@ -2354,7 +2354,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-11-23T18:56:56Z",
+      "pushedAt": "2026-11-24T18:36:16Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2369,7 +2369,7 @@
       "pagesUrl": "https://sortilege-inc.github.io/sortilege-index/",
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-11-24T18:34:55Z",
+        "created_at": "2026-11-25T17:45:12Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2558,7 +2558,7 @@
     "marginalia": {
       "slug": "marginalia",
       "description": "A Solo TTRPG Structure powered by Claude and Titterpig",
-      "pushedAt": "2026-10-14T01:43:33Z",
+      "pushedAt": "2026-11-25T14:40:13Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2567,7 +2567,7 @@
       "declaredLicense": "MPL-2.0",
       "topics": [],
       "hasIssues": true,
-      "freshness": "active",
+      "freshness": "fresh",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -2755,7 +2755,7 @@
     "dossiers": {
       "slug": "dossiers",
       "description": "Deep dives on constructed player characters",
-      "pushedAt": "2026-11-24T02:31:45Z",
+      "pushedAt": "2026-11-25T14:40:17Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -5052,7 +5052,7 @@
     "fragilepeace": {
       "slug": "fragilepeace",
       "description": "The Fragile Peace",
-      "pushedAt": "2026-11-18T15:21:43Z",
+      "pushedAt": "2026-11-24T23:15:53Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
