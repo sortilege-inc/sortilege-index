@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-25T17:45:18.842Z",
+  "generatedAt": "2026-11-26T17:29:25.164Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 133,
-    "org": 142,
-    "untracked": 9,
+    "org": 143,
+    "untracked": 10,
     "accessLimited": 0,
     "openTasks": 244,
     "backlogRepos": 2,
@@ -143,7 +143,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": null,
-      "pushedAt": "2026-11-25T14:40:05Z",
+      "pushedAt": "2026-11-26T15:32:58Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -215,7 +215,7 @@
     "titterpig-dsl": {
       "slug": "titterpig-dsl",
       "description": "A Domain Specific Language for encoding Tabletop Roleplaying Game Sourcebooks",
-      "pushedAt": "2026-11-24T09:14:12Z",
+      "pushedAt": "2026-11-26T11:25:56Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -498,7 +498,7 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-11-25T16:06:54Z",
+      "pushedAt": "2026-11-26T11:43:40Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2354,7 +2354,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-11-24T18:36:16Z",
+      "pushedAt": "2026-11-25T17:46:28Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2369,7 +2369,7 @@
       "pagesUrl": "https://sortilege-inc.github.io/sortilege-index/",
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-11-25T17:45:12Z",
+        "created_at": "2026-11-26T17:29:13Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2635,7 +2635,7 @@
     "session-history": {
       "slug": "session-history",
       "description": "TTRPG Session History",
-      "pushedAt": "2026-11-22T17:38:13Z",
+      "pushedAt": "2026-11-26T15:32:48Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2950,7 +2950,7 @@
     "landing": {
       "slug": "landing",
       "description": "Landing page for sortilege.online",
-      "pushedAt": "2026-10-30T22:03:50Z",
+      "pushedAt": "2026-11-25T18:56:03Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2965,7 +2965,7 @@
       "pagesUrl": "https://landing.sortilege.online/",
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-10-30T22:03:52Z",
+        "created_at": "2026-11-25T18:56:04Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3009,7 +3009,7 @@
     "registration": {
       "slug": "registration",
       "description": "Event Registration for sortilege.online",
-      "pushedAt": "2026-11-15T14:04:16Z",
+      "pushedAt": "2026-11-25T18:56:05Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -3024,7 +3024,7 @@
       "pagesUrl": "https://rsvp.sortilege.online/",
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-11-15T14:04:18Z",
+        "created_at": "2026-11-25T18:56:07Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -5488,6 +5488,15 @@
     }
   },
   "untracked": [
+    {
+      "slug": "vote",
+      "description": "Vote for Upcoming Events",
+      "pushedAt": "2026-11-26T17:27:29Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": false
+    },
     {
       "slug": "tccon26",
       "description": "Twin Cities Con 2026",
