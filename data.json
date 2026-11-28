@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-27T17:09:25.973Z",
+  "generatedAt": "2026-11-28T15:55:50.921Z",
   "owner": "sortilege-inc",
   "counts": {
     "tracked": 133,
-    "org": 143,
-    "untracked": 10,
+    "org": 144,
+    "untracked": 11,
     "accessLimited": 0,
     "openTasks": 244,
     "backlogRepos": 2,
@@ -143,7 +143,7 @@
     "titterpig-mastra": {
       "slug": "titterpig-mastra",
       "description": null,
-      "pushedAt": "2026-11-27T17:04:30Z",
+      "pushedAt": "2026-11-28T13:31:59Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -181,7 +181,7 @@
     "titterpig-synthesist": {
       "slug": "titterpig-synthesist",
       "description": "Titterpig Synthesist",
-      "pushedAt": "2026-11-25T14:40:09Z",
+      "pushedAt": "2026-11-28T08:34:11Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -317,7 +317,7 @@
     "titterpig-doublecheck": {
       "slug": "titterpig-doublecheck",
       "description": null,
-      "pushedAt": "2026-11-27T08:46:39Z",
+      "pushedAt": "2026-11-28T08:25:49Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -498,7 +498,7 @@
     "titterpig-dsl-arm5e": {
       "slug": "titterpig-dsl-arm5e",
       "description": "Ars Magica Definitive Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-11-27T17:04:23Z",
+      "pushedAt": "2026-11-27T22:30:40Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -541,7 +541,7 @@
     "titterpig-dsl-callofcthulhu7e": {
       "slug": "titterpig-dsl-callofcthulhu7e",
       "description": "Titterpig Call of Cthulhu 7e",
-      "pushedAt": "2026-11-18T03:33:04Z",
+      "pushedAt": "2026-11-28T13:32:23Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -978,7 +978,7 @@
     "titterpig-dsl-l5r5e": {
       "slug": "titterpig-dsl-l5r5e",
       "description": "Legend of the Five Rings 5th Edition - Titterpig DSL Implementation",
-      "pushedAt": "2026-11-24T09:14:18Z",
+      "pushedAt": "2026-11-28T13:31:47Z",
       "archived": false,
       "visibility": "private",
       "defaultBranch": "main",
@@ -2354,7 +2354,7 @@
     "sortilege-index": {
       "slug": "sortilege-index",
       "description": "Sortilege Project Index",
-      "pushedAt": "2026-11-26T17:30:25Z",
+      "pushedAt": "2026-11-27T17:10:24Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2369,7 +2369,7 @@
       "pagesUrl": "https://sortilege-inc.github.io/sortilege-index/",
       "lastRun": {
         "conclusion": null,
-        "created_at": "2026-11-27T17:09:11Z",
+        "created_at": "2026-11-28T15:55:46Z",
         "head_branch": "main",
         "name": "Refresh live state",
         "status": "in_progress"
@@ -2950,7 +2950,7 @@
     "landing": {
       "slug": "landing",
       "description": "Landing page for sortilege.online",
-      "pushedAt": "2026-11-25T18:56:03Z",
+      "pushedAt": "2026-11-28T04:36:10Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -2965,7 +2965,7 @@
       "pagesUrl": "https://landing.sortilege.online/",
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-11-25T18:56:04Z",
+        "created_at": "2026-11-28T04:36:12Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3009,7 +3009,7 @@
     "registration": {
       "slug": "registration",
       "description": "Event Registration for sortilege.online",
-      "pushedAt": "2026-11-25T18:56:05Z",
+      "pushedAt": "2026-11-28T04:36:14Z",
       "archived": false,
       "visibility": "public",
       "defaultBranch": "main",
@@ -3024,7 +3024,7 @@
       "pagesUrl": "https://rsvp.sortilege.online/",
       "lastRun": {
         "conclusion": "success",
-        "created_at": "2026-11-25T18:56:07Z",
+        "created_at": "2026-11-28T04:36:16Z",
         "head_branch": "main",
         "name": "pages build and deployment",
         "status": "completed"
@@ -3111,7 +3111,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -3154,7 +3154,7 @@
       "declaredLicense": null,
       "topics": [],
       "hasIssues": true,
-      "freshness": "fresh",
+      "freshness": "active",
       "isDslCorpus": false,
       "openItems": 0,
       "lastRun": null,
@@ -5489,9 +5489,18 @@
   },
   "untracked": [
     {
+      "slug": "titterpig-dsl-thousandyearvampire",
+      "description": "Thousand Year Vampire",
+      "pushedAt": "2026-11-28T08:29:45Z",
+      "archived": false,
+      "visibility": "private",
+      "freshness": "fresh",
+      "isDslCorpus": true
+    },
+    {
       "slug": "vote",
       "description": "Vote for Upcoming Events",
-      "pushedAt": "2026-11-26T17:40:42Z",
+      "pushedAt": "2026-11-28T04:36:18Z",
       "archived": false,
       "visibility": "private",
       "freshness": "fresh",
